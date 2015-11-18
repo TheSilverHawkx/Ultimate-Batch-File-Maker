@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,6 +15,7 @@ namespace FalloutBatchMaker.Classes
 
     class Item_List
     {
+        // Resources
         public static Object Acid = new Object { code = "001BF72D", amount = 0, };
         public static Object Adhesive = new Object { code = "001BF72E", amount = 0, };
         public static Object Aluminum = new Object { code = "0006907A", amount = 0, };
@@ -45,6 +47,8 @@ namespace FalloutBatchMaker.Classes
         public static Object Spring = new Object { code = "00069082", amount = 0, };
         public static Object Steel = new Object { code = "000731A4", amount = 0, };
         public static Object Wood = new Object { code = "000731A3", amount = 0, };
+
+        //Crops
         public static Object Carrot = new Object { code = "000F742E", amount = 0, };
         public static Object Corn = new Object { code = "000330F8", amount = 0, };
         public static Object Gourd = new Object { code = "000EF24D", amount = 0, };
@@ -52,6 +56,8 @@ namespace FalloutBatchMaker.Classes
         public static Object Mutfruit = new Object { code = "000d3EA7", amount = 0, };
         public static Object Razorgrain = new Object { code = "000E0043", amount = 0, };
         public static Object Tato = new Object { code = "009DCC4", amount = 0, };
+
+        //etc
         public static ArrayList Final = new ArrayList();
     }
 }

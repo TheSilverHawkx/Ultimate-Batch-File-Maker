@@ -11,6 +11,22 @@ namespace FalloutBatchMaker
             InitializeComponent();
         }
 
+        public void add2Array(string item, int value) // Array add function
+        {
+            if (value > 0)
+            {
+                try
+                {
+                    Classes.Item_List.Final.Add("player.additem " + item + " " + value);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                }
+            }
+            
+        }
+
         private void SetRes_btn_Click(object sender, EventArgs e) // Set Value Resources
         {
             /*Set Button for Resources, takes all the textbox values that are int and add them into the Item list values objects.
@@ -292,18 +308,6 @@ namespace FalloutBatchMaker
             this.Close();
         }
 
-        public void add2Array(string item, int value) // Array add function
-        {
-            try
-            {
-                Classes.Item_List.Final.Add("player.additem " + item + " " + value);
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
-        }
-
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try
@@ -365,11 +369,6 @@ namespace FalloutBatchMaker
             saver.Dispose();
             saver.Close();
             MessageBox.Show("File Saved.");
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }

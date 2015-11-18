@@ -121,6 +121,7 @@
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage_Res.SuspendLayout();
@@ -203,6 +204,7 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage_Res);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 24);
             this.tabControl1.Name = "tabControl1";
@@ -887,7 +889,7 @@
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(458, 444);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Food";
+            this.tabPage2.Text = "Crops";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // ClrFd_btn
@@ -1036,6 +1038,16 @@
             this.label34.TabIndex = 6;
             this.label34.Text = "Carrot:";
             // 
+            // tabPage1
+            // 
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(458, 444);
+            this.tabPage1.TabIndex = 2;
+            this.tabPage1.Text = "Mobs";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1153,6 +1165,7 @@
         private System.Windows.Forms.Button SetRes_btn;
         private System.Windows.Forms.Button ClrFd_btn;
         private System.Windows.Forms.Button SetFd_btn;
+        private System.Windows.Forms.TabPage tabPage1;
     }
 }
 
