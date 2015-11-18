@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace FalloutBatchMaker.Classes
 {
-    class Object
+    public class Object
     {
         public string code;
         public int amount;
     }
 
-    class Item_List
+    public static class Item_List
     {
         // Resources
         public static Object Acid = new Object { code = "001BF72D", amount = 0, };
