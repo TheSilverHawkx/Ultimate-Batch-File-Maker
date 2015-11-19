@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using System.IO;
+using System.Collections.Generic;
 
 namespace FalloutBatchMaker
 {
@@ -203,6 +204,24 @@ namespace FalloutBatchMaker
             Classes.Item_List.Spring.amount = 0;
             Classes.Item_List.Steel.amount = 0;
             Classes.Item_List.Wood.amount = 0;
+            Classes.Actor_List.Ghoul.amount = 0;
+            Classes.Actor_List.Raider.amount = 0;
+            Classes.Actor_List.Super_Mutant.amount = 0;
+            Classes.Actor_List.Brahmin.amount = 0;
+            Classes.Actor_List.Mole_rat.amount = 0;
+            Classes.Actor_List.Mongle.amount = 0;
+            Classes.Actor_List.Mutant_hound.amount = 0;
+            Classes.Actor_List.Radstag.amount = 0;
+            Classes.Actor_List.Yao_Guai.amount = 0;
+            Classes.Actor_List.Deathclaw.amount = 0;
+            Classes.Actor_List.Bloatfly.amount = 0;
+            Classes.Actor_List.Bloodbug.amount = 0;
+            Classes.Actor_List.Mirelurk.amount = 0;
+            Classes.Actor_List.Stingwing.amount = 0;
+            Classes.Actor_List.Radroach.amount = 0;
+            Classes.Actor_List.Radscorpion.amount = 0;
+            Classes.Actor_List.Alien.amount = 0;
+            Classes.Actor_List.Dog.amount = 0;
 
             acd_txtbx.Text = "0";
             adh_txtbx.Text = "0";
@@ -242,6 +261,24 @@ namespace FalloutBatchMaker
             mtf_txtbx.Text = "0";
             rzr_txtbx.Text = "0";
             tto_txtbx.Text = "0";
+            ghl_txtbx.Text = "0";
+            rdr_txtbx.Text = "0";
+            spm_txtbx.Text = "0";
+            brm_txtbx.Text = "0";
+            mlr_txtbx.Text = "0";
+            mng_txtbx.Text = "0";
+            mth_txtbx.Text = "0";
+            rds_txtbx.Text = "0";
+            yag_txtbx.Text = "0";
+            dtc_txtbx.Text = "0";
+            blf_txtbx.Text = "0";
+            blb_txtbx.Text = "0";
+            mrl_txtbx.Text = "0";
+            stw_txtbx.Text = "0";
+            rdro_txtbx.Text = "0";
+            rdrsctxtbx.Text = "0";
+            alb_txtbx.Text = "0";
+            dog_txtbx.Text = "0";
 
         }
 
@@ -541,7 +578,7 @@ namespace FalloutBatchMaker
             Classes.Actor_List.Dog.amount = int.Parse(dog_txtbx.Text);
         }
 
-        private void Mob_clear_btn_Click(object sender, EventArgs e)
+        public void Mob_clear_btn_Click(object sender, EventArgs e)
         {
             Classes.Actor_List.Ghoul.amount = 0;
             Classes.Actor_List.Raider.amount = 0;
