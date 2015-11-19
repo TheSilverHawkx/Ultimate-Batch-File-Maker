@@ -15,6 +15,30 @@ namespace FalloutBatchMaker.Classes
 
     public static class Item_List
     {
+        // Ammo
+        public static Object ammo_dot308 = new Object { code = "0001f66b", amount = 0, };
+        public static Object ammo_dot38 = new Object { code = "0004ce87", amount = 0, };
+        public static Object ammo_dot44 = new Object { code = "0009221c", amount = 0, };
+        public static Object ammo_dot45 = new Object { code = "0001f66a", amount = 0, };
+        public static Object ammo_dot50_calibeammo = new Object { code = "0001f279", amount = 0, };
+        public static Object ammo_dot10mm = new Object { code = "0001f276", amount = 0, };
+        public static Object ammo_dot5mm = new Object { code = "0001f66c", amount = 0, };
+        public static Object ammo_5dot56mm = new Object { code = "0001f278", amount = 0, };
+        public static Object ammo_shotgun_shell = new Object { code = "0001f673", amount = 0, };
+        public static Object ammo_Railway_spike = new Object { code = "000fe269", amount = 0, };
+        public static Object ammo_Cyro_cell = new Object { code = "0018abe2", amount = 0, };
+        public static Object ammo_Energy_cell = new Object { code = "000c1897", amount = 0, };
+        public static Object ammo_Plasma_cart = new Object { code = "0001dbb7", amount = 0, };
+        public static Object ammo_Fusion_core = new Object { code = "00075fe4", amount = 0, };
+        public static Object ammo_Fusion_cell = new Object { code = "000c1897", amount = 0, };
+        public static Object ammo_2mm_EC = new Object { code = "0018abdf", amount = 0, };
+        public static Object ammo_Gamma = new Object { code = "000df279", amount = 0, };
+        public static Object ammo_Alien_b = new Object { code = "001025aa", amount = 0, };
+        public static Object ammo_missile = new Object { code = "000caba3", amount = 0, };
+        public static Object ammo_flare = new Object { code = "001025ae", amount = 0, };
+        public static Object ammo_junk = new Object { code = "000e942c", amount = 0, };
+        public static Object ammo_cannonball = new Object { code = "000fd11c", amount = 0, };
+
         // Resources
         public static Object Acid = new Object { code = "001BF72D", amount = 0, };
         public static Object Adhesive = new Object { code = "001BF72E", amount = 0, };
