@@ -122,12 +122,52 @@
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.EC2mm_txtbx = new System.Windows.Forms.TextBox();
+            this.msl_txtbx = new System.Windows.Forms.TextBox();
+            this.fusco_txtbx = new System.Windows.Forms.TextBox();
+            this.rws_txtbx = new System.Windows.Forms.TextBox();
+            this.fusce_txtbx = new System.Windows.Forms.TextBox();
+            this.alb_txtbx = new System.Windows.Forms.TextBox();
+            this.plm_txtbx = new System.Windows.Forms.TextBox();
+            this.stg_txtbx = new System.Windows.Forms.TextBox();
+            this.dot556mm_txtbx = new System.Windows.Forms.TextBox();
+            this.nrg_txtbx = new System.Windows.Forms.TextBox();
+            this.dot5mm_txtbx = new System.Windows.Forms.TextBox();
+            this.cyr_txtbx = new System.Windows.Forms.TextBox();
+            this.dot10mm_txtbx = new System.Windows.Forms.TextBox();
+            this.jnk_txtbx = new System.Windows.Forms.TextBox();
+            this.dot50_txtbx = new System.Windows.Forms.TextBox();
+            this.gam_txtbx = new System.Windows.Forms.TextBox();
+            this.dot44_txtbx = new System.Windows.Forms.TextBox();
+            this.cnb_txtbx = new System.Windows.Forms.TextBox();
+            this.dot38_txtbx = new System.Windows.Forms.TextBox();
+            this.flr_txtbx = new System.Windows.Forms.TextBox();
+            this.dot308_txtbx = new System.Windows.Forms.TextBox();
             this.label39 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label42 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
+            this.label57 = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
+            this.ammo_clear = new System.Windows.Forms.Button();
+            this.ammo_set = new System.Windows.Forms.Button();
+            this.label54 = new System.Windows.Forms.Label();
+            this.dot45_txtbx = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage_Res.SuspendLayout();
@@ -1047,75 +1087,475 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.textBox2);
-            this.tabPage1.Controls.Add(this.textBox1);
-            this.tabPage1.Controls.Add(this.label41);
-            this.tabPage1.Controls.Add(this.label40);
-            this.tabPage1.Controls.Add(this.label42);
+            this.tabPage1.Controls.Add(this.ammo_clear);
+            this.tabPage1.Controls.Add(this.ammo_set);
+            this.tabPage1.Controls.Add(this.EC2mm_txtbx);
+            this.tabPage1.Controls.Add(this.msl_txtbx);
+            this.tabPage1.Controls.Add(this.fusco_txtbx);
+            this.tabPage1.Controls.Add(this.rws_txtbx);
+            this.tabPage1.Controls.Add(this.fusce_txtbx);
+            this.tabPage1.Controls.Add(this.alb_txtbx);
+            this.tabPage1.Controls.Add(this.plm_txtbx);
+            this.tabPage1.Controls.Add(this.stg_txtbx);
+            this.tabPage1.Controls.Add(this.dot556mm_txtbx);
+            this.tabPage1.Controls.Add(this.nrg_txtbx);
+            this.tabPage1.Controls.Add(this.dot5mm_txtbx);
+            this.tabPage1.Controls.Add(this.cyr_txtbx);
+            this.tabPage1.Controls.Add(this.dot10mm_txtbx);
+            this.tabPage1.Controls.Add(this.jnk_txtbx);
+            this.tabPage1.Controls.Add(this.dot50_txtbx);
+            this.tabPage1.Controls.Add(this.gam_txtbx);
+            this.tabPage1.Controls.Add(this.dot45_txtbx);
+            this.tabPage1.Controls.Add(this.dot44_txtbx);
+            this.tabPage1.Controls.Add(this.cnb_txtbx);
+            this.tabPage1.Controls.Add(this.dot38_txtbx);
+            this.tabPage1.Controls.Add(this.flr_txtbx);
+            this.tabPage1.Controls.Add(this.dot308_txtbx);
             this.tabPage1.Controls.Add(this.label39);
+            this.tabPage1.Controls.Add(this.label40);
+            this.tabPage1.Controls.Add(this.label41);
+            this.tabPage1.Controls.Add(this.label42);
+            this.tabPage1.Controls.Add(this.label43);
+            this.tabPage1.Controls.Add(this.label44);
+            this.tabPage1.Controls.Add(this.label45);
+            this.tabPage1.Controls.Add(this.label46);
+            this.tabPage1.Controls.Add(this.label47);
+            this.tabPage1.Controls.Add(this.label48);
+            this.tabPage1.Controls.Add(this.label49);
+            this.tabPage1.Controls.Add(this.label50);
+            this.tabPage1.Controls.Add(this.label51);
+            this.tabPage1.Controls.Add(this.label52);
+            this.tabPage1.Controls.Add(this.label53);
+            this.tabPage1.Controls.Add(this.label55);
+            this.tabPage1.Controls.Add(this.label56);
+            this.tabPage1.Controls.Add(this.label54);
+            this.tabPage1.Controls.Add(this.label57);
+            this.tabPage1.Controls.Add(this.label58);
+            this.tabPage1.Controls.Add(this.label59);
+            this.tabPage1.Controls.Add(this.label60);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(458, 444);
             this.tabPage1.TabIndex = 2;
-            this.tabPage1.Text = "Mobs";
+            this.tabPage1.Text = "Ammo";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // EC2mm_txtbx
+            // 
+            this.EC2mm_txtbx.Location = new System.Drawing.Point(338, 279);
+            this.EC2mm_txtbx.Name = "EC2mm_txtbx";
+            this.EC2mm_txtbx.Size = new System.Drawing.Size(100, 20);
+            this.EC2mm_txtbx.TabIndex = 45;
+            this.EC2mm_txtbx.Text = "0";
+            // 
+            // msl_txtbx
+            // 
+            this.msl_txtbx.Location = new System.Drawing.Point(338, 10);
+            this.msl_txtbx.Name = "msl_txtbx";
+            this.msl_txtbx.Size = new System.Drawing.Size(100, 20);
+            this.msl_txtbx.TabIndex = 26;
+            this.msl_txtbx.Text = "0";
+            // 
+            // fusco_txtbx
+            // 
+            this.fusco_txtbx.Location = new System.Drawing.Point(338, 227);
+            this.fusco_txtbx.Name = "fusco_txtbx";
+            this.fusco_txtbx.Size = new System.Drawing.Size(100, 20);
+            this.fusco_txtbx.TabIndex = 27;
+            this.fusco_txtbx.Text = "0";
+            // 
+            // rws_txtbx
+            // 
+            this.rws_txtbx.Location = new System.Drawing.Point(113, 253);
+            this.rws_txtbx.Name = "rws_txtbx";
+            this.rws_txtbx.Size = new System.Drawing.Size(100, 20);
+            this.rws_txtbx.TabIndex = 28;
+            this.rws_txtbx.Text = "0";
+            // 
+            // fusce_txtbx
+            // 
+            this.fusce_txtbx.Location = new System.Drawing.Point(338, 253);
+            this.fusce_txtbx.Name = "fusce_txtbx";
+            this.fusce_txtbx.Size = new System.Drawing.Size(100, 20);
+            this.fusce_txtbx.TabIndex = 29;
+            this.fusce_txtbx.Text = "0";
+            // 
+            // alb_txtbx
+            // 
+            this.alb_txtbx.Location = new System.Drawing.Point(113, 279);
+            this.alb_txtbx.Name = "alb_txtbx";
+            this.alb_txtbx.Size = new System.Drawing.Size(100, 20);
+            this.alb_txtbx.TabIndex = 30;
+            this.alb_txtbx.Text = "0";
+            // 
+            // plm_txtbx
+            // 
+            this.plm_txtbx.Location = new System.Drawing.Point(338, 201);
+            this.plm_txtbx.Name = "plm_txtbx";
+            this.plm_txtbx.Size = new System.Drawing.Size(100, 20);
+            this.plm_txtbx.TabIndex = 31;
+            this.plm_txtbx.Text = "0";
+            // 
+            // stg_txtbx
+            // 
+            this.stg_txtbx.Location = new System.Drawing.Point(113, 227);
+            this.stg_txtbx.Name = "stg_txtbx";
+            this.stg_txtbx.Size = new System.Drawing.Size(100, 20);
+            this.stg_txtbx.TabIndex = 32;
+            this.stg_txtbx.Text = "0";
+            // 
+            // dot556mm_txtbx
+            // 
+            this.dot556mm_txtbx.Location = new System.Drawing.Point(113, 201);
+            this.dot556mm_txtbx.Name = "dot556mm_txtbx";
+            this.dot556mm_txtbx.Size = new System.Drawing.Size(100, 20);
+            this.dot556mm_txtbx.TabIndex = 33;
+            this.dot556mm_txtbx.Text = "0";
+            // 
+            // nrg_txtbx
+            // 
+            this.nrg_txtbx.Location = new System.Drawing.Point(338, 173);
+            this.nrg_txtbx.Name = "nrg_txtbx";
+            this.nrg_txtbx.Size = new System.Drawing.Size(100, 20);
+            this.nrg_txtbx.TabIndex = 44;
+            this.nrg_txtbx.Text = "0";
+            // 
+            // dot5mm_txtbx
+            // 
+            this.dot5mm_txtbx.Location = new System.Drawing.Point(113, 173);
+            this.dot5mm_txtbx.Name = "dot5mm_txtbx";
+            this.dot5mm_txtbx.Size = new System.Drawing.Size(100, 20);
+            this.dot5mm_txtbx.TabIndex = 36;
+            this.dot5mm_txtbx.Text = "0";
+            // 
+            // cyr_txtbx
+            // 
+            this.cyr_txtbx.Location = new System.Drawing.Point(338, 147);
+            this.cyr_txtbx.Name = "cyr_txtbx";
+            this.cyr_txtbx.Size = new System.Drawing.Size(100, 20);
+            this.cyr_txtbx.TabIndex = 37;
+            this.cyr_txtbx.Text = "0";
+            // 
+            // dot10mm_txtbx
+            // 
+            this.dot10mm_txtbx.Location = new System.Drawing.Point(113, 147);
+            this.dot10mm_txtbx.Name = "dot10mm_txtbx";
+            this.dot10mm_txtbx.Size = new System.Drawing.Size(100, 20);
+            this.dot10mm_txtbx.TabIndex = 38;
+            this.dot10mm_txtbx.Text = "0";
+            // 
+            // jnk_txtbx
+            // 
+            this.jnk_txtbx.Location = new System.Drawing.Point(338, 117);
+            this.jnk_txtbx.Name = "jnk_txtbx";
+            this.jnk_txtbx.Size = new System.Drawing.Size(100, 20);
+            this.jnk_txtbx.TabIndex = 39;
+            this.jnk_txtbx.Text = "0";
+            // 
+            // dot50_txtbx
+            // 
+            this.dot50_txtbx.Location = new System.Drawing.Point(113, 117);
+            this.dot50_txtbx.Name = "dot50_txtbx";
+            this.dot50_txtbx.Size = new System.Drawing.Size(100, 20);
+            this.dot50_txtbx.TabIndex = 40;
+            this.dot50_txtbx.Text = "0";
+            // 
+            // gam_txtbx
+            // 
+            this.gam_txtbx.Location = new System.Drawing.Point(338, 91);
+            this.gam_txtbx.Name = "gam_txtbx";
+            this.gam_txtbx.Size = new System.Drawing.Size(100, 20);
+            this.gam_txtbx.TabIndex = 41;
+            this.gam_txtbx.Text = "0";
+            // 
+            // dot44_txtbx
+            // 
+            this.dot44_txtbx.Location = new System.Drawing.Point(113, 65);
+            this.dot44_txtbx.Name = "dot44_txtbx";
+            this.dot44_txtbx.Size = new System.Drawing.Size(100, 20);
+            this.dot44_txtbx.TabIndex = 42;
+            this.dot44_txtbx.Text = "0";
+            // 
+            // cnb_txtbx
+            // 
+            this.cnb_txtbx.Location = new System.Drawing.Point(338, 62);
+            this.cnb_txtbx.Name = "cnb_txtbx";
+            this.cnb_txtbx.Size = new System.Drawing.Size(100, 20);
+            this.cnb_txtbx.TabIndex = 43;
+            this.cnb_txtbx.Text = "0";
+            // 
+            // dot38_txtbx
+            // 
+            this.dot38_txtbx.Location = new System.Drawing.Point(113, 36);
+            this.dot38_txtbx.Name = "dot38_txtbx";
+            this.dot38_txtbx.Size = new System.Drawing.Size(100, 20);
+            this.dot38_txtbx.TabIndex = 25;
+            this.dot38_txtbx.Text = "0";
+            // 
+            // flr_txtbx
+            // 
+            this.flr_txtbx.Location = new System.Drawing.Point(338, 36);
+            this.flr_txtbx.Name = "flr_txtbx";
+            this.flr_txtbx.Size = new System.Drawing.Size(100, 20);
+            this.flr_txtbx.TabIndex = 34;
+            this.flr_txtbx.Text = "0";
+            // 
+            // dot308_txtbx
+            // 
+            this.dot308_txtbx.Location = new System.Drawing.Point(113, 10);
+            this.dot308_txtbx.Name = "dot308_txtbx";
+            this.dot308_txtbx.Size = new System.Drawing.Size(100, 20);
+            this.dot308_txtbx.TabIndex = 24;
+            this.dot308_txtbx.Text = "0";
             // 
             // label39
             // 
             this.label39.AutoSize = true;
             this.label39.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.Location = new System.Drawing.Point(7, 12);
+            this.label39.Location = new System.Drawing.Point(232, 281);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(52, 18);
-            this.label39.TabIndex = 7;
-            this.label39.Text = "Ghoul:";
+            this.label39.Size = new System.Drawing.Size(70, 18);
+            this.label39.TabIndex = 22;
+            this.label39.Text = "2mm EC";
             // 
             // label40
             // 
             this.label40.AutoSize = true;
             this.label40.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(307, 279);
+            this.label40.Location = new System.Drawing.Point(232, 12);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(56, 18);
-            this.label40.TabIndex = 7;
-            this.label40.Text = "Carrot:";
+            this.label40.Size = new System.Drawing.Size(61, 18);
+            this.label40.TabIndex = 3;
+            this.label40.Text = "Missile:";
             // 
             // label41
             // 
             this.label41.AutoSize = true;
             this.label41.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.Location = new System.Drawing.Point(283, 215);
+            this.label41.Location = new System.Drawing.Point(234, 255);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(56, 18);
-            this.label41.TabIndex = 7;
-            this.label41.Text = "Carrot:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(113, 10);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 11;
-            this.textBox1.Text = "0";
+            this.label41.Size = new System.Drawing.Size(86, 18);
+            this.label41.TabIndex = 4;
+            this.label41.Text = "Fusion cell:";
             // 
             // label42
             // 
             this.label42.AutoSize = true;
             this.label42.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(7, 38);
+            this.label42.Location = new System.Drawing.Point(9, 281);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(92, 18);
-            this.label42.TabIndex = 7;
-            this.label42.Text = "Feral Ghoul:";
+            this.label42.Size = new System.Drawing.Size(100, 18);
+            this.label42.TabIndex = 5;
+            this.label42.Text = "Alien Blaster:";
             // 
-            // textBox2
+            // label43
             // 
-            this.textBox2.Location = new System.Drawing.Point(113, 36);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 11;
-            this.textBox2.Text = "0";
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.Location = new System.Drawing.Point(232, 229);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(94, 18);
+            this.label43.TabIndex = 6;
+            this.label43.Text = "Fusion core:";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.Location = new System.Drawing.Point(7, 255);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(108, 18);
+            this.label44.TabIndex = 7;
+            this.label44.Text = "Railway spike:";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.Location = new System.Drawing.Point(9, 229);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(69, 18);
+            this.label45.TabIndex = 8;
+            this.label45.Text = "Shotgun:";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.Location = new System.Drawing.Point(234, 203);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(92, 18);
+            this.label46.TabIndex = 9;
+            this.label46.Text = "Plasma cell:";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.Location = new System.Drawing.Point(9, 203);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(73, 18);
+            this.label47.TabIndex = 10;
+            this.label47.Text = ".5.56mm:";
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.Location = new System.Drawing.Point(232, 119);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(44, 18);
+            this.label48.TabIndex = 11;
+            this.label48.Text = "Junk:";
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label49.Location = new System.Drawing.Point(7, 119);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(89, 18);
+            this.label49.TabIndex = 12;
+            this.label49.Text = ".50 Caliber:";
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.Location = new System.Drawing.Point(232, 149);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(72, 18);
+            this.label50.TabIndex = 13;
+            this.label50.Text = "Cyro cell:";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label51.Location = new System.Drawing.Point(7, 149);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(60, 18);
+            this.label51.TabIndex = 14;
+            this.label51.Text = ".10mm:";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.Location = new System.Drawing.Point(232, 64);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(90, 18);
+            this.label52.TabIndex = 15;
+            this.label52.Text = "Cannonball:";
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label53.Location = new System.Drawing.Point(7, 38);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(34, 18);
+            this.label53.TabIndex = 16;
+            this.label53.Text = ".38:";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label55.Location = new System.Drawing.Point(232, 175);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(88, 18);
+            this.label55.TabIndex = 18;
+            this.label55.Text = "Energy cell:";
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label56.Location = new System.Drawing.Point(7, 175);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(51, 18);
+            this.label56.TabIndex = 19;
+            this.label56.Text = ".5mm:";
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label57.Location = new System.Drawing.Point(232, 93);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(68, 18);
+            this.label57.TabIndex = 20;
+            this.label57.Text = "Gamma:";
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label58.Location = new System.Drawing.Point(7, 67);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(34, 18);
+            this.label58.TabIndex = 21;
+            this.label58.Text = ".44:";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label59.Location = new System.Drawing.Point(232, 38);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(48, 18);
+            this.label59.TabIndex = 23;
+            this.label59.Text = "Flare:";
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label60.Location = new System.Drawing.Point(7, 12);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(43, 18);
+            this.label60.TabIndex = 2;
+            this.label60.Text = ".308:";
+            // 
+            // ammo_clear
+            // 
+            this.ammo_clear.Location = new System.Drawing.Point(338, 411);
+            this.ammo_clear.Name = "ammo_clear";
+            this.ammo_clear.Size = new System.Drawing.Size(100, 27);
+            this.ammo_clear.TabIndex = 46;
+            this.ammo_clear.Text = "Clear Values";
+            this.ammo_clear.UseVisualStyleBackColor = true;
+            this.ammo_clear.Click += new System.EventHandler(this.ammo_clear_Click);
+            // 
+            // ammo_set
+            // 
+            this.ammo_set.Location = new System.Drawing.Point(235, 412);
+            this.ammo_set.Name = "ammo_set";
+            this.ammo_set.Size = new System.Drawing.Size(97, 26);
+            this.ammo_set.TabIndex = 47;
+            this.ammo_set.Text = "Set Values";
+            this.ammo_set.UseVisualStyleBackColor = true;
+            this.ammo_set.Click += new System.EventHandler(this.ammo_set_Click);
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.Location = new System.Drawing.Point(7, 93);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(34, 18);
+            this.label54.TabIndex = 21;
+            this.label54.Text = ".45:";
+            // 
+            // dot45_txtbx
+            // 
+            this.dot45_txtbx.Location = new System.Drawing.Point(113, 91);
+            this.dot45_txtbx.Name = "dot45_txtbx";
+            this.dot45_txtbx.Size = new System.Drawing.Size(100, 20);
+            this.dot45_txtbx.TabIndex = 42;
+            this.dot45_txtbx.Text = "0";
             // 
             // Form1
             // 
@@ -1237,12 +1677,52 @@
         private System.Windows.Forms.Button ClrFd_btn;
         private System.Windows.Forms.Button SetFd_btn;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.TextBox EC2mm_txtbx;
+        private System.Windows.Forms.TextBox msl_txtbx;
+        private System.Windows.Forms.TextBox fusco_txtbx;
+        private System.Windows.Forms.TextBox rws_txtbx;
+        private System.Windows.Forms.TextBox fusce_txtbx;
+        private System.Windows.Forms.TextBox alb_txtbx;
+        private System.Windows.Forms.TextBox plm_txtbx;
+        private System.Windows.Forms.TextBox stg_txtbx;
+        private System.Windows.Forms.TextBox dot556mm_txtbx;
+        private System.Windows.Forms.TextBox nrg_txtbx;
+        private System.Windows.Forms.TextBox dot5mm_txtbx;
+        private System.Windows.Forms.TextBox cyr_txtbx;
+        private System.Windows.Forms.TextBox dot10mm_txtbx;
+        private System.Windows.Forms.TextBox jnk_txtbx;
+        private System.Windows.Forms.TextBox dot50_txtbx;
+        private System.Windows.Forms.TextBox gam_txtbx;
+        private System.Windows.Forms.TextBox dot44_txtbx;
+        private System.Windows.Forms.TextBox cnb_txtbx;
+        private System.Windows.Forms.TextBox dot38_txtbx;
+        private System.Windows.Forms.TextBox flr_txtbx;
+        private System.Windows.Forms.TextBox dot308_txtbx;
         private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.Label label60;
+        private System.Windows.Forms.Button ammo_clear;
+        private System.Windows.Forms.Button ammo_set;
+        private System.Windows.Forms.TextBox dot45_txtbx;
+        private System.Windows.Forms.Label label54;
     }
 }
 

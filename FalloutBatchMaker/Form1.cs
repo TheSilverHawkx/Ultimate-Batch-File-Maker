@@ -140,7 +140,7 @@ namespace FalloutBatchMaker
             wod_txtbx.Text = "0";
         }
 
-        private void button5_Click(object sender, EventArgs e) // Set Value Food
+        private void button5_Click(object sender, EventArgs e) // Set Value Corp
         {
             /* Same as Resource set value button, but for food */
             try
@@ -301,6 +301,28 @@ namespace FalloutBatchMaker
             mtf_txtbx.Text = "0";
             rzr_txtbx.Text = "0";
             tto_txtbx.Text = "0";
+            dot308_txtbx.Text = "0";
+            dot38_txtbx.Text = "0";
+            dot44_txtbx.Text = "0";
+            dot45_txtbx.Text = "0";
+            dot50_txtbx.Text = "0";
+            dot5mm_txtbx.Text = "0";
+            dot10mm_txtbx.Text = "0";
+            dot556mm_txtbx.Text = "0";
+            stg_txtbx.Text = "0";
+            rws_txtbx.Text = "0";
+            alb_txtbx.Text = "0";
+            msl_txtbx.Text = "0";
+            flr_txtbx.Text = "0";
+            cnb_txtbx.Text = "0";
+            gam_txtbx.Text = "0";
+            jnk_txtbx.Text = "0";
+            cyr_txtbx.Text = "0";
+            nrg_txtbx.Text = "0";
+            plm_txtbx.Text = "0";
+            fusco_txtbx.Text = "0";
+            fusce_txtbx.Text = "0";
+            EC2mm_txtbx.Text = "0";
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e) // Menu Exit
@@ -312,6 +334,7 @@ namespace FalloutBatchMaker
         {
             try
             {
+                // Resources
                 add2Array(Classes.Item_List.Acid.code, Classes.Item_List.Acid.amount);
                 add2Array(Classes.Item_List.Adhesive.code, Classes.Item_List.Adhesive.amount);
                 add2Array(Classes.Item_List.Aluminum.code, Classes.Item_List.Aluminum.amount);
@@ -343,6 +366,8 @@ namespace FalloutBatchMaker
                 add2Array(Classes.Item_List.Spring.code, Classes.Item_List.Spring.amount);
                 add2Array(Classes.Item_List.Steel.code, Classes.Item_List.Steel.amount);
                 add2Array(Classes.Item_List.Wood.code, Classes.Item_List.Wood.amount);
+
+                // Crops
                 add2Array(Classes.Item_List.Carrot.code, Classes.Item_List.Carrot.amount);
                 add2Array(Classes.Item_List.Corn.code, Classes.Item_List.Corn.amount);
                 add2Array(Classes.Item_List.Gourd.code, Classes.Item_List.Gourd.amount);
@@ -350,6 +375,30 @@ namespace FalloutBatchMaker
                 add2Array(Classes.Item_List.Mutfruit.code, Classes.Item_List.Mutfruit.amount);
                 add2Array(Classes.Item_List.Razorgrain.code, Classes.Item_List.Razorgrain.amount);
                 add2Array(Classes.Item_List.Tato.code, Classes.Item_List.Tato.amount);
+
+                // Ammo
+                add2Array(Classes.Item_List.ammo_dot308.code,Classes.Item_List.ammo_dot308.amount);
+                add2Array(Classes.Item_List.ammo_dot38.code, Classes.Item_List.ammo_dot38.amount);
+                add2Array(Classes.Item_List.ammo_dot44.code, Classes.Item_List.ammo_dot44.amount);
+                add2Array(Classes.Item_List.ammo_dot45.code, Classes.Item_List.ammo_dot45.amount);
+                add2Array(Classes.Item_List.ammo_dot50_calibeammo.code, Classes.Item_List.ammo_dot50_calibeammo.amount);
+                add2Array(Classes.Item_List.ammo_dot5mm.code, Classes.Item_List.ammo_dot5mm.amount);
+                add2Array(Classes.Item_List.ammo_dot10mm.code, Classes.Item_List.ammo_dot10mm.amount);
+                add2Array(Classes.Item_List.ammo_5dot56mm.code, Classes.Item_List.ammo_5dot56mm.amount);
+                add2Array(Classes.Item_List.ammo_shotgun_shell.code, Classes.Item_List.ammo_shotgun_shell.amount);
+                add2Array(Classes.Item_List.ammo_Railway_spike.code, Classes.Item_List.ammo_Railway_spike.amount);
+                add2Array(Classes.Item_List.ammo_Alien_b.code, Classes.Item_List.ammo_Alien_b.amount);
+                add2Array(Classes.Item_List.ammo_missile.code, Classes.Item_List.ammo_missile.amount);
+                add2Array(Classes.Item_List.ammo_flare.code, Classes.Item_List.ammo_flare.amount);
+                add2Array(Classes.Item_List.ammo_cannonball.code, Classes.Item_List.ammo_cannonball.amount);
+                add2Array(Classes.Item_List.ammo_Gamma.code, Classes.Item_List.ammo_Gamma.amount);
+                add2Array(Classes.Item_List.ammo_junk.code, Classes.Item_List.ammo_junk.amount);
+                add2Array(Classes.Item_List.ammo_Cyro_cell.code, Classes.Item_List.ammo_Cyro_cell.amount);
+                add2Array(Classes.Item_List.ammo_Energy_cell.code, Classes.Item_List.ammo_Energy_cell.amount);
+                add2Array(Classes.Item_List.ammo_Plasma_cart.code, Classes.Item_List.ammo_Plasma_cart.amount);
+                add2Array(Classes.Item_List.ammo_Fusion_core.code, Classes.Item_List.ammo_Fusion_core.amount);
+                add2Array(Classes.Item_List.ammo_Fusion_cell.code, Classes.Item_List.ammo_Fusion_cell.amount);
+                add2Array(Classes.Item_List.ammo_2mm_EC.code,Classes.Item_List.ammo_2mm_EC.amount);
             }
             catch (Exception)
             {
@@ -369,6 +418,89 @@ namespace FalloutBatchMaker
             saver.Dispose();
             saver.Close();
             MessageBox.Show("File Saved.");
+        }
+
+        private void ammo_set_Click(object sender, EventArgs e) // Set Value Ammo
+        {
+            try
+            {
+                Classes.Item_List.ammo_dot308.amount = int.Parse(dot308_txtbx.Text);
+                Classes.Item_List.ammo_dot38.amount = int.Parse(dot38_txtbx.Text);
+                Classes.Item_List.ammo_dot44.amount = int.Parse(dot44_txtbx.Text);
+                Classes.Item_List.ammo_dot45.amount = int.Parse(dot45_txtbx.Text);
+                Classes.Item_List.ammo_dot50_calibeammo.amount = int.Parse(dot50_txtbx.Text);
+                Classes.Item_List.ammo_dot5mm.amount = int.Parse(dot5mm_txtbx.Text);
+                Classes.Item_List.ammo_dot10mm.amount = int.Parse(dot10mm_txtbx.Text);
+                Classes.Item_List.ammo_5dot56mm.amount = int.Parse(dot556mm_txtbx.Text);
+                Classes.Item_List.ammo_shotgun_shell.amount = int.Parse(stg_txtbx.Text);
+                Classes.Item_List.ammo_Railway_spike.amount = int.Parse(rws_txtbx.Text);
+                Classes.Item_List.ammo_Alien_b.amount = int.Parse(alb_txtbx.Text);
+                Classes.Item_List.ammo_missile.amount = int.Parse(msl_txtbx.Text);
+                Classes.Item_List.ammo_flare.amount = int.Parse(flr_txtbx.Text);
+                Classes.Item_List.ammo_cannonball.amount = int.Parse(cnb_txtbx.Text);
+                Classes.Item_List.ammo_Gamma.amount = int.Parse(gam_txtbx.Text);
+                Classes.Item_List.ammo_junk.amount = int.Parse(jnk_txtbx.Text);
+                Classes.Item_List.ammo_Cyro_cell.amount = int.Parse(cyr_txtbx.Text);
+                Classes.Item_List.ammo_Energy_cell.amount = int.Parse(nrg_txtbx.Text);
+                Classes.Item_List.ammo_Plasma_cart.amount = int.Parse(plm_txtbx.Text);
+                Classes.Item_List.ammo_Fusion_core.amount = int.Parse(fusco_txtbx.Text);
+                Classes.Item_List.ammo_Fusion_cell.amount = int.Parse(fusce_txtbx.Text);
+                Classes.Item_List.ammo_2mm_EC.amount = int.Parse(EC2mm_txtbx.Text);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("One or more values are not numbers..");
+            }
+            
+        }
+
+        private void ammo_clear_Click(object sender, EventArgs e) // Ammo Clear
+        {
+            Classes.Item_List.ammo_dot308.amount = 0;
+            Classes.Item_List.ammo_dot38.amount = 0;
+            Classes.Item_List.ammo_dot44.amount = 0;
+            Classes.Item_List.ammo_dot45.amount = 0;
+            Classes.Item_List.ammo_dot50_calibeammo.amount = 0;
+            Classes.Item_List.ammo_dot5mm.amount = 0;
+            Classes.Item_List.ammo_dot10mm.amount = 0;
+            Classes.Item_List.ammo_5dot56mm.amount = 0;
+            Classes.Item_List.ammo_shotgun_shell.amount = 0;
+            Classes.Item_List.ammo_Railway_spike.amount = 0;
+            Classes.Item_List.ammo_Alien_b.amount = 0;
+            Classes.Item_List.ammo_missile.amount = 0;
+            Classes.Item_List.ammo_flare.amount = 0;
+            Classes.Item_List.ammo_cannonball.amount = 0;
+            Classes.Item_List.ammo_Gamma.amount = 0;
+            Classes.Item_List.ammo_junk.amount = 0;
+            Classes.Item_List.ammo_Cyro_cell.amount = 0;
+            Classes.Item_List.ammo_Energy_cell.amount = 0;
+            Classes.Item_List.ammo_Plasma_cart.amount = 0;
+            Classes.Item_List.ammo_Fusion_core.amount = 0;
+            Classes.Item_List.ammo_Fusion_cell.amount = 0;
+            Classes.Item_List.ammo_2mm_EC.amount = 0;
+
+            dot308_txtbx.Text= "0";
+            dot38_txtbx.Text= "0";
+            dot44_txtbx.Text= "0";
+            dot45_txtbx.Text= "0";
+            dot50_txtbx.Text= "0";
+            dot5mm_txtbx.Text= "0";
+            dot10mm_txtbx.Text= "0";
+            dot556mm_txtbx.Text= "0";
+            stg_txtbx.Text= "0";
+            rws_txtbx.Text= "0";
+            alb_txtbx.Text= "0";
+            msl_txtbx.Text= "0";
+            flr_txtbx.Text= "0";
+            cnb_txtbx.Text= "0";
+            gam_txtbx.Text= "0";
+            jnk_txtbx.Text= "0";
+            cyr_txtbx.Text= "0";
+            nrg_txtbx.Text= "0";
+            plm_txtbx.Text= "0";
+            fusco_txtbx.Text= "0";
+            fusce_txtbx.Text= "0";
+            EC2mm_txtbx.Text= "0";
         }
     }
 }
