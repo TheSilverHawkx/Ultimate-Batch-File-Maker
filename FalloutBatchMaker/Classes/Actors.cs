@@ -7,13 +7,7 @@ using System.Threading.Tasks;
 
 namespace FalloutBatchMaker.Classes
 {
-    public class Object
-    {
-        public string code;
-        public int amount;
-    }
-
-    public static class Actor_List
+    class Actor_List
     {
         // Mobs
         public static Object Ghoul = new Object { code = "758AD", amount = 0, };
