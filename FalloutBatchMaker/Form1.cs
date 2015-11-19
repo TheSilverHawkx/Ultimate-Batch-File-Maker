@@ -450,22 +450,28 @@ namespace FalloutBatchMaker
             SaveFileDialog saving = new SaveFileDialog();
 
             saving.Filter = "Text File|*.txt";
-            saving.ShowDialog();
+            DialogResult result = saving.ShowDialog();
+            if (result == DialogResult.OK)
+                {
             StreamWriter saver = new StreamWriter(saving.FileName);
-            foreach (var line in Classes.Functionality.Final_Items.ToArray())
+            foreach (var line in Classes.Functionality.Final_Items)
             {
-                saver.WriteLine(line.ToString());
+                if (line != String.Empty)
+                saver.WriteLine(line);
             }
 
-            foreach (var line in Classes.Functionality.Final_Actors.ToArray())
+            foreach (var line in Classes.Functionality.Final_Actors)
             {
-                saver.WriteLine(line.ToString());
+                if (line != String.Empty)
+                saver.WriteLine(line);
             }
+                
             
             functions.ClearArrays();
             saver.Dispose();
             saver.Close();
             MessageBox.Show("File Saved.");
+                }
         }
 
         private void ammo_set_Click(object sender, EventArgs e) // Set Value Ammo
