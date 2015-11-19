@@ -75,10 +75,6 @@ namespace FalloutBatchMaker.Classes
         public static Object Mutfruit = new Object { code = "000d3EA7", amount = 0, };
         public static Object Razorgrain = new Object { code = "000E0043", amount = 0, };
         public static Object Tato = new Object { code = "009DCC4", amount = 0, };
-
-
-        
-        //etc
-        public static ArrayList Final = new ArrayList();
+       
     }
 }

@@ -168,11 +168,51 @@
             this.label58 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.Mob_clear_btn = new System.Windows.Forms.Button();
+            this.Mobs_set_btn = new System.Windows.Forms.Button();
+            this.blf_txtbx = new System.Windows.Forms.TextBox();
+            this.dog_txtbx = new System.Windows.Forms.TextBox();
+            this.dtc_txtbx = new System.Windows.Forms.TextBox();
+            this.rds_txtbx = new System.Windows.Forms.TextBox();
+            this.aln_txtbx = new System.Windows.Forms.TextBox();
+            this.mth_txtbx = new System.Windows.Forms.TextBox();
+            this.rdrsctxtbx = new System.Windows.Forms.TextBox();
+            this.mng_txtbx = new System.Windows.Forms.TextBox();
+            this.rdro_txtbx = new System.Windows.Forms.TextBox();
+            this.mlr_txtbx = new System.Windows.Forms.TextBox();
+            this.stw_txtbx = new System.Windows.Forms.TextBox();
+            this.brm_txtbx = new System.Windows.Forms.TextBox();
+            this.spm_txtbx = new System.Windows.Forms.TextBox();
+            this.mrl_txtbx = new System.Windows.Forms.TextBox();
+            this.rdr_txtbx = new System.Windows.Forms.TextBox();
+            this.blb_txtbx = new System.Windows.Forms.TextBox();
+            this.ghl_txtbx = new System.Windows.Forms.TextBox();
+            this.bloatfly_lbl = new System.Windows.Forms.Label();
+            this.deathclaw_lbl = new System.Windows.Forms.Label();
+            this.dog_lbl = new System.Windows.Forms.Label();
+            this.radstag_lbl = new System.Windows.Forms.Label();
+            this.radroach_lbl = new System.Windows.Forms.Label();
+            this.label71 = new System.Windows.Forms.Label();
+            this.radscorpion_lbl = new System.Windows.Forms.Label();
+            this.label73 = new System.Windows.Forms.Label();
+            this.mirelurk_lbl = new System.Windows.Forms.Label();
+            this.label75 = new System.Windows.Forms.Label();
+            this.alien_lbl = new System.Windows.Forms.Label();
+            this.Mutant_Hound = new System.Windows.Forms.Label();
+            this.label78 = new System.Windows.Forms.Label();
+            this.stingwing_lbl = new System.Windows.Forms.Label();
+            this.label80 = new System.Windows.Forms.Label();
+            this.bloodbug_lbl = new System.Windows.Forms.Label();
+            this.label82 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.yag_txtbx = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage_Res.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -238,14 +278,14 @@
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.helpToolStripMenuItem.Text = "Help";
             this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem1
             // 
             this.aboutToolStripMenuItem1.Name = "aboutToolStripMenuItem1";
-            this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(107, 22);
             this.aboutToolStripMenuItem1.Text = "About";
             // 
             // tabControl1
@@ -253,6 +293,7 @@
             this.tabControl1.Controls.Add(this.tabPage_Res);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 24);
             this.tabControl1.Name = "tabControl1";
@@ -1558,6 +1599,398 @@
             this.label60.TabIndex = 2;
             this.label60.Text = ".308:";
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.Mob_clear_btn);
+            this.tabPage3.Controls.Add(this.Mobs_set_btn);
+            this.tabPage3.Controls.Add(this.blf_txtbx);
+            this.tabPage3.Controls.Add(this.dog_txtbx);
+            this.tabPage3.Controls.Add(this.dtc_txtbx);
+            this.tabPage3.Controls.Add(this.yag_txtbx);
+            this.tabPage3.Controls.Add(this.rds_txtbx);
+            this.tabPage3.Controls.Add(this.aln_txtbx);
+            this.tabPage3.Controls.Add(this.mth_txtbx);
+            this.tabPage3.Controls.Add(this.rdrsctxtbx);
+            this.tabPage3.Controls.Add(this.mng_txtbx);
+            this.tabPage3.Controls.Add(this.rdro_txtbx);
+            this.tabPage3.Controls.Add(this.mlr_txtbx);
+            this.tabPage3.Controls.Add(this.stw_txtbx);
+            this.tabPage3.Controls.Add(this.brm_txtbx);
+            this.tabPage3.Controls.Add(this.spm_txtbx);
+            this.tabPage3.Controls.Add(this.mrl_txtbx);
+            this.tabPage3.Controls.Add(this.rdr_txtbx);
+            this.tabPage3.Controls.Add(this.blb_txtbx);
+            this.tabPage3.Controls.Add(this.ghl_txtbx);
+            this.tabPage3.Controls.Add(this.bloatfly_lbl);
+            this.tabPage3.Controls.Add(this.deathclaw_lbl);
+            this.tabPage3.Controls.Add(this.label61);
+            this.tabPage3.Controls.Add(this.dog_lbl);
+            this.tabPage3.Controls.Add(this.radstag_lbl);
+            this.tabPage3.Controls.Add(this.radroach_lbl);
+            this.tabPage3.Controls.Add(this.label71);
+            this.tabPage3.Controls.Add(this.radscorpion_lbl);
+            this.tabPage3.Controls.Add(this.label73);
+            this.tabPage3.Controls.Add(this.mirelurk_lbl);
+            this.tabPage3.Controls.Add(this.label75);
+            this.tabPage3.Controls.Add(this.alien_lbl);
+            this.tabPage3.Controls.Add(this.Mutant_Hound);
+            this.tabPage3.Controls.Add(this.label78);
+            this.tabPage3.Controls.Add(this.stingwing_lbl);
+            this.tabPage3.Controls.Add(this.label80);
+            this.tabPage3.Controls.Add(this.bloodbug_lbl);
+            this.tabPage3.Controls.Add(this.label82);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(458, 444);
+            this.tabPage3.TabIndex = 3;
+            this.tabPage3.Text = "Mobs";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // Mob_clear_btn
+            // 
+            this.Mob_clear_btn.Location = new System.Drawing.Point(338, 411);
+            this.Mob_clear_btn.Name = "Mob_clear_btn";
+            this.Mob_clear_btn.Size = new System.Drawing.Size(100, 27);
+            this.Mob_clear_btn.TabIndex = 92;
+            this.Mob_clear_btn.Text = "Clear Values";
+            this.Mob_clear_btn.UseVisualStyleBackColor = true;
+            this.Mob_clear_btn.Click += new System.EventHandler(this.Mob_clear_btn_Click);
+            // 
+            // Mobs_set_btn
+            // 
+            this.Mobs_set_btn.Location = new System.Drawing.Point(235, 412);
+            this.Mobs_set_btn.Name = "Mobs_set_btn";
+            this.Mobs_set_btn.Size = new System.Drawing.Size(97, 26);
+            this.Mobs_set_btn.TabIndex = 93;
+            this.Mobs_set_btn.Text = "Set Values";
+            this.Mobs_set_btn.UseVisualStyleBackColor = true;
+            this.Mobs_set_btn.Click += new System.EventHandler(this.Mobs_set_btn_Click);
+            // 
+            // blf_txtbx
+            // 
+            this.blf_txtbx.Location = new System.Drawing.Point(338, 36);
+            this.blf_txtbx.Name = "blf_txtbx";
+            this.blf_txtbx.Size = new System.Drawing.Size(100, 20);
+            this.blf_txtbx.TabIndex = 72;
+            this.blf_txtbx.Text = "0";
+            // 
+            // dog_txtbx
+            // 
+            this.dog_txtbx.Location = new System.Drawing.Point(338, 227);
+            this.dog_txtbx.Name = "dog_txtbx";
+            this.dog_txtbx.Size = new System.Drawing.Size(100, 20);
+            this.dog_txtbx.TabIndex = 77;
+            this.dog_txtbx.Text = "0";
+            // 
+            // dtc_txtbx
+            // 
+            this.dtc_txtbx.Location = new System.Drawing.Point(338, 10);
+            this.dtc_txtbx.Name = "dtc_txtbx";
+            this.dtc_txtbx.Size = new System.Drawing.Size(100, 20);
+            this.dtc_txtbx.TabIndex = 78;
+            this.dtc_txtbx.Text = "0";
+            // 
+            // rds_txtbx
+            // 
+            this.rds_txtbx.Location = new System.Drawing.Point(113, 201);
+            this.rds_txtbx.Name = "rds_txtbx";
+            this.rds_txtbx.Size = new System.Drawing.Size(100, 20);
+            this.rds_txtbx.TabIndex = 79;
+            this.rds_txtbx.Text = "0";
+            // 
+            // aln_txtbx
+            // 
+            this.aln_txtbx.Location = new System.Drawing.Point(338, 199);
+            this.aln_txtbx.Name = "aln_txtbx";
+            this.aln_txtbx.Size = new System.Drawing.Size(100, 20);
+            this.aln_txtbx.TabIndex = 90;
+            this.aln_txtbx.Text = "0";
+            // 
+            // mth_txtbx
+            // 
+            this.mth_txtbx.Location = new System.Drawing.Point(113, 173);
+            this.mth_txtbx.Name = "mth_txtbx";
+            this.mth_txtbx.Size = new System.Drawing.Size(100, 20);
+            this.mth_txtbx.TabIndex = 81;
+            this.mth_txtbx.Text = "0";
+            // 
+            // rdrsctxtbx
+            // 
+            this.rdrsctxtbx.Location = new System.Drawing.Point(338, 173);
+            this.rdrsctxtbx.Name = "rdrsctxtbx";
+            this.rdrsctxtbx.Size = new System.Drawing.Size(100, 20);
+            this.rdrsctxtbx.TabIndex = 82;
+            this.rdrsctxtbx.Text = "0";
+            // 
+            // mng_txtbx
+            // 
+            this.mng_txtbx.Location = new System.Drawing.Point(113, 147);
+            this.mng_txtbx.Name = "mng_txtbx";
+            this.mng_txtbx.Size = new System.Drawing.Size(100, 20);
+            this.mng_txtbx.TabIndex = 83;
+            this.mng_txtbx.Text = "0";
+            // 
+            // rdro_txtbx
+            // 
+            this.rdro_txtbx.Location = new System.Drawing.Point(338, 143);
+            this.rdro_txtbx.Name = "rdro_txtbx";
+            this.rdro_txtbx.Size = new System.Drawing.Size(100, 20);
+            this.rdro_txtbx.TabIndex = 84;
+            this.rdro_txtbx.Text = "0";
+            // 
+            // mlr_txtbx
+            // 
+            this.mlr_txtbx.Location = new System.Drawing.Point(113, 117);
+            this.mlr_txtbx.Name = "mlr_txtbx";
+            this.mlr_txtbx.Size = new System.Drawing.Size(100, 20);
+            this.mlr_txtbx.TabIndex = 85;
+            this.mlr_txtbx.Text = "0";
+            // 
+            // stw_txtbx
+            // 
+            this.stw_txtbx.Location = new System.Drawing.Point(338, 117);
+            this.stw_txtbx.Name = "stw_txtbx";
+            this.stw_txtbx.Size = new System.Drawing.Size(100, 20);
+            this.stw_txtbx.TabIndex = 86;
+            this.stw_txtbx.Text = "0";
+            // 
+            // brm_txtbx
+            // 
+            this.brm_txtbx.Location = new System.Drawing.Point(113, 91);
+            this.brm_txtbx.Name = "brm_txtbx";
+            this.brm_txtbx.Size = new System.Drawing.Size(100, 20);
+            this.brm_txtbx.TabIndex = 88;
+            this.brm_txtbx.Text = "0";
+            // 
+            // spm_txtbx
+            // 
+            this.spm_txtbx.Location = new System.Drawing.Point(113, 65);
+            this.spm_txtbx.Name = "spm_txtbx";
+            this.spm_txtbx.Size = new System.Drawing.Size(100, 20);
+            this.spm_txtbx.TabIndex = 87;
+            this.spm_txtbx.Text = "0";
+            // 
+            // mrl_txtbx
+            // 
+            this.mrl_txtbx.Location = new System.Drawing.Point(338, 88);
+            this.mrl_txtbx.Name = "mrl_txtbx";
+            this.mrl_txtbx.Size = new System.Drawing.Size(100, 20);
+            this.mrl_txtbx.TabIndex = 89;
+            this.mrl_txtbx.Text = "0";
+            // 
+            // rdr_txtbx
+            // 
+            this.rdr_txtbx.Location = new System.Drawing.Point(113, 36);
+            this.rdr_txtbx.Name = "rdr_txtbx";
+            this.rdr_txtbx.Size = new System.Drawing.Size(100, 20);
+            this.rdr_txtbx.TabIndex = 71;
+            this.rdr_txtbx.Text = "0";
+            // 
+            // blb_txtbx
+            // 
+            this.blb_txtbx.Location = new System.Drawing.Point(338, 62);
+            this.blb_txtbx.Name = "blb_txtbx";
+            this.blb_txtbx.Size = new System.Drawing.Size(100, 20);
+            this.blb_txtbx.TabIndex = 80;
+            this.blb_txtbx.Text = "0";
+            // 
+            // ghl_txtbx
+            // 
+            this.ghl_txtbx.Location = new System.Drawing.Point(113, 10);
+            this.ghl_txtbx.Name = "ghl_txtbx";
+            this.ghl_txtbx.Size = new System.Drawing.Size(100, 20);
+            this.ghl_txtbx.TabIndex = 70;
+            this.ghl_txtbx.Text = "0";
+            // 
+            // bloatfly_lbl
+            // 
+            this.bloatfly_lbl.AutoSize = true;
+            this.bloatfly_lbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bloatfly_lbl.Location = new System.Drawing.Point(232, 38);
+            this.bloatfly_lbl.Name = "bloatfly_lbl";
+            this.bloatfly_lbl.Size = new System.Drawing.Size(62, 18);
+            this.bloatfly_lbl.TabIndex = 49;
+            this.bloatfly_lbl.Text = "Bloatfly:";
+            // 
+            // deathclaw_lbl
+            // 
+            this.deathclaw_lbl.AutoSize = true;
+            this.deathclaw_lbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deathclaw_lbl.Location = new System.Drawing.Point(234, 12);
+            this.deathclaw_lbl.Name = "deathclaw_lbl";
+            this.deathclaw_lbl.Size = new System.Drawing.Size(85, 18);
+            this.deathclaw_lbl.TabIndex = 54;
+            this.deathclaw_lbl.Text = "Deathclaw:";
+            // 
+            // dog_lbl
+            // 
+            this.dog_lbl.AutoSize = true;
+            this.dog_lbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dog_lbl.Location = new System.Drawing.Point(234, 229);
+            this.dog_lbl.Name = "dog_lbl";
+            this.dog_lbl.Size = new System.Drawing.Size(42, 18);
+            this.dog_lbl.TabIndex = 55;
+            this.dog_lbl.Text = "Dog:";
+            // 
+            // radstag_lbl
+            // 
+            this.radstag_lbl.AutoSize = true;
+            this.radstag_lbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radstag_lbl.Location = new System.Drawing.Point(9, 203);
+            this.radstag_lbl.Name = "radstag_lbl";
+            this.radstag_lbl.Size = new System.Drawing.Size(71, 18);
+            this.radstag_lbl.TabIndex = 56;
+            this.radstag_lbl.Text = "Radstag:";
+            // 
+            // radroach_lbl
+            // 
+            this.radroach_lbl.AutoSize = true;
+            this.radroach_lbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radroach_lbl.Location = new System.Drawing.Point(232, 145);
+            this.radroach_lbl.Name = "radroach_lbl";
+            this.radroach_lbl.Size = new System.Drawing.Size(80, 18);
+            this.radroach_lbl.TabIndex = 57;
+            this.radroach_lbl.Text = "Radroach:";
+            // 
+            // label71
+            // 
+            this.label71.AutoSize = true;
+            this.label71.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label71.Location = new System.Drawing.Point(7, 119);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(74, 18);
+            this.label71.TabIndex = 58;
+            this.label71.Text = "Mole Rat:";
+            // 
+            // radscorpion_lbl
+            // 
+            this.radscorpion_lbl.AutoSize = true;
+            this.radscorpion_lbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radscorpion_lbl.Location = new System.Drawing.Point(232, 175);
+            this.radscorpion_lbl.Name = "radscorpion_lbl";
+            this.radscorpion_lbl.Size = new System.Drawing.Size(101, 18);
+            this.radscorpion_lbl.TabIndex = 59;
+            this.radscorpion_lbl.Text = "Radscorpion:";
+            // 
+            // label73
+            // 
+            this.label73.AutoSize = true;
+            this.label73.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label73.Location = new System.Drawing.Point(7, 149);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(63, 18);
+            this.label73.TabIndex = 60;
+            this.label73.Text = "Mongle:";
+            // 
+            // mirelurk_lbl
+            // 
+            this.mirelurk_lbl.AutoSize = true;
+            this.mirelurk_lbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mirelurk_lbl.Location = new System.Drawing.Point(232, 90);
+            this.mirelurk_lbl.Name = "mirelurk_lbl";
+            this.mirelurk_lbl.Size = new System.Drawing.Size(67, 18);
+            this.mirelurk_lbl.TabIndex = 61;
+            this.mirelurk_lbl.Text = "Mirelurk:";
+            // 
+            // label75
+            // 
+            this.label75.AutoSize = true;
+            this.label75.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label75.Location = new System.Drawing.Point(7, 38);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(59, 18);
+            this.label75.TabIndex = 62;
+            this.label75.Text = "Raider:";
+            // 
+            // alien_lbl
+            // 
+            this.alien_lbl.AutoSize = true;
+            this.alien_lbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.alien_lbl.Location = new System.Drawing.Point(232, 201);
+            this.alien_lbl.Name = "alien_lbl";
+            this.alien_lbl.Size = new System.Drawing.Size(47, 18);
+            this.alien_lbl.TabIndex = 63;
+            this.alien_lbl.Text = "Alien:";
+            // 
+            // Mutant_Hound
+            // 
+            this.Mutant_Hound.AutoSize = true;
+            this.Mutant_Hound.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Mutant_Hound.Location = new System.Drawing.Point(7, 175);
+            this.Mutant_Hound.Name = "Mutant_Hound";
+            this.Mutant_Hound.Size = new System.Drawing.Size(107, 18);
+            this.Mutant_Hound.TabIndex = 64;
+            this.Mutant_Hound.Text = "Mutant Hound:";
+            // 
+            // label78
+            // 
+            this.label78.AutoSize = true;
+            this.label78.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label78.Location = new System.Drawing.Point(7, 93);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(70, 18);
+            this.label78.TabIndex = 67;
+            this.label78.Text = "Brahmin:";
+            // 
+            // stingwing_lbl
+            // 
+            this.stingwing_lbl.AutoSize = true;
+            this.stingwing_lbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.stingwing_lbl.Location = new System.Drawing.Point(232, 119);
+            this.stingwing_lbl.Name = "stingwing_lbl";
+            this.stingwing_lbl.Size = new System.Drawing.Size(80, 18);
+            this.stingwing_lbl.TabIndex = 65;
+            this.stingwing_lbl.Text = "Stingwing:";
+            // 
+            // label80
+            // 
+            this.label80.AutoSize = true;
+            this.label80.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label80.Location = new System.Drawing.Point(7, 67);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(104, 18);
+            this.label80.TabIndex = 66;
+            this.label80.Text = "Super Mutant:";
+            // 
+            // bloodbug_lbl
+            // 
+            this.bloodbug_lbl.AutoSize = true;
+            this.bloodbug_lbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bloodbug_lbl.Location = new System.Drawing.Point(232, 64);
+            this.bloodbug_lbl.Name = "bloodbug_lbl";
+            this.bloodbug_lbl.Size = new System.Drawing.Size(79, 18);
+            this.bloodbug_lbl.TabIndex = 69;
+            this.bloodbug_lbl.Text = "Bloodbug:";
+            // 
+            // label82
+            // 
+            this.label82.AutoSize = true;
+            this.label82.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label82.Location = new System.Drawing.Point(7, 12);
+            this.label82.Name = "label82";
+            this.label82.Size = new System.Drawing.Size(52, 18);
+            this.label82.TabIndex = 48;
+            this.label82.Text = "Ghoul:";
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label61.Location = new System.Drawing.Point(9, 229);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(75, 18);
+            this.label61.TabIndex = 56;
+            this.label61.Text = "Yao Guai:";
+            // 
+            // yag_txtbx
+            // 
+            this.yag_txtbx.Location = new System.Drawing.Point(113, 227);
+            this.yag_txtbx.Name = "yag_txtbx";
+            this.yag_txtbx.Size = new System.Drawing.Size(100, 20);
+            this.yag_txtbx.TabIndex = 79;
+            this.yag_txtbx.Text = "0";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1578,6 +2011,8 @@
             this.tabPage2.PerformLayout();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1724,6 +2159,45 @@
         private System.Windows.Forms.Button ammo_set;
         private System.Windows.Forms.TextBox dot45_txtbx;
         private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Button Mob_clear_btn;
+        private System.Windows.Forms.Button Mobs_set_btn;
+        private System.Windows.Forms.TextBox blf_txtbx;
+        private System.Windows.Forms.TextBox dog_txtbx;
+        private System.Windows.Forms.TextBox dtc_txtbx;
+        private System.Windows.Forms.TextBox rds_txtbx;
+        private System.Windows.Forms.TextBox aln_txtbx;
+        private System.Windows.Forms.TextBox mth_txtbx;
+        private System.Windows.Forms.TextBox rdrsctxtbx;
+        private System.Windows.Forms.TextBox mng_txtbx;
+        private System.Windows.Forms.TextBox rdro_txtbx;
+        private System.Windows.Forms.TextBox mlr_txtbx;
+        private System.Windows.Forms.TextBox stw_txtbx;
+        private System.Windows.Forms.TextBox brm_txtbx;
+        private System.Windows.Forms.TextBox spm_txtbx;
+        private System.Windows.Forms.TextBox mrl_txtbx;
+        private System.Windows.Forms.TextBox rdr_txtbx;
+        private System.Windows.Forms.TextBox blb_txtbx;
+        private System.Windows.Forms.TextBox ghl_txtbx;
+        private System.Windows.Forms.Label bloatfly_lbl;
+        private System.Windows.Forms.Label deathclaw_lbl;
+        private System.Windows.Forms.Label dog_lbl;
+        private System.Windows.Forms.Label radstag_lbl;
+        private System.Windows.Forms.Label radroach_lbl;
+        private System.Windows.Forms.Label label71;
+        private System.Windows.Forms.Label radscorpion_lbl;
+        private System.Windows.Forms.Label label73;
+        private System.Windows.Forms.Label mirelurk_lbl;
+        private System.Windows.Forms.Label label75;
+        private System.Windows.Forms.Label alien_lbl;
+        private System.Windows.Forms.Label Mutant_Hound;
+        private System.Windows.Forms.Label label78;
+        private System.Windows.Forms.Label stingwing_lbl;
+        private System.Windows.Forms.Label label80;
+        private System.Windows.Forms.Label bloodbug_lbl;
+        private System.Windows.Forms.Label label82;
+        private System.Windows.Forms.TextBox yag_txtbx;
+        private System.Windows.Forms.Label label61;
     }
 }
 

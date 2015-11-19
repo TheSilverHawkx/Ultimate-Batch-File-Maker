@@ -11,22 +11,6 @@ namespace FalloutBatchMaker
             InitializeComponent();
         }
 
-        public void add2Array(string item, int value) // Array add function
-        {
-            if (value > 0)
-            {
-                try
-                {
-                    Classes.Item_List.Final.Add("player.additem " + item + " " + value);
-                }
-                catch (Exception e)
-                {
-                    Console.WriteLine(e.Message);
-                }
-            }
-            
-        }
-
         private void SetRes_btn_Click(object sender, EventArgs e) // Set Value Resources
         {
             /*Set Button for Resources, takes all the textbox values that are int and add them into the Item list values objects.
@@ -332,73 +316,94 @@ namespace FalloutBatchMaker
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Classes.Functionality functions = new Classes.Functionality();
             try
             {
                 // Resources
-                add2Array(Classes.Item_List.Acid.code, Classes.Item_List.Acid.amount);
-                add2Array(Classes.Item_List.Adhesive.code, Classes.Item_List.Adhesive.amount);
-                add2Array(Classes.Item_List.Aluminum.code, Classes.Item_List.Aluminum.amount);
-                add2Array(Classes.Item_List.Antiseptic.code, Classes.Item_List.Antiseptic.amount);
-                add2Array(Classes.Item_List.Asbestos.code, Classes.Item_List.Asbestos.amount);
-                add2Array(Classes.Item_List.Ballistic_Fiber.code, Classes.Item_List.Ballistic_Fiber.amount);
-                add2Array(Classes.Item_List.Bone.code, Classes.Item_List.Bone.amount);
-                add2Array(Classes.Item_List.Fiber_Optics.code, Classes.Item_List.Fiber_Optics.amount);
-                add2Array(Classes.Item_List.Ceramic.code, Classes.Item_List.Ceramic.amount);
-                add2Array(Classes.Item_List.Circuitry.code, Classes.Item_List.Circuitry.amount);
-                add2Array(Classes.Item_List.Cloth.code, Classes.Item_List.Cloth.amount);
-                add2Array(Classes.Item_List.Concrete.code, Classes.Item_List.Concrete.amount);
-                add2Array(Classes.Item_List.Copper.code, Classes.Item_List.Copper.amount);
-                add2Array(Classes.Item_List.Cork.code, Classes.Item_List.Cork.amount);
-                add2Array(Classes.Item_List.Crystal.code, Classes.Item_List.Crystal.amount);
-                add2Array(Classes.Item_List.Fertilizer.code, Classes.Item_List.Fertilizer.amount);
-                add2Array(Classes.Item_List.Fiberglass.code, Classes.Item_List.Fiberglass.amount);
-                add2Array(Classes.Item_List.Gears.code, Classes.Item_List.Gears.amount);
-                add2Array(Classes.Item_List.Glass.code, Classes.Item_List.Glass.amount);
-                add2Array(Classes.Item_List.Gold.code, Classes.Item_List.Gold.amount);
-                add2Array(Classes.Item_List.Lead.code, Classes.Item_List.Lead.amount);
-                add2Array(Classes.Item_List.Leather.code, Classes.Item_List.Leather.amount);
-                add2Array(Classes.Item_List.Nuclear_Material.code, Classes.Item_List.Nuclear_Material.amount);
-                add2Array(Classes.Item_List.Oil.code, Classes.Item_List.Oil.amount);
-                add2Array(Classes.Item_List.Plastic.code, Classes.Item_List.Plastic.amount);
-                add2Array(Classes.Item_List.Rubber.code, Classes.Item_List.Rubber.amount);
-                add2Array(Classes.Item_List.Screw.code, Classes.Item_List.Screw.amount);
-                add2Array(Classes.Item_List.Silver.code, Classes.Item_List.Silver.amount);
-                add2Array(Classes.Item_List.Spring.code, Classes.Item_List.Spring.amount);
-                add2Array(Classes.Item_List.Steel.code, Classes.Item_List.Steel.amount);
-                add2Array(Classes.Item_List.Wood.code, Classes.Item_List.Wood.amount);
+                functions.add2Items(Classes.Item_List.Acid.code, Classes.Item_List.Acid.amount);
+                functions.add2Items(Classes.Item_List.Adhesive.code, Classes.Item_List.Adhesive.amount);
+                functions.add2Items(Classes.Item_List.Aluminum.code, Classes.Item_List.Aluminum.amount);
+                functions.add2Items(Classes.Item_List.Antiseptic.code, Classes.Item_List.Antiseptic.amount);
+                functions.add2Items(Classes.Item_List.Asbestos.code, Classes.Item_List.Asbestos.amount);
+                functions.add2Items(Classes.Item_List.Ballistic_Fiber.code, Classes.Item_List.Ballistic_Fiber.amount);
+                functions.add2Items(Classes.Item_List.Bone.code, Classes.Item_List.Bone.amount);
+                functions.add2Items(Classes.Item_List.Fiber_Optics.code, Classes.Item_List.Fiber_Optics.amount);
+                functions.add2Items(Classes.Item_List.Ceramic.code, Classes.Item_List.Ceramic.amount);
+                functions.add2Items(Classes.Item_List.Circuitry.code, Classes.Item_List.Circuitry.amount);
+                functions.add2Items(Classes.Item_List.Cloth.code, Classes.Item_List.Cloth.amount);
+                functions.add2Items(Classes.Item_List.Concrete.code, Classes.Item_List.Concrete.amount);
+                functions.add2Items(Classes.Item_List.Copper.code, Classes.Item_List.Copper.amount);
+                functions.add2Items(Classes.Item_List.Cork.code, Classes.Item_List.Cork.amount);
+                functions.add2Items(Classes.Item_List.Crystal.code, Classes.Item_List.Crystal.amount);
+                functions.add2Items(Classes.Item_List.Fertilizer.code, Classes.Item_List.Fertilizer.amount);
+                functions.add2Items(Classes.Item_List.Fiberglass.code, Classes.Item_List.Fiberglass.amount);
+                functions.add2Items(Classes.Item_List.Gears.code, Classes.Item_List.Gears.amount);
+                functions.add2Items(Classes.Item_List.Glass.code, Classes.Item_List.Glass.amount);
+                functions.add2Items(Classes.Item_List.Gold.code, Classes.Item_List.Gold.amount);
+                functions.add2Items(Classes.Item_List.Lead.code, Classes.Item_List.Lead.amount);
+                functions.add2Items(Classes.Item_List.Leather.code, Classes.Item_List.Leather.amount);
+                functions.add2Items(Classes.Item_List.Nuclear_Material.code, Classes.Item_List.Nuclear_Material.amount);
+                functions.add2Items(Classes.Item_List.Oil.code, Classes.Item_List.Oil.amount);
+                functions.add2Items(Classes.Item_List.Plastic.code, Classes.Item_List.Plastic.amount);
+                functions.add2Items(Classes.Item_List.Rubber.code, Classes.Item_List.Rubber.amount);
+                functions.add2Items(Classes.Item_List.Screw.code, Classes.Item_List.Screw.amount);
+                functions.add2Items(Classes.Item_List.Silver.code, Classes.Item_List.Silver.amount);
+                functions.add2Items(Classes.Item_List.Spring.code, Classes.Item_List.Spring.amount);
+                functions.add2Items(Classes.Item_List.Steel.code, Classes.Item_List.Steel.amount);
+                functions.add2Items(Classes.Item_List.Wood.code, Classes.Item_List.Wood.amount);
 
                 // Crops
-                add2Array(Classes.Item_List.Carrot.code, Classes.Item_List.Carrot.amount);
-                add2Array(Classes.Item_List.Corn.code, Classes.Item_List.Corn.amount);
-                add2Array(Classes.Item_List.Gourd.code, Classes.Item_List.Gourd.amount);
-                add2Array(Classes.Item_List.Melon.code, Classes.Item_List.Melon.amount);
-                add2Array(Classes.Item_List.Mutfruit.code, Classes.Item_List.Mutfruit.amount);
-                add2Array(Classes.Item_List.Razorgrain.code, Classes.Item_List.Razorgrain.amount);
-                add2Array(Classes.Item_List.Tato.code, Classes.Item_List.Tato.amount);
+                functions.add2Items(Classes.Item_List.Carrot.code, Classes.Item_List.Carrot.amount);
+                functions.add2Items(Classes.Item_List.Corn.code, Classes.Item_List.Corn.amount);
+                functions.add2Items(Classes.Item_List.Gourd.code, Classes.Item_List.Gourd.amount);
+                functions.add2Items(Classes.Item_List.Melon.code, Classes.Item_List.Melon.amount);
+                functions.add2Items(Classes.Item_List.Mutfruit.code, Classes.Item_List.Mutfruit.amount);
+                functions.add2Items(Classes.Item_List.Razorgrain.code, Classes.Item_List.Razorgrain.amount);
+                functions.add2Items(Classes.Item_List.Tato.code, Classes.Item_List.Tato.amount);
 
                 // Ammo
-                add2Array(Classes.Item_List.ammo_dot308.code,Classes.Item_List.ammo_dot308.amount);
-                add2Array(Classes.Item_List.ammo_dot38.code, Classes.Item_List.ammo_dot38.amount);
-                add2Array(Classes.Item_List.ammo_dot44.code, Classes.Item_List.ammo_dot44.amount);
-                add2Array(Classes.Item_List.ammo_dot45.code, Classes.Item_List.ammo_dot45.amount);
-                add2Array(Classes.Item_List.ammo_dot50_calibeammo.code, Classes.Item_List.ammo_dot50_calibeammo.amount);
-                add2Array(Classes.Item_List.ammo_dot5mm.code, Classes.Item_List.ammo_dot5mm.amount);
-                add2Array(Classes.Item_List.ammo_dot10mm.code, Classes.Item_List.ammo_dot10mm.amount);
-                add2Array(Classes.Item_List.ammo_5dot56mm.code, Classes.Item_List.ammo_5dot56mm.amount);
-                add2Array(Classes.Item_List.ammo_shotgun_shell.code, Classes.Item_List.ammo_shotgun_shell.amount);
-                add2Array(Classes.Item_List.ammo_Railway_spike.code, Classes.Item_List.ammo_Railway_spike.amount);
-                add2Array(Classes.Item_List.ammo_Alien_b.code, Classes.Item_List.ammo_Alien_b.amount);
-                add2Array(Classes.Item_List.ammo_missile.code, Classes.Item_List.ammo_missile.amount);
-                add2Array(Classes.Item_List.ammo_flare.code, Classes.Item_List.ammo_flare.amount);
-                add2Array(Classes.Item_List.ammo_cannonball.code, Classes.Item_List.ammo_cannonball.amount);
-                add2Array(Classes.Item_List.ammo_Gamma.code, Classes.Item_List.ammo_Gamma.amount);
-                add2Array(Classes.Item_List.ammo_junk.code, Classes.Item_List.ammo_junk.amount);
-                add2Array(Classes.Item_List.ammo_Cyro_cell.code, Classes.Item_List.ammo_Cyro_cell.amount);
-                add2Array(Classes.Item_List.ammo_Energy_cell.code, Classes.Item_List.ammo_Energy_cell.amount);
-                add2Array(Classes.Item_List.ammo_Plasma_cart.code, Classes.Item_List.ammo_Plasma_cart.amount);
-                add2Array(Classes.Item_List.ammo_Fusion_core.code, Classes.Item_List.ammo_Fusion_core.amount);
-                add2Array(Classes.Item_List.ammo_Fusion_cell.code, Classes.Item_List.ammo_Fusion_cell.amount);
-                add2Array(Classes.Item_List.ammo_2mm_EC.code,Classes.Item_List.ammo_2mm_EC.amount);
+                functions.add2Items(Classes.Item_List.ammo_dot308.code,Classes.Item_List.ammo_dot308.amount);
+                functions.add2Items(Classes.Item_List.ammo_dot38.code, Classes.Item_List.ammo_dot38.amount);
+                functions.add2Items(Classes.Item_List.ammo_dot44.code, Classes.Item_List.ammo_dot44.amount);
+                functions.add2Items(Classes.Item_List.ammo_dot45.code, Classes.Item_List.ammo_dot45.amount);
+                functions.add2Items(Classes.Item_List.ammo_dot50_calibeammo.code, Classes.Item_List.ammo_dot50_calibeammo.amount);
+                functions.add2Items(Classes.Item_List.ammo_dot5mm.code, Classes.Item_List.ammo_dot5mm.amount);
+                functions.add2Items(Classes.Item_List.ammo_dot10mm.code, Classes.Item_List.ammo_dot10mm.amount);
+                functions.add2Items(Classes.Item_List.ammo_5dot56mm.code, Classes.Item_List.ammo_5dot56mm.amount);
+                functions.add2Items(Classes.Item_List.ammo_shotgun_shell.code, Classes.Item_List.ammo_shotgun_shell.amount);
+                functions.add2Items(Classes.Item_List.ammo_Railway_spike.code, Classes.Item_List.ammo_Railway_spike.amount);
+                functions.add2Items(Classes.Item_List.ammo_Alien_b.code, Classes.Item_List.ammo_Alien_b.amount);
+                functions.add2Items(Classes.Item_List.ammo_missile.code, Classes.Item_List.ammo_missile.amount);
+                functions.add2Items(Classes.Item_List.ammo_flare.code, Classes.Item_List.ammo_flare.amount);
+                functions.add2Items(Classes.Item_List.ammo_cannonball.code, Classes.Item_List.ammo_cannonball.amount);
+                functions.add2Items(Classes.Item_List.ammo_Gamma.code, Classes.Item_List.ammo_Gamma.amount);
+                functions.add2Items(Classes.Item_List.ammo_junk.code, Classes.Item_List.ammo_junk.amount);
+                functions.add2Items(Classes.Item_List.ammo_Cyro_cell.code, Classes.Item_List.ammo_Cyro_cell.amount);
+                functions.add2Items(Classes.Item_List.ammo_Energy_cell.code, Classes.Item_List.ammo_Energy_cell.amount);
+                functions.add2Items(Classes.Item_List.ammo_Plasma_cart.code, Classes.Item_List.ammo_Plasma_cart.amount);
+                functions.add2Items(Classes.Item_List.ammo_Fusion_core.code, Classes.Item_List.ammo_Fusion_core.amount);
+                functions.add2Items(Classes.Item_List.ammo_Fusion_cell.code, Classes.Item_List.ammo_Fusion_cell.amount);
+                functions.add2Items(Classes.Item_List.ammo_2mm_EC.code,Classes.Item_List.ammo_2mm_EC.amount);
+
+                // Mobs
+                functions.add2Actors(Classes.Actor_List.Ghoul.code ,Classes.Actor_List.Ghoul.amount);
+                functions.add2Actors(Classes.Actor_List.Raider.code, Classes.Actor_List.Raider.amount);
+                functions.add2Actors(Classes.Actor_List.Super_Mutant.code, Classes.Actor_List.Super_Mutant.amount);
+                functions.add2Actors(Classes.Actor_List.Brahmin.code, Classes.Actor_List.Brahmin.amount);
+                functions.add2Actors(Classes.Actor_List.Mole_rat.code, Classes.Actor_List.Mole_rat.amount);
+                functions.add2Actors(Classes.Actor_List.Mongle.code, Classes.Actor_List.Mongle.amount);
+                functions.add2Actors(Classes.Actor_List.Mutant_hound.code, Classes.Actor_List.Mutant_hound.amount);
+                functions.add2Actors(Classes.Actor_List.Radstag.code, Classes.Actor_List.Radstag.amount);
+                functions.add2Actors(Classes.Actor_List.Yao_Guai.code, Classes.Actor_List.Yao_Guai.amount);
+                functions.add2Actors(Classes.Actor_List.Deathclaw.code, Classes.Actor_List.Deathclaw.amount);
+                functions.add2Actors(Classes.Actor_List.Bloatfly.code, Classes.Actor_List.Bloatfly.amount);
+                functions.add2Actors(Classes.Actor_List.Bloodbug.code, Classes.Actor_List.Bloodbug.amount);
+                functions.add2Actors(Classes.Actor_List.Mirelurk.code, Classes.Actor_List.Mirelurk.amount);
+                functions.add2Actors(Classes.Actor_List.Stingwing.code, Classes.Actor_List.Stingwing.amount);
+                functions.add2Actors(Classes.Actor_List.Radroach.code, Classes.Actor_List.Radroach.amount);
+                functions.add2Actors(Classes.Actor_List.Radscorpion.code, Classes.Actor_List.Radscorpion.amount);
+                functions.add2Actors(Classes.Actor_List.Alien.code, Classes.Actor_List.Alien.amount);
+                functions.add2Actors(Classes.Actor_List.Dog.code, Classes.Actor_List.Dog.amount);
             }
             catch (Exception)
             {
@@ -410,11 +415,17 @@ namespace FalloutBatchMaker
             saving.Filter = "Text File|*.txt";
             saving.ShowDialog();
             StreamWriter saver = new StreamWriter(saving.FileName);
-            foreach (var line in Classes.Item_List.Final.ToArray())
+            foreach (var line in Classes.Functionality.Final_Items.ToArray())
             {
-                //MessageBox.Show(line.ToString());
                 saver.WriteLine(line.ToString());
             }
+
+            foreach (var line in Classes.Functionality.Final_Actors.ToArray())
+            {
+                saver.WriteLine(line.ToString());
+            }
+            
+            functions.ClearArrays();
             saver.Dispose();
             saver.Close();
             MessageBox.Show("File Saved.");
@@ -506,6 +517,69 @@ namespace FalloutBatchMaker
         private void helpToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Set Values > Click set > File>Save");
+        }
+
+        private void Mobs_set_btn_Click(object sender, EventArgs e)
+        {
+            Classes.Actor_List.Ghoul.amount = int.Parse(ghl_txtbx.Text);
+            Classes.Actor_List.Raider.amount = int.Parse(rdr_txtbx.Text);
+            Classes.Actor_List.Super_Mutant.amount = int.Parse(spm_txtbx.Text);
+            Classes.Actor_List.Brahmin.amount = int.Parse(brm_txtbx.Text);
+            Classes.Actor_List.Mole_rat.amount = int.Parse(mlr_txtbx.Text);
+            Classes.Actor_List.Mongle.amount = int.Parse(mng_txtbx.Text);
+            Classes.Actor_List.Mutant_hound.amount = int.Parse(mth_txtbx.Text);
+            Classes.Actor_List.Radstag.amount = int.Parse(rds_txtbx.Text);
+            Classes.Actor_List.Yao_Guai.amount = int.Parse(yag_txtbx.Text);
+            Classes.Actor_List.Deathclaw.amount = int.Parse(dtc_txtbx.Text);
+            Classes.Actor_List.Bloatfly.amount = int.Parse(blf_txtbx.Text);
+            Classes.Actor_List.Bloodbug.amount = int.Parse(blb_txtbx.Text);
+            Classes.Actor_List.Mirelurk.amount = int.Parse(mrl_txtbx.Text);
+            Classes.Actor_List.Stingwing.amount = int.Parse(stw_txtbx.Text);
+            Classes.Actor_List.Radroach.amount = int.Parse(rdro_txtbx.Text);
+            Classes.Actor_List.Radscorpion.amount = int.Parse(rdrsctxtbx.Text);
+            Classes.Actor_List.Alien.amount = int.Parse(alm_txtbx.Text);
+            Classes.Actor_List.Dog.amount = int.Parse(dog_txtbx.Text);
+        }
+
+        private void Mob_clear_btn_Click(object sender, EventArgs e)
+        {
+            Classes.Actor_List.Ghoul.amount = 0;
+            Classes.Actor_List.Raider.amount = 0;
+            Classes.Actor_List.Super_Mutant.amount = 0;
+            Classes.Actor_List.Brahmin.amount = 0;
+            Classes.Actor_List.Mole_rat.amount = 0;
+            Classes.Actor_List.Mongle.amount = 0;
+            Classes.Actor_List.Mutant_hound.amount = 0;
+            Classes.Actor_List.Radstag.amount = 0;
+            Classes.Actor_List.Yao_Guai.amount = 0;
+            Classes.Actor_List.Deathclaw.amount = 0;
+            Classes.Actor_List.Bloatfly.amount = 0;
+            Classes.Actor_List.Bloodbug.amount = 0;
+            Classes.Actor_List.Mirelurk.amount = 0;
+            Classes.Actor_List.Stingwing.amount = 0;
+            Classes.Actor_List.Radroach.amount = 0;
+            Classes.Actor_List.Radscorpion.amount = 0;
+            Classes.Actor_List.Alien.amount = 0;
+            Classes.Actor_List.Dog.amount = 0;
+
+            ghl_txtbx.Text = "0";
+            rdr_txtbx.Text = "0";
+            spm_txtbx.Text = "0";
+            brm_txtbx.Text = "0";
+            mlr_txtbx.Text = "0";
+            mng_txtbx.Text = "0";
+            mth_txtbx.Text = "0";
+            rds_txtbx.Text = "0";
+            yag_txtbx.Text = "0";
+            dtc_txtbx.Text = "0";
+            blf_txtbx.Text = "0";
+            blb_txtbx.Text = "0";
+            mrl_txtbx.Text = "0";
+            stw_txtbx.Text = "0";
+            rdro_txtbx.Text = "0";
+            rdrsctxtbx.Text = "0";
+            alb_txtbx.Text = "0";
+            dog_txtbx.Text = "0";
         }
     }
 }

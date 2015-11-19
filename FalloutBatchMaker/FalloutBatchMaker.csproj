@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Actors.cs" />
+    <Compile Include="Classes\Functionality.cs" />
     <Compile Include="Classes\Items.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
