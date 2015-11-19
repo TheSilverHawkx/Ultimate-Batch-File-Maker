@@ -7,8 +7,8 @@ namespace FalloutBatchMaker.Classes
 {
     class Functionality // For Arrays and such
     {
-        public static ArrayList Final_Items = new ArrayList();
-        public static ArrayList Final_Actors = new ArrayList();
+        public static List<string> Final_Items = new List<string>();
+        public static List<string> Final_Actors = new List<string>();
 
         public void ClearArrays()
         {
