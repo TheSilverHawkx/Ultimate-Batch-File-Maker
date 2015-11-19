@@ -122,6 +122,8 @@
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.ammo_clear = new System.Windows.Forms.Button();
+            this.ammo_set = new System.Windows.Forms.Button();
             this.EC2mm_txtbx = new System.Windows.Forms.TextBox();
             this.msl_txtbx = new System.Windows.Forms.TextBox();
             this.fusco_txtbx = new System.Windows.Forms.TextBox();
@@ -138,6 +140,7 @@
             this.jnk_txtbx = new System.Windows.Forms.TextBox();
             this.dot50_txtbx = new System.Windows.Forms.TextBox();
             this.gam_txtbx = new System.Windows.Forms.TextBox();
+            this.dot45_txtbx = new System.Windows.Forms.TextBox();
             this.dot44_txtbx = new System.Windows.Forms.TextBox();
             this.cnb_txtbx = new System.Windows.Forms.TextBox();
             this.dot38_txtbx = new System.Windows.Forms.TextBox();
@@ -160,14 +163,11 @@
             this.label53 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
             this.label57 = new System.Windows.Forms.Label();
             this.label58 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
-            this.ammo_clear = new System.Windows.Forms.Button();
-            this.ammo_set = new System.Windows.Forms.Button();
-            this.label54 = new System.Windows.Forms.Label();
-            this.dot45_txtbx = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage_Res.SuspendLayout();
@@ -238,13 +238,14 @@
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.helpToolStripMenuItem.Text = "Help";
+            this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem1
             // 
             this.aboutToolStripMenuItem1.Name = "aboutToolStripMenuItem1";
-            this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(107, 22);
+            this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.aboutToolStripMenuItem1.Text = "About";
             // 
             // tabControl1
@@ -1141,6 +1142,26 @@
             this.tabPage1.Text = "Ammo";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // ammo_clear
+            // 
+            this.ammo_clear.Location = new System.Drawing.Point(338, 411);
+            this.ammo_clear.Name = "ammo_clear";
+            this.ammo_clear.Size = new System.Drawing.Size(100, 27);
+            this.ammo_clear.TabIndex = 46;
+            this.ammo_clear.Text = "Clear Values";
+            this.ammo_clear.UseVisualStyleBackColor = true;
+            this.ammo_clear.Click += new System.EventHandler(this.ammo_clear_Click);
+            // 
+            // ammo_set
+            // 
+            this.ammo_set.Location = new System.Drawing.Point(235, 412);
+            this.ammo_set.Name = "ammo_set";
+            this.ammo_set.Size = new System.Drawing.Size(97, 26);
+            this.ammo_set.TabIndex = 47;
+            this.ammo_set.Text = "Set Values";
+            this.ammo_set.UseVisualStyleBackColor = true;
+            this.ammo_set.Click += new System.EventHandler(this.ammo_set_Click);
+            // 
             // EC2mm_txtbx
             // 
             this.EC2mm_txtbx.Location = new System.Drawing.Point(338, 279);
@@ -1268,6 +1289,14 @@
             this.gam_txtbx.Size = new System.Drawing.Size(100, 20);
             this.gam_txtbx.TabIndex = 41;
             this.gam_txtbx.Text = "0";
+            // 
+            // dot45_txtbx
+            // 
+            this.dot45_txtbx.Location = new System.Drawing.Point(113, 91);
+            this.dot45_txtbx.Name = "dot45_txtbx";
+            this.dot45_txtbx.Size = new System.Drawing.Size(100, 20);
+            this.dot45_txtbx.TabIndex = 42;
+            this.dot45_txtbx.Text = "0";
             // 
             // dot44_txtbx
             // 
@@ -1479,6 +1508,16 @@
             this.label56.TabIndex = 19;
             this.label56.Text = ".5mm:";
             // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.Location = new System.Drawing.Point(7, 93);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(34, 18);
+            this.label54.TabIndex = 21;
+            this.label54.Text = ".45:";
+            // 
             // label57
             // 
             this.label57.AutoSize = true;
@@ -1518,44 +1557,6 @@
             this.label60.Size = new System.Drawing.Size(43, 18);
             this.label60.TabIndex = 2;
             this.label60.Text = ".308:";
-            // 
-            // ammo_clear
-            // 
-            this.ammo_clear.Location = new System.Drawing.Point(338, 411);
-            this.ammo_clear.Name = "ammo_clear";
-            this.ammo_clear.Size = new System.Drawing.Size(100, 27);
-            this.ammo_clear.TabIndex = 46;
-            this.ammo_clear.Text = "Clear Values";
-            this.ammo_clear.UseVisualStyleBackColor = true;
-            this.ammo_clear.Click += new System.EventHandler(this.ammo_clear_Click);
-            // 
-            // ammo_set
-            // 
-            this.ammo_set.Location = new System.Drawing.Point(235, 412);
-            this.ammo_set.Name = "ammo_set";
-            this.ammo_set.Size = new System.Drawing.Size(97, 26);
-            this.ammo_set.TabIndex = 47;
-            this.ammo_set.Text = "Set Values";
-            this.ammo_set.UseVisualStyleBackColor = true;
-            this.ammo_set.Click += new System.EventHandler(this.ammo_set_Click);
-            // 
-            // label54
-            // 
-            this.label54.AutoSize = true;
-            this.label54.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label54.Location = new System.Drawing.Point(7, 93);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(34, 18);
-            this.label54.TabIndex = 21;
-            this.label54.Text = ".45:";
-            // 
-            // dot45_txtbx
-            // 
-            this.dot45_txtbx.Location = new System.Drawing.Point(113, 91);
-            this.dot45_txtbx.Name = "dot45_txtbx";
-            this.dot45_txtbx.Size = new System.Drawing.Size(100, 20);
-            this.dot45_txtbx.TabIndex = 42;
-            this.dot45_txtbx.Text = "0";
             // 
             // Form1
             // 

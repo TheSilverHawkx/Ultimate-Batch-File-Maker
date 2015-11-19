@@ -502,5 +502,10 @@ namespace FalloutBatchMaker
             fusce_txtbx.Text= "0";
             EC2mm_txtbx.Text= "0";
         }
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Set Values > Click set > File>Save");
+        }
     }
 }

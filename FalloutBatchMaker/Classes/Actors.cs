@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections;
 
 namespace FalloutBatchMaker.Classes
 {
-    class Actor_List
+    public class Actor_List
     {
         // Mobs
         public static Object Ghoul = new Object { code = "758AD", amount = 0, };
@@ -29,9 +24,5 @@ namespace FalloutBatchMaker.Classes
         public static Object Alien = new Object { code = "184C51", amount = 0, };
         public static Object Glowing_mole_rat = new Object { code = "ff0044E0", amount = 0, };
         public static Object Dog = new Object { code = "1d162", amount = 0, };
-
-        
-        //etc
-        public static ArrayList Final = new ArrayList();
     }
 }
