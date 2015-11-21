@@ -10,13 +10,13 @@ namespace FalloutBatchMaker.Classes
         public static List<string> Final_Items = new List<string>();
         public static List<string> Final_Actors = new List<string>();
 
-        public void ClearArrays()
+        public void ClearLists()
         {
             Final_Actors.Clear();
             Final_Items.Clear();
         }
 
-        public void add2Items(string item, int value) // Add to Items Array
+        public void add2Items(string item, int value) // Add to Items List
         {
             if (value > 0)
             {
@@ -31,7 +31,7 @@ namespace FalloutBatchMaker.Classes
             }
 
         }
-        public void add2Actors(string item, int value) // Add to Actors Array
+        public void add2Actors(string item, int value) // Add to Actors list
         {
             if (value > 0)
             {

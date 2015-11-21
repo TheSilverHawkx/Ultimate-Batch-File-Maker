@@ -452,26 +452,25 @@ namespace FalloutBatchMaker
             saving.Filter = "Text File|*.txt";
             DialogResult result = saving.ShowDialog();
             if (result == DialogResult.OK)
+            {
+                StreamWriter saver = new StreamWriter(saving.FileName);
+                foreach (var line in Classes.Functionality.Final_Items)
                 {
-            StreamWriter saver = new StreamWriter(saving.FileName);
-            foreach (var line in Classes.Functionality.Final_Items)
-            {
-                if (line != String.Empty)
-                saver.WriteLine(line);
-            }
-
-            foreach (var line in Classes.Functionality.Final_Actors)
-            {
-                if (line != String.Empty)
-                saver.WriteLine(line);
-            }
-                
-            
-            functions.ClearArrays();
-            saver.Dispose();
-            saver.Close();
-            MessageBox.Show("File Saved.");
+                    if (line != String.Empty)
+                    saver.WriteLine(line);
                 }
+
+                foreach (var line in Classes.Functionality.Final_Actors)
+                {
+                    if (line != String.Empty)
+                    saver.WriteLine(line);
+                }
+
+                functions.ClearLists();
+                saver.Dispose();
+                saver.Close();
+                MessageBox.Show("File Saved.");
+            }
         }
 
         private void ammo_set_Click(object sender, EventArgs e) // Set Value Ammo
@@ -584,7 +583,7 @@ namespace FalloutBatchMaker
             Classes.Actor_List.Dog.amount = int.Parse(dog_txtbx.Text);
         }
 
-        public void Mob_clear_btn_Click(object sender, EventArgs e)
+        private void Mob_clear_btn_Click(object sender, EventArgs e)
         {
             Classes.Actor_List.Ghoul.amount = 0;
             Classes.Actor_List.Raider.amount = 0;

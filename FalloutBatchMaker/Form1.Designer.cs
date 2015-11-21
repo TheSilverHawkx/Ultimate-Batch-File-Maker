@@ -38,6 +38,8 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabControl3 = new System.Windows.Forms.TabControl();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage_Res = new System.Windows.Forms.TabPage();
             this.ClrRes_btn = new System.Windows.Forms.Button();
@@ -168,6 +170,8 @@
             this.label58 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.Mob_clear_btn = new System.Windows.Forms.Button();
             this.Mobs_set_btn = new System.Windows.Forms.Button();
@@ -208,10 +212,14 @@
             this.bloodbug_lbl = new System.Windows.Forms.Label();
             this.label82 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
+            this.tabControl3.SuspendLayout();
+            this.tabPage6.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage_Res.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.tabPage7.SuspendLayout();
+            this.tabControl2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -223,7 +231,7 @@
             this.aboutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(466, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(468, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -288,17 +296,38 @@
             this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(107, 22);
             this.aboutToolStripMenuItem1.Text = "About";
             // 
+            // tabControl3
+            // 
+            this.tabControl3.Controls.Add(this.tabPage6);
+            this.tabControl3.Controls.Add(this.tabPage7);
+            this.tabControl3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl3.Location = new System.Drawing.Point(0, 24);
+            this.tabControl3.Name = "tabControl3";
+            this.tabControl3.SelectedIndex = 0;
+            this.tabControl3.Size = new System.Drawing.Size(468, 492);
+            this.tabControl3.TabIndex = 4;
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.Controls.Add(this.tabControl1);
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(460, 466);
+            this.tabPage6.TabIndex = 0;
+            this.tabPage6.Text = "Items";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage_Res);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Location = new System.Drawing.Point(0, 24);
+            this.tabControl1.Location = new System.Drawing.Point(3, 3);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(466, 459);
+            this.tabControl1.Size = new System.Drawing.Size(454, 460);
             this.tabControl1.TabIndex = 2;
             // 
             // tabPage_Res
@@ -372,7 +401,7 @@
             this.tabPage_Res.Location = new System.Drawing.Point(4, 22);
             this.tabPage_Res.Name = "tabPage_Res";
             this.tabPage_Res.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_Res.Size = new System.Drawing.Size(458, 433);
+            this.tabPage_Res.Size = new System.Drawing.Size(446, 434);
             this.tabPage_Res.TabIndex = 0;
             this.tabPage_Res.Text = "Resources";
             this.tabPage_Res.UseVisualStyleBackColor = true;
@@ -976,7 +1005,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(458, 433);
+            this.tabPage2.Size = new System.Drawing.Size(446, 434);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Crops";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -1178,7 +1207,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(458, 433);
+            this.tabPage1.Size = new System.Drawing.Size(446, 434);
             this.tabPage1.TabIndex = 2;
             this.tabPage1.Text = "Ammo";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -1599,6 +1628,27 @@
             this.label60.TabIndex = 2;
             this.label60.Text = ".308:";
             // 
+            // tabPage7
+            // 
+            this.tabPage7.Controls.Add(this.tabControl2);
+            this.tabPage7.Location = new System.Drawing.Point(4, 22);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(460, 466);
+            this.tabPage7.TabIndex = 1;
+            this.tabPage7.Text = "Actors";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // tabControl2
+            // 
+            this.tabControl2.Controls.Add(this.tabPage3);
+            this.tabControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl2.Location = new System.Drawing.Point(3, 3);
+            this.tabControl2.Name = "tabControl2";
+            this.tabControl2.SelectedIndex = 0;
+            this.tabControl2.Size = new System.Drawing.Size(454, 460);
+            this.tabControl2.TabIndex = 0;
+            // 
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.Mob_clear_btn);
@@ -1642,8 +1692,8 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(458, 433);
-            this.tabPage3.TabIndex = 3;
+            this.tabPage3.Size = new System.Drawing.Size(446, 434);
+            this.tabPage3.TabIndex = 4;
             this.tabPage3.Text = "Mobs";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
@@ -1995,8 +2045,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(466, 483);
-            this.Controls.Add(this.tabControl1);
+            this.ClientSize = new System.Drawing.Size(468, 516);
+            this.Controls.Add(this.tabControl3);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
@@ -2004,6 +2054,8 @@
             this.Text = "Fallout 4 Resource Batch Maker";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.tabControl3.ResumeLayout(false);
+            this.tabPage6.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage_Res.ResumeLayout(false);
             this.tabPage_Res.PerformLayout();
@@ -2011,6 +2063,8 @@
             this.tabPage2.PerformLayout();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.tabPage7.ResumeLayout(false);
+            this.tabControl2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.ResumeLayout(false);
@@ -2029,9 +2083,14 @@
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem1;
+        private System.Windows.Forms.TabControl tabControl3;
+        private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage_Res;
+        private System.Windows.Forms.Button ClrRes_btn;
+        private System.Windows.Forms.Button SetRes_btn;
         private System.Windows.Forms.TextBox wod_txtbx;
+        private System.Windows.Forms.TextBox fio_txtbx;
         private System.Windows.Forms.TextBox rbr_txtbx;
         private System.Windows.Forms.TextBox con_txtbx;
         private System.Windows.Forms.TextBox spr_txtbx;
@@ -2045,6 +2104,7 @@
         private System.Windows.Forms.TextBox slv_txtbx;
         private System.Windows.Forms.TextBox cor_txtbx;
         private System.Windows.Forms.TextBox num_txtbx;
+        private System.Windows.Forms.TextBox cer_txtbx;
         private System.Windows.Forms.TextBox bon_txtbx;
         private System.Windows.Forms.TextBox scr_txtbx;
         private System.Windows.Forms.TextBox cop_txtbx;
@@ -2061,6 +2121,7 @@
         private System.Windows.Forms.TextBox fib_txtbx;
         private System.Windows.Forms.TextBox acd_txtbx;
         private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label28;
@@ -2073,6 +2134,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label22;
@@ -2090,6 +2152,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.Button ClrFd_btn;
+        private System.Windows.Forms.Button SetFd_btn;
         private System.Windows.Forms.TextBox tto_txtbx;
         private System.Windows.Forms.TextBox mln_txtbx;
         private System.Windows.Forms.TextBox rzr_txtbx;
@@ -2104,15 +2168,9 @@
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.TextBox fio_txtbx;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.TextBox cer_txtbx;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Button ClrRes_btn;
-        private System.Windows.Forms.Button SetRes_btn;
-        private System.Windows.Forms.Button ClrFd_btn;
-        private System.Windows.Forms.Button SetFd_btn;
         private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.Button ammo_clear;
+        private System.Windows.Forms.Button ammo_set;
         private System.Windows.Forms.TextBox EC2mm_txtbx;
         private System.Windows.Forms.TextBox msl_txtbx;
         private System.Windows.Forms.TextBox fusco_txtbx;
@@ -2129,6 +2187,7 @@
         private System.Windows.Forms.TextBox jnk_txtbx;
         private System.Windows.Forms.TextBox dot50_txtbx;
         private System.Windows.Forms.TextBox gam_txtbx;
+        private System.Windows.Forms.TextBox dot45_txtbx;
         private System.Windows.Forms.TextBox dot44_txtbx;
         private System.Windows.Forms.TextBox cnb_txtbx;
         private System.Windows.Forms.TextBox dot38_txtbx;
@@ -2151,20 +2210,20 @@
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.Label label54;
         private System.Windows.Forms.Label label57;
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.Label label59;
         private System.Windows.Forms.Label label60;
-        private System.Windows.Forms.Button ammo_clear;
-        private System.Windows.Forms.Button ammo_set;
-        private System.Windows.Forms.TextBox dot45_txtbx;
-        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.TabPage tabPage7;
+        private System.Windows.Forms.TabControl tabControl2;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Button Mob_clear_btn;
         private System.Windows.Forms.Button Mobs_set_btn;
         private System.Windows.Forms.TextBox blf_txtbx;
         private System.Windows.Forms.TextBox dog_txtbx;
         private System.Windows.Forms.TextBox dtc_txtbx;
+        private System.Windows.Forms.TextBox yag_txtbx;
         private System.Windows.Forms.TextBox rds_txtbx;
         private System.Windows.Forms.TextBox aln_txtbx;
         private System.Windows.Forms.TextBox mth_txtbx;
@@ -2181,6 +2240,7 @@
         private System.Windows.Forms.TextBox ghl_txtbx;
         private System.Windows.Forms.Label bloatfly_lbl;
         private System.Windows.Forms.Label deathclaw_lbl;
+        private System.Windows.Forms.Label label61;
         private System.Windows.Forms.Label dog_lbl;
         private System.Windows.Forms.Label radstag_lbl;
         private System.Windows.Forms.Label radroach_lbl;
@@ -2196,8 +2256,6 @@
         private System.Windows.Forms.Label label80;
         private System.Windows.Forms.Label bloodbug_lbl;
         private System.Windows.Forms.Label label82;
-        private System.Windows.Forms.TextBox yag_txtbx;
-        private System.Windows.Forms.Label label61;
     }
 }
 
