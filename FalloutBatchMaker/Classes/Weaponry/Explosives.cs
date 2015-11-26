@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FalloutBatchMaker.Classes
+namespace FalloutBatchMaker.Classes.Weaponry
 {
     class Explosives
     {

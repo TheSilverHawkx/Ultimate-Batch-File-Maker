@@ -441,10 +441,76 @@ namespace FalloutBatchMaker
                 functions.add2Actors(Classes.Actor_List.Radscorpion.code, Classes.Actor_List.Radscorpion.amount);
                 functions.add2Actors(Classes.Actor_List.Alien.code, Classes.Actor_List.Alien.amount);
                 functions.add2Actors(Classes.Actor_List.Dog.code, Classes.Actor_List.Dog.amount);
+
+                // Weapons
+                functions.add2Items(Classes.Weaponry.Projectiles.dot44_pst.code, Classes.Weaponry.Projectiles.dot44_pst.amount);
+                functions.add2Items(Classes.Weaponry.Projectiles.dot10_pst.code, Classes.Weaponry.Projectiles.dot10_pst.amount);
+                functions.add2Items(Classes.Weaponry.Projectiles.flare_pst.code, Classes.Weaponry.Projectiles.flare_pst.amount);
+                functions.add2Items(Classes.Weaponry.Projectiles.pipe_pst.code, Classes.Weaponry.Projectiles.pipe_pst.amount);
+                functions.add2Items(Classes.Weaponry.Projectiles.pipe_rev.code, Classes.Weaponry.Projectiles.pipe_rev.amount);
+                functions.add2Items(Classes.Weaponry.Projectiles.assault_rfl.code, Classes.Weaponry.Projectiles.assault_rfl.amount);
+                functions.add2Items(Classes.Weaponry.Projectiles.combat_rfl.code, Classes.Weaponry.Projectiles.combat_rfl.amount);
+                functions.add2Items(Classes.Weaponry.Projectiles.hunting_rfl.code, Classes.Weaponry.Projectiles.hunting_rfl.amount);
+                functions.add2Items(Classes.Weaponry.Projectiles.pipe_rfl.code, Classes.Weaponry.Projectiles.pipe_rfl.amount);
+                functions.add2Items(Classes.Weaponry.Projectiles.railway_rfl.code, Classes.Weaponry.Projectiles.railway_rfl.amount);
+                functions.add2Items(Classes.Weaponry.Projectiles.combat_sht.code, Classes.Weaponry.Projectiles.combat_sht.amount);
+                functions.add2Items(Classes.Weaponry.Projectiles.double_sht.code, Classes.Weaponry.Projectiles.double_sht.amount);
+                functions.add2Items(Classes.Weaponry.Projectiles.fat_man.code, Classes.Weaponry.Projectiles.fat_man.amount);
+                functions.add2Items(Classes.Weaponry.Projectiles.flamer.code, Classes.Weaponry.Projectiles.flamer.amount);
+                functions.add2Items(Classes.Weaponry.Projectiles.junk_jet.code, Classes.Weaponry.Projectiles.junk_jet.amount);
+                functions.add2Items(Classes.Weaponry.Projectiles.minigun.code, Classes.Weaponry.Projectiles.minigun.amount);
+                functions.add2Items(Classes.Weaponry.Projectiles.misl_lnchr.code, Classes.Weaponry.Projectiles.misl_lnchr.amount);
+                functions.add2Items(Classes.Weaponry.Energy.musket_lsr.code, Classes.Weaponry.Energy.musket_lsr.amount);
+                functions.add2Items(Classes.Weaponry.Energy.pistol_lsr.code, Classes.Weaponry.Energy.pistol_lsr.amount);
+                functions.add2Items(Classes.Weaponry.Energy.rifle_lsr.code, Classes.Weaponry.Energy.rifle_lsr.amount);
+                functions.add2Items(Classes.Weaponry.Energy.gatling_lsr.code, Classes.Weaponry.Energy.gatling_lsr.amount);
+                functions.add2Items(Classes.Weaponry.Energy.pistol_pls.code, Classes.Weaponry.Energy.pistol_pls.amount);
+                functions.add2Items(Classes.Weaponry.Energy.rifle_pls.code, Classes.Weaponry.Energy.rifle_pls.amount);
+                functions.add2Items(Classes.Weaponry.Energy.scater_pls.code, Classes.Weaponry.Energy.scater_pls.amount);
+                functions.add2Items(Classes.Weaponry.Energy.sniper_pls.code, Classes.Weaponry.Energy.sniper_pls.amount);
+                functions.add2Items(Classes.Weaponry.Energy.thrower_pls.code, Classes.Weaponry.Energy.thrower_pls.amount);
+                functions.add2Items(Classes.Weaponry.Energy.Gamma.code, Classes.Weaponry.Energy.Gamma.amount);
+                functions.add2Items(Classes.Weaponry.Energy.Gauss.code, Classes.Weaponry.Energy.Gauss.amount);
+                functions.add2Items(Classes.Weaponry.Energy.Alien.code, Classes.Weaponry.Energy.Alien.amount);
+                functions.add2Items(Classes.Weaponry.Energy.Cryolator.code, Classes.Weaponry.Energy.Cryolator.amount);
+                functions.add2Items(Classes.Weaponry.Explosives.Cyro_grnd.code, Classes.Weaponry.Explosives.Cyro_grnd.amount);
+                functions.add2Items(Classes.Weaponry.Explosives.frag_grnd.code, Classes.Weaponry.Explosives.frag_grnd.amount);
+                functions.add2Items(Classes.Weaponry.Explosives.gas_grnd.code, Classes.Weaponry.Explosives.gas_grnd.amount);
+                functions.add2Items(Classes.Weaponry.Explosives.nuka_grnd.code, Classes.Weaponry.Explosives.nuka_grnd.amount);
+                functions.add2Items(Classes.Weaponry.Explosives.mltv_cctl.code, Classes.Weaponry.Explosives.mltv_cctl.amount);
+                functions.add2Items(Classes.Weaponry.Explosives.basbl_grnd.code, Classes.Weaponry.Explosives.basbl_grnd.amount);
+                functions.add2Items(Classes.Weaponry.Explosives.puls_grnd.code, Classes.Weaponry.Explosives.puls_grnd.amount);
+                functions.add2Items(Classes.Weaponry.Explosives.plsm_grnd.code, Classes.Weaponry.Explosives.plsm_grnd.amount);
+                functions.add2Items(Classes.Weaponry.Explosives.nuke_mn.code, Classes.Weaponry.Explosives.nuke_mn.amount);
+                functions.add2Items(Classes.Weaponry.Explosives.btlcp_mn.code, Classes.Weaponry.Explosives.btlcp_mn.amount);
+                functions.add2Items(Classes.Weaponry.Explosives.frag_mn.code, Classes.Weaponry.Explosives.frag_mn.amount);
+                functions.add2Items(Classes.Weaponry.Explosives.plsm_mn.code, Classes.Weaponry.Explosives.plsm_mn.amount);
+                functions.add2Items(Classes.Weaponry.Explosives.Puls_mn.code, Classes.Weaponry.Explosives.Puls_mn.amount);
+                functions.add2Items(Classes.Weaponry.Explosives.cyro_mn.code, Classes.Weaponry.Explosives.cyro_mn.amount);
+                functions.add2Items(Classes.Weaponry.Melee.chns_swrd.code, Classes.Weaponry.Melee.chns_swrd.amount);
+                functions.add2Items(Classes.Weaponry.Melee.cmbt_knf.code, Classes.Weaponry.Melee.cmbt_knf.amount);
+                functions.add2Items(Classes.Weaponry.Melee.knife.code, Classes.Weaponry.Melee.knife.amount);
+                functions.add2Items(Classes.Weaponry.Melee.mchete.code, Classes.Weaponry.Melee.mchete.amount);
+                functions.add2Items(Classes.Weaponry.Melee.rvltn_swrd.code, Classes.Weaponry.Melee.rvltn_swrd.amount);
+                functions.add2Items(Classes.Weaponry.Melee.ripper.code, Classes.Weaponry.Melee.ripper.amount);
+                functions.add2Items(Classes.Weaponry.Melee.shshkbb.code, Classes.Weaponry.Melee.shshkbb.amount);
+                functions.add2Items(Classes.Weaponry.Melee.switch_bld.code, Classes.Weaponry.Melee.switch_bld.amount);
+                functions.add2Items(Classes.Weaponry.Melee.bsbl_bat.code, Classes.Weaponry.Melee.bsbl_bat.amount);
+                functions.add2Items(Classes.Weaponry.Melee.board.code, Classes.Weaponry.Melee.board.amount);
+                functions.add2Items(Classes.Weaponry.Melee.pool_cue.code, Classes.Weaponry.Melee.pool_cue.amount);
+                functions.add2Items(Classes.Weaponry.Melee.scrt_bton.code, Classes.Weaponry.Melee.scrt_bton.amount);
+                functions.add2Items(Classes.Weaponry.Melee.sldg_hmr.code, Classes.Weaponry.Melee.sldg_hmr.amount);
+                functions.add2Items(Classes.Weaponry.Melee.spr_sldg.code, Classes.Weaponry.Melee.spr_sldg.amount);
+                functions.add2Items(Classes.Weaponry.Melee.wlk_cane.code, Classes.Weaponry.Melee.wlk_cane.amount);
+                functions.add2Items(Classes.Weaponry.Melee.tire_irn.code, Classes.Weaponry.Melee.tire_irn.amount);
+                functions.add2Items(Classes.Weaponry.Melee.dthclw_gntlt.code, Classes.Weaponry.Melee.dthclw_gntlt.amount);
+                functions.add2Items(Classes.Weaponry.Melee.knckls.code, Classes.Weaponry.Melee.knckls.amount);
+                functions.add2Items(Classes.Weaponry.Melee.pwr_fst.code, Classes.Weaponry.Melee.pwr_fst.amount);
+                functions.add2Items(Classes.Weaponry.Melee.bxng_glv.code, Classes.Weaponry.Melee.bxng_glv.amount);
             }
             catch (Exception)
             {
-                MessageBox.Show("Couldn't add items to the hash");
+                MessageBox.Show("Couldn't add items to the lists");
             }
 
             SaveFileDialog saving = new SaveFileDialog();
@@ -561,7 +627,7 @@ namespace FalloutBatchMaker
             MessageBox.Show("Set Values > Click set > File>Save");
         }
 
-        private void Mobs_set_btn_Click(object sender, EventArgs e)
+        private void Mobs_set_btn_Click(object sender, EventArgs e) // Set Mobs
         {
             Classes.Actor_List.Ghoul.amount = int.Parse(ghl_txtbx.Text);
             Classes.Actor_List.Raider.amount = int.Parse(rdr_txtbx.Text);
@@ -583,7 +649,7 @@ namespace FalloutBatchMaker
             Classes.Actor_List.Dog.amount = int.Parse(dog_txtbx.Text);
         }
 
-        private void Mob_clear_btn_Click(object sender, EventArgs e)
+        private void Mob_clear_btn_Click(object sender, EventArgs e) // Clear Mobs
         {
             Classes.Actor_List.Ghoul.amount = 0;
             Classes.Actor_List.Raider.amount = 0;
@@ -622,6 +688,301 @@ namespace FalloutBatchMaker
             rdrsctxtbx.Text = "0";
             alb_txtbx.Text = "0";
             dog_txtbx.Text = "0";
+        }
+
+        private void prj_set_btn_Click(object sender, EventArgs e) // Set Projectiles
+        {
+            try
+            {
+                // Pistols
+                Classes.Weaponry.Projectiles.dot44_pst.amount = int.Parse(dot44pst_txtbx.Text);
+                Classes.Weaponry.Projectiles.dot10_pst.amount = int.Parse(dot10pst_txtbx.Text);
+                Classes.Weaponry.Projectiles.flare_pst.amount = int.Parse(flrpst__txtbx.Text);
+                Classes.Weaponry.Projectiles.pipe_pst.amount = int.Parse(pippst__txtbx.Text);
+                Classes.Weaponry.Projectiles.pipe_rev.amount = int.Parse(piprev_txtbx.Text);
+
+                // Rifles
+                Classes.Weaponry.Projectiles.assault_rfl.amount = int.Parse(asltrfl_txtbx.Text);
+                Classes.Weaponry.Projectiles.combat_rfl.amount = int.Parse(cmbtrfl_txtbx.Text);
+                Classes.Weaponry.Projectiles.hunting_rfl.amount = int.Parse(hntrfl_txtbx.Text);
+                Classes.Weaponry.Projectiles.pipe_rfl.amount = int.Parse(piprfl_txtbx.Text);
+                Classes.Weaponry.Projectiles.railway_rfl.amount = int.Parse(rlwrfl_txtbx.Text);
+
+                // Shotguns
+                Classes.Weaponry.Projectiles.combat_sht.amount = int.Parse(cmbtstg_txtbx.Text);
+                Classes.Weaponry.Projectiles.double_sht.amount = int.Parse(dblstg_txtbx.Text);
+
+                // Heavy Weps
+                Classes.Weaponry.Projectiles.fat_man.amount = int.Parse(fatman_txtbx.Text);
+                Classes.Weaponry.Projectiles.flamer.amount = int.Parse(flmr_txtbx.Text);
+                Classes.Weaponry.Projectiles.junk_jet.amount = int.Parse(jnkjet_txtbx.Text);
+                Classes.Weaponry.Projectiles.minigun.amount = int.Parse(mngun_txtbx.Text);
+                Classes.Weaponry.Projectiles.misl_lnchr.amount = int.Parse(msllnr_txtbx.Text);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("One or more values are not numbers..");
+            }
+        }
+
+        private void nrg_set_btn_Click(object sender, EventArgs e) // Set Energy Weps
+        {
+            try
+            {
+                // Laser
+                Classes.Weaponry.Energy.musket_lsr.amount = int.Parse(lsrmsk_txtbx.Text);
+                Classes.Weaponry.Energy.pistol_lsr.amount = int.Parse(lsrpst_txtbx.Text);
+                Classes.Weaponry.Energy.rifle_lsr.amount = int.Parse(lsrrfl_txtbx.Text);
+                Classes.Weaponry.Energy.gatling_lsr.amount = int.Parse(lsrgtl_txtbx.Text);
+
+                // Plasma
+                Classes.Weaponry.Energy.pistol_pls.amount = int.Parse(plspst_txtbx.Text);
+                Classes.Weaponry.Energy.rifle_pls.amount = int.Parse(plsrfl_txtbx.Text);
+                Classes.Weaponry.Energy.scater_pls.amount = int.Parse(plssct_txtbx.Text);
+                Classes.Weaponry.Energy.sniper_pls.amount = int.Parse(plssnp_txtbx.Text);
+                Classes.Weaponry.Energy.thrower_pls.amount = int.Parse(plstrw_txtbx.Text);
+
+
+                // Other
+                Classes.Weaponry.Energy.Gamma.amount = int.Parse(gam_txtbx.Text);
+                Classes.Weaponry.Energy.Gauss.amount = int.Parse(guass_txtbx.Text);
+                Classes.Weaponry.Energy.Alien.amount = int.Parse(alnblst_txtbx.Text);
+                Classes.Weaponry.Energy.Cryolator.amount = int.Parse(cryo_txtbx.Text);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("One or more values are not numbers..");
+            }
+        }
+
+        private void xpl_set_btn_Click(object sender, EventArgs e) // Set Explosives
+        {
+            try
+            {
+                // Thrown
+                Classes.Weaponry.Explosives.Cyro_grnd.amount = int.Parse(cyrgrnd_txtbx.Text);
+                Classes.Weaponry.Explosives.frag_grnd.amount = int.Parse(frggrnd_txtbx.Text);
+                Classes.Weaponry.Explosives.gas_grnd.amount = int.Parse(gasgrnd_txtbx.Text);
+                Classes.Weaponry.Explosives.nuka_grnd.amount = int.Parse(nukagrnd_txtbx.Text);
+                Classes.Weaponry.Explosives.mltv_cctl.amount = int.Parse(mltvcktl_txtbx.Text);
+                Classes.Weaponry.Explosives.basbl_grnd.amount = int.Parse(bsblgrnd_txtbx.Text);
+                Classes.Weaponry.Explosives.puls_grnd.amount = int.Parse(pulgrnd_txtbx.Text);
+                Classes.Weaponry.Explosives.plsm_grnd.amount = int.Parse(plsgrnd_txtbx.Text);
+
+                // Mines
+                Classes.Weaponry.Explosives.nuke_mn.amount = int.Parse(nukmn_txtbx.Text);
+                Classes.Weaponry.Explosives.btlcp_mn.amount = int.Parse(btlcpmn_txtbx.Text);
+                Classes.Weaponry.Explosives.frag_mn.amount = int.Parse(frgmn_txtbx.Text);
+                Classes.Weaponry.Explosives.plsm_mn.amount = int.Parse(plsmn_txtbx.Text);
+                Classes.Weaponry.Explosives.Puls_mn.amount = int.Parse(pulmn_txtbx.Text);
+                Classes.Weaponry.Explosives.cyro_mn.amount = int.Parse(Crymn_txtbx.Text);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("One or more values are not numbers..");
+            }
+        }
+
+        private void mle_set_btn_Click(object sender, EventArgs e) // Set Melees
+        {
+            try
+            {
+                // Blades
+                Classes.Weaponry.Melee.chns_swrd.amount = int.Parse(cswrd_txtbx.Text);
+                Classes.Weaponry.Melee.cmbt_knf.amount = int.Parse(cmbtk_txtbx.Text);
+                Classes.Weaponry.Melee.knife.amount = int.Parse(knf_txtbx.Text);
+                Classes.Weaponry.Melee.mchete.amount = int.Parse(mcht_txtbx.Text);
+                Classes.Weaponry.Melee.rvltn_swrd.amount = int.Parse(rvlswd_txtbx.Text);
+                Classes.Weaponry.Melee.ripper.amount = int.Parse(rpr_txtbx.Text);
+                Classes.Weaponry.Melee.shshkbb.amount = int.Parse(shkbb_txtbx.Text);
+                Classes.Weaponry.Melee.switch_bld.amount = int.Parse(swbld_txtbx.Text);
+
+                // Blunt
+                Classes.Weaponry.Melee.bsbl_bat.amount = int.Parse(bsblbt_txtbx.Text);
+                Classes.Weaponry.Melee.board.amount = int.Parse(brd_txtbx.Text);
+                Classes.Weaponry.Melee.pool_cue.amount = int.Parse(polcu_txtbx.Text);
+                Classes.Weaponry.Melee.scrt_bton.amount = int.Parse(secbt_txtbx.Text);
+                Classes.Weaponry.Melee.spr_sldg.amount = int.Parse(sprslg_txtbx.Text);
+                Classes.Weaponry.Melee.sldg_hmr.amount = int.Parse(slghmr_txtbx.Text);
+                Classes.Weaponry.Melee.wlk_cane.amount = int.Parse(wlkcn_txtbx.Text);
+                Classes.Weaponry.Melee.tire_irn.amount = int.Parse(trirn_txtbx.Text);
+
+                // Fists
+                Classes.Weaponry.Melee.dthclw_gntlt.amount = int.Parse(dtcgau_txtbx.Text);
+                Classes.Weaponry.Melee.knckls.amount = int.Parse(knkls_txtbx.Text);
+                Classes.Weaponry.Melee.pwr_fst.amount = int.Parse(pwrfst_txtbx.Text);
+                Classes.Weaponry.Melee.bxng_glv.amount = int.Parse(bxglv_txtbx.Text);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("One or more values are not numbers..");
+            }
+        }
+
+        private void prj_clr_btn_Click(object sender, EventArgs e) // Clear Projectiles
+        {
+            Classes.Weaponry.Projectiles.dot44_pst.amount = 0;
+
+            Classes.Weaponry.Projectiles.dot10_pst.amount = 0;
+            Classes.Weaponry.Projectiles.flare_pst.amount = 0;
+            Classes.Weaponry.Projectiles.pipe_pst.amount = 0;
+            Classes.Weaponry.Projectiles.pipe_rev.amount = 0;
+
+            // Rifles
+            Classes.Weaponry.Projectiles.assault_rfl.amount = 0;
+            Classes.Weaponry.Projectiles.combat_rfl.amount = 0;
+            Classes.Weaponry.Projectiles.hunting_rfl.amount = 0;
+            Classes.Weaponry.Projectiles.pipe_rfl.amount = 0;
+            Classes.Weaponry.Projectiles.railway_rfl.amount = 0;
+
+            // Shotguns
+            Classes.Weaponry.Projectiles.combat_sht.amount = 0;
+            Classes.Weaponry.Projectiles.double_sht.amount = 0;
+
+            // Heavy Weps
+            Classes.Weaponry.Projectiles.fat_man.amount = 0;
+            Classes.Weaponry.Projectiles.flamer.amount = 0;
+            Classes.Weaponry.Projectiles.junk_jet.amount = 0;
+            Classes.Weaponry.Projectiles.minigun.amount = 0;
+            Classes.Weaponry.Projectiles.misl_lnchr.amount = 0;
+
+            dot44pst_txtbx.Text = "0";
+            dot10pst_txtbx.Text = "0";
+            flrpst__txtbx.Text = "0";
+            pippst__txtbx.Text = "0";
+            piprev_txtbx.Text = "0";
+            asltrfl_txtbx.Text = "0";
+            cmbtrfl_txtbx.Text = "0";
+            hntrfl_txtbx.Text = "0";
+            piprfl_txtbx.Text = "0";
+            rlwrfl_txtbx.Text = "0";
+            cmbtstg_txtbx.Text = "0";
+            dblstg_txtbx.Text = "0";
+            fatman_txtbx.Text = "0";
+            flmr_txtbx.Text = "0";
+            jnkjet_txtbx.Text = "0";
+            mngun_txtbx.Text = "0";
+            msllnr_txtbx.Text = "0";
+        }
+
+        private void nrg_clr_btn_Click(object sender, EventArgs e) // Clear Energy Weps
+        {
+            Classes.Weaponry.Energy.musket_lsr.amount = 0;
+            Classes.Weaponry.Energy.pistol_lsr.amount = 0;
+            Classes.Weaponry.Energy.rifle_lsr.amount = 0;
+            Classes.Weaponry.Energy.gatling_lsr.amount = 0;
+
+            // Plasma
+            Classes.Weaponry.Energy.pistol_pls.amount = 0;
+            Classes.Weaponry.Energy.rifle_pls.amount = 0;
+            Classes.Weaponry.Energy.scater_pls.amount = 0;
+            Classes.Weaponry.Energy.sniper_pls.amount = 0;
+            Classes.Weaponry.Energy.thrower_pls.amount = 0;
+
+
+            // Other
+            Classes.Weaponry.Energy.Gamma.amount = 0;
+            Classes.Weaponry.Energy.Gauss.amount = 0;
+            Classes.Weaponry.Energy.Alien.amount = 0;
+            Classes.Weaponry.Energy.Cryolator.amount = 0; 
+
+            lsrmsk_txtbx.Text = "0";
+            lsrpst_txtbx.Text = "0";
+            lsrrfl_txtbx.Text = "0";
+            lsrgtl_txtbx.Text = "0";
+            plspst_txtbx.Text = "0";
+            plsrfl_txtbx.Text = "0";
+            plssct_txtbx.Text = "0";
+            plssnp_txtbx.Text = "0";
+            plstrw_txtbx.Text = "0";
+            gam_txtbx.Text = "0";
+            guass_txtbx.Text = "0";
+            alnblst_txtbx.Text = "0";
+            cryo_txtbx.Text = "0";
+        }
+
+        private void xpl_clr_btn_Click(object sender, EventArgs e) // Clear Explosives
+        {
+            Classes.Weaponry.Explosives.Cyro_grnd.amount = 0;
+            Classes.Weaponry.Explosives.frag_grnd.amount = 0;
+            Classes.Weaponry.Explosives.gas_grnd.amount = 0;
+            Classes.Weaponry.Explosives.nuka_grnd.amount = 0;
+            Classes.Weaponry.Explosives.mltv_cctl.amount = 0;
+            Classes.Weaponry.Explosives.basbl_grnd.amount = 0;
+            Classes.Weaponry.Explosives.puls_grnd.amount = 0;
+            Classes.Weaponry.Explosives.plsm_grnd.amount = 0;
+
+            // Mines
+            Classes.Weaponry.Explosives.nuke_mn.amount = 0;
+            Classes.Weaponry.Explosives.btlcp_mn.amount = 0;
+            Classes.Weaponry.Explosives.frag_mn.amount = 0;
+            Classes.Weaponry.Explosives.plsm_mn.amount = 0;
+            Classes.Weaponry.Explosives.Puls_mn.amount = 0;
+            Classes.Weaponry.Explosives.cyro_mn.amount = 0; 
+
+            cyrgrnd_txtbx.Text = "0";
+            frggrnd_txtbx.Text = "0";
+            nukagrnd_txtbx.Text = "0";
+            gasgrnd_txtbx.Text = "0";
+            mltvcktl_txtbx.Text = "0";
+            bsblgrnd_txtbx.Text = "0";
+            pulgrnd_txtbx.Text = "0";
+            plsgrnd_txtbx.Text = "0";
+            btlcpmn_txtbx.Text = "0";
+            nukmn_txtbx.Text = "0";
+            frgmn_txtbx.Text = "0";
+            plsmn_txtbx.Text = "0";
+            pulmn_txtbx.Text = "0";
+            Crymn_txtbx.Text = "0";
+        }
+
+        private void mle_clr_btn_Click(object sender, EventArgs e) // Clear Melees
+        {
+            Classes.Weaponry.Melee.chns_swrd.amount = 0;
+            Classes.Weaponry.Melee.cmbt_knf.amount = 0;
+            Classes.Weaponry.Melee.knife.amount = 0;
+            Classes.Weaponry.Melee.mchete.amount = 0;
+            Classes.Weaponry.Melee.rvltn_swrd.amount = 0;
+            Classes.Weaponry.Melee.ripper.amount = 0;
+            Classes.Weaponry.Melee.shshkbb.amount = 0;
+            Classes.Weaponry.Melee.switch_bld.amount = 0;
+
+            // Blunt
+            Classes.Weaponry.Melee.bsbl_bat.amount = 0;
+            Classes.Weaponry.Melee.board.amount = 0;
+            Classes.Weaponry.Melee.pool_cue.amount = 0;
+            Classes.Weaponry.Melee.scrt_bton.amount = 0;
+            Classes.Weaponry.Melee.spr_sldg.amount = 0;
+            Classes.Weaponry.Melee.sldg_hmr.amount = 0;
+            Classes.Weaponry.Melee.wlk_cane.amount = 0;
+            Classes.Weaponry.Melee.tire_irn.amount = 0;
+
+            // Fists
+            Classes.Weaponry.Melee.dthclw_gntlt.amount = 0;
+            Classes.Weaponry.Melee.knckls.amount = 0;
+            Classes.Weaponry.Melee.pwr_fst.amount = 0;
+            Classes.Weaponry.Melee.bxng_glv.amount = 0;
+
+            cswrd_txtbx.Text = "0";
+            cmbtk_txtbx.Text = "0";
+            knf_txtbx.Text = "0";
+            mcht_txtbx.Text = "0";
+            rvlswd_txtbx.Text = "0";
+            rpr_txtbx.Text = "0";
+            shkbb_txtbx.Text = "0";
+            swbld_txtbx.Text = "0";
+            bsblbt_txtbx.Text = "0";
+            brd_txtbx.Text = "0";
+            polcu_txtbx.Text = "0";
+            secbt_txtbx.Text = "0";
+            sprslg_txtbx.Text = "0";
+            slghmr_txtbx.Text = "0";
+            wlkcn_txtbx.Text = "0";
+            trirn_txtbx.Text = "0";
+            dtcgau_txtbx.Text = "0";
+            knkls_txtbx.Text = "0";
+            pwrfst_txtbx.Text = "0";
+            bxglv_txtbx.Text = "0";
         }
     }
 }
