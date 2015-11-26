@@ -75,6 +75,32 @@ namespace FalloutBatchMaker.Classes
         public static Object Mutfruit = new Object { code = "000d3EA7", amount = 0, };
         public static Object Razorgrain = new Object { code = "000E0043", amount = 0, };
         public static Object Tato = new Object { code = "009DCC4", amount = 0, };
+        
+        //Consumables
+        public static Object Bloafy_Meat = new Object { code = "000330f4", amount = 0, };
+        public static Object Brahmin_Meat = new Object { code = "0004a13f", amount = 0, };
+        public static Object Cram = new Object { code = "000330ee", amount = 0, };
+        public static Object Deathclaw_Meat = new Object { code = "00074d0e", amount = 0, };
+        public static Object Porks_Beans = new Object { code = "000330f0", amount = 0, };
+        public static Object Salsbury_Steak = new Object { code = "000366ba", amount = 0, };
+        public static Object Sugar_Bombs = new Object { code = "000330f2", amount = 0, };
+        public static Object Blood_Pack = new Object { code = "00052409", amount = 0, };
+        public static Object Dirty_Water = new Object { code = "000366bf", amount = 0, };
+        public static Object Nuka_Cola = new Object { code = "0004835d", amount = 0, };
+        public static Object Nuka_Quantum = new Object { code = "0004835f", amount = 0, };
+        public static Object Purified_Water = new Object { code = "000366c0", amount = 0, };
+        public static Object Beer = new Object { code = "0011ea93", amount = 0, };
+        public static Object Whisky = new Object { code = "000366c1", amount = 0, };
+        public static Object Wine = new Object { code = "000366c2", amount = 0, };
+        public static Object Buffout = new Object { code = "00033778", amount = 0, };
+        public static Object Jet = new Object { code = "000366c5", amount = 0, };
+        public static Object Med_X = new Object { code = "00033779", amount = 0, };
+        public static Object Mentats = new Object { code = "0003377b", amount = 0, };
+        public static Object Psycho = new Object { code = "0003377d", amount = 0, };
+        public static Object Rad_X = new Object { code = "00024057", amount = 0, };
+        public static Object Rad_Away = new Object { code = "00023742", amount = 0, };
+        public static Object Stimpack = new Object { code = "00023736", amount = 0, };
+        
        
     }
 }
