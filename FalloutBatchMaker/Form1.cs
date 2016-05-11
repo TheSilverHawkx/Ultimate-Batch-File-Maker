@@ -984,5 +984,41 @@ namespace FalloutBatchMaker
             pwrfst_txtbx.Text = "0";
             bxglv_txtbx.Text = "0";
         }
+        
+        
+        
+        private void PerkListClear_Click(object sender, EventArgs e)
+        {
+            Classes.Perk_List.strenght.amount = 0;
+            Classes.Perk_List.perception.amount = 0;
+            Classes.Perk_List.endurance.amount = 0;
+            Classes.Perk_List.charisma.amount = 0;
+            Classes.Perk_List.intelligence.amount = 0;
+            Classes.Perk_List.agility.amount = 0;
+            Classes.Perk_List.luck.amount = 0;
+            Classes.Perk_List.level.amount = 0;
+
+            textBox1.Text = "0";
+            textBox2.Text = "0";
+            textBox3.Text = "0";
+            textBox4.Text = "0";
+            textBox5.Text = "0";
+            textBox6.Text = "0";
+            textBox7.Text = "0";
+            textBox72.Text = "0";
+
+        }
+
+        private void PerkListSet_Click(object sender, EventArgs e)
+        {
+            Classes.Perk_List.strenght.amount = int.Parse(textBox1.Text);
+            Classes.Perk_List.perception.amount = int.Parse(textBox2.Text);
+            Classes.Perk_List.endurance.amount = int.Parse(textBox3.Text);
+            Classes.Perk_List.charisma.amount = int.Parse(textBox4.Text);
+            Classes.Perk_List.intelligence.amount = int.Parse(textBox5.Text);
+            Classes.Perk_List.agility.amount = int.Parse(textBox6.Text);
+            Classes.Perk_List.luck.amount = int.Parse(textBox7.Text);
+            Classes.Perk_List.level.amount = int.Parse(textBox72.Text);
+        }
     }
 }
