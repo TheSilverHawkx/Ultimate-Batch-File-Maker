@@ -984,5 +984,89 @@ namespace FalloutBatchMaker
             pwrfst_txtbx.Text = "0";
             bxglv_txtbx.Text = "0";
         }
+        
+         private void clearcons_Click(object sender, EventArgs e)
+        {
+            Classes.Consumables_List.blossom.amount = 0;
+            Classes.Consumables_List.maccheese.amount = 0;
+            Classes.Consumables_List.bloaftymeat.amount = 0;
+            Classes.Consumables_List.brahimmeat.amount = 0;
+            Classes.Consumables_List.cram.amount = 0;
+            Classes.Consumables_List.nukacola.amount = 0;
+            Classes.Consumables_List.nukaquantum.amount = 0;
+            Classes.Consumables_List.beer.amount = 0;
+            Classes.Consumables_List.dirtywater.amount = 0;
+            Classes.Consumables_List.wine.amount = 0;
+            Classes.Consumables_List.bufjet.amount = 0;
+            Classes.Consumables_List.calmex.amount = 0;
+            Classes.Consumables_List.fury.amount = 0;
+            Classes.Consumables_List.jet.amount = 0;
+            Classes.Consumables_List.medx.amount = 0;
+            Classes.Consumables_List.mentats.amount = 0;
+            Classes.Consumables_List.psycho.amount = 0;
+            Classes.Consumables_List.radx.amount = 0;
+            Classes.Consumables_List.radaway.amount = 0;
+            Classes.Consumables_List.stimpack.amount = 0;
+            Classes.Consumables_List.xcell.amount = 0;
+            Classes.Consumables_List.stealthboy.amount = 0;
+
+
+            textBox21.Text = "0";
+            textBox20.Text = "0";
+            textBox19.Text = "0";
+            textBox18.Text = "0";
+            textBox17.Text = "0";
+            textBox16.Text = "0";
+            textBox15.Text = "0";
+            textBox14.Text = "0";
+            textBox13.Text = "0";
+            textBox12.Text = "0";
+            textBox11.Text = "0";
+            textBox10.Text = "0";
+            textBox9.Text = "0";
+            textBox8.Text = "0";
+            textBox22.Text = "0";
+            textBox23.Text = "0";
+            textBox24.Text = "0";
+            textBox25.Text = "0";
+            textBox26.Text = "0";
+            textBox27.Text = "0";
+            textBox29.Text = "0";
+
+        }
+        
+        private void PerkListClearBtn_Click(object sender, EventArgs e)
+        {
+            Classes.Perk_List.strenght.amount = 0;
+            Classes.Perk_List.perception.amount = 0;
+            Classes.Perk_List.endurance.amount = 0;
+            Classes.Perk_List.charisma.amount = 0;
+            Classes.Perk_List.intelligence.amount = 0;
+            Classes.Perk_List.agility.amount = 0;
+            Classes.Perk_List.luck.amount = 0;
+            Classes.Perk_List.level.amount = 0;
+
+            textBox1.Text = "0";
+            textBox2.Text = "0";
+            textBox3.Text = "0";
+            textBox4.Text = "0";
+            textBox5.Text = "0";
+            textBox6.Text = "0";
+            textBox7.Text = "0";
+            textBox72.Text = "0";
+
+        }
+
+        private void PerkListSetBtn_Click(object sender, EventArgs e)
+        {
+            Classes.Perk_List.strenght.amount = int.Parse(textBox1.Text);
+            Classes.Perk_List.perception.amount = int.Parse(textBox2.Text);
+            Classes.Perk_List.endurance.amount = int.Parse(textBox3.Text);
+            Classes.Perk_List.charisma.amount = int.Parse(textBox4.Text);
+            Classes.Perk_List.intelligence.amount = int.Parse(textBox5.Text);
+            Classes.Perk_List.agility.amount = int.Parse(textBox6.Text);
+            Classes.Perk_List.luck.amount = int.Parse(textBox7.Text);
+            Classes.Perk_List.level.amount = int.Parse(textBox72.Text);
+        }
     }
 }
