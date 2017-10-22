@@ -938,7 +938,7 @@ namespace FalloutBatchMaker
 
         private void mle_clr_btn_Click(object sender, EventArgs e) // Clear Melees
         {
-            Classes.Weaponry.Melee.chns_swrd.amount = 0;
+            /*Classes.Weaponry.Melee.chns_swrd.amount = 0;
             Classes.Weaponry.Melee.cmbt_knf.amount = 0;
             Classes.Weaponry.Melee.knife.amount = 0;
             Classes.Weaponry.Melee.mchete.amount = 0;
@@ -1066,7 +1066,7 @@ namespace FalloutBatchMaker
             Classes.Perk_List.intelligence.amount = int.Parse(textBox5.Text);
             Classes.Perk_List.agility.amount = int.Parse(textBox6.Text);
             Classes.Perk_List.luck.amount = int.Parse(textBox7.Text);
-            Classes.Perk_List.level.amount = int.Parse(textBox72.Text);
+            Classes.Perk_List.level.amount = int.Parse(textBox72.Text);*/
         }
     }
 }

@@ -48,7 +48,7 @@ namespace FalloutBatchMaker.Classes
             }
 
         }
-        
+
         public void add2Perks(string item, int value) // Add to Perks Array
         {
             if (value > 0)
@@ -64,7 +64,7 @@ namespace FalloutBatchMaker.Classes
             }
 
         }
-
+    }
 
 
 }
