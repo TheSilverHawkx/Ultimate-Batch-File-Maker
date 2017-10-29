@@ -1,0 +1,93 @@
+{
+  "Game": "Fallout 4",
+  "Ammo": [
+      {
+        "name": ".308 Ammo",
+        "code": "0001f66b"
+      },
+      {
+        "name": ".38 Ammo",
+        "code": "0004ce87"
+      },
+      {
+        "name": ".44 Ammo",
+        "code": "0009221c"
+      },
+      {
+        "name": ".45 Ammo",
+        "code": "0001f66a"
+      },
+      {
+        "name": ".50 Caliber Ammo",
+        "code": "0001f279"
+      },
+      {
+        "name": "10mm Ammo",
+        "code": "0001f276"
+      },
+      {
+        "name": "5mm Ammo",
+        "code": "0001f66c"
+      },
+      {
+        "name": "5.56mm Ammo",
+        "code": "0001f278"
+      },
+      {
+        "name": "Shotgun Shell",
+        "code": "0001f673"
+      },
+      {
+        "name": "Railway Spike",
+        "code": "000fe269"
+      },
+      {
+        "name": "Cryo Cell",
+        "code": "0018abe2"
+      },
+      {
+        "name": "Energy Cell",
+        "code": "000c1897"
+      },
+      {
+        "name": "Plasma Cartridge",
+        "code": "0001dbb7"
+      },
+      {
+        "name": "Fusion Core",
+        "code": "00075fe4"
+      },
+      {
+        "name": "Fusion Cell",
+        "code": "000c1897"
+      },
+      {
+        "name": "2mm EC",
+        "code": "0018abdf"
+      },
+      {
+        "name": "Gamma Round",
+        "code": "000df279"
+      },
+      {
+        "name": "Alien Blaster Round",
+        "code": "001025aa"
+      },
+      {
+        "name": "Missile",
+        "code": "000caba3"
+      },
+      {
+        "name": "Flare",
+        "code": "001025ae"
+      },
+      {
+        "name": "Junk",
+        "code": "000e942c"
+      },
+      {
+        "name": "Cannonball",
+        "code": "000fd11c"
+      }
+    ]
+}
