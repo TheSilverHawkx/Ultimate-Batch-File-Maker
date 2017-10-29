@@ -1,0 +1,81 @@
+{
+  "Game": "Fallout 4",
+  "Actors": [
+      {
+        "name": "Ghoul",
+        "code": "758AD"
+      },
+      {
+        "name": "Raider",
+        "code": "4AF21"
+      },
+      {
+        "name": "Super Mutant",
+        "code": "A1471"
+      },
+      {
+        "name": "Brahmin",
+        "code": "20480"
+      },
+      {
+        "name": "MoleRat",
+        "code": "1A966"
+      },
+      {
+        "name": "Mongle",
+        "code": "1D1SA"
+      },
+      {
+        "name": "Mutant Hound",
+        "code": "9OC37"
+      },
+      {
+        "name": "Rad Stag",
+        "code": "8CA3C"
+      },
+      {
+        "name": "Yao Guai",
+        "code": "AOF33"
+      },
+      {
+        "name": "Death Claw",
+        "code": "1DB4C"
+      },
+      {
+        "name": "Bloat Fly",
+        "code": "29469"
+      },
+      {
+        "name": "Blood Bug",
+        "code": "28669"
+      },
+      {
+        "name": "Mirelurk",
+        "code": "24002"
+      },
+      {
+        "name": "Stingwing",
+        "code": "5FBB3"
+      },
+      {
+        "name": "Radroach",
+        "code": "475DF"
+      },
+      {
+        "name": "Rad Scorpion",
+        "code": "636AA"
+      },
+      {
+        "name": "Alien",
+        "code": "184C51"
+      },
+      {
+        "name": "Glowing Mole",
+        "code": "ff0044E0"
+      },
+      {
+        "name": "Dog",
+        "code": "1d162"
+      }
+  ]
+}
