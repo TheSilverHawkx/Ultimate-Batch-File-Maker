@@ -8,62 +8,64 @@ namespace FalloutBatchMaker
 {
     class Definitions
     {
-        private string addCommand { get; set; }
-        private string setValCommand { get; set; }
-        private string addPerkCommand { get; set; }
-        private string spawnCommand { get; set; }
-        private string setLevelCommand { get; set; }
-        private string mapMarkersCommand { get; set; }
+        private string AddCommand { get; set; }
+        private string SetValCommand { get; set; }
+        private string AddPerkCommand { get; set; }
+        private string SpawnCommand { get; set; }
+        private string SetLevelCommand { get; set; }
+        private string MapMarkersCommand { get; set; }
+        public string GameName { get; set; }
+        private Dictionary<string, string> Association = new Dictionary<string, string>();
 
-
-        public Definitions(string add, string setV, string addP, string spawn, string setlvl, string mapcomm)
+        public Definitions(string gname, string add, string setV, string addP, string spawn, string setlvl, string mapcomm)
         {
-            addCommand = add;
-            setValCommand = setV;
-            addPerkCommand = addP;
-            spawnCommand = spawn;
-            setLevelCommand = setlvl;
-            mapMarkersCommand = mapcomm;
+            GameName = gname;
+            AddCommand = add;
+            SetValCommand = setV;
+            AddPerkCommand = addP;
+            SpawnCommand = spawn;
+            SetLevelCommand = setlvl;
+            MapMarkersCommand = mapcomm;
         }
 
-        public string additem(string code, int amount)
+        public string Additem(string code, int amount)
         {
-            return addCommand + " " + code + " " + amount;
+            return AddCommand + " " + code + " " + amount;
         }
 
-        public string setValue (string code, int amount)
+        public string SetValue (string code, int amount)
         {
-            return setValCommand + " " + code + " " + amount;
+            return SetValCommand + " " + code + " " + amount;
         }
 
-        public string addPerk(string code)
+        public string AddPerk(string code)
         {
-            return addPerkCommand + " " + code;
+            return AddPerkCommand + " " + code;
         }
 
-        public string spawnNPC(string code, int amount)
+        public string SpawnNPC(string code, int amount)
         {
-            return spawnCommand + " " + code + " " + amount;
+            return SpawnCommand + " " + code + " " + amount;
         }
 
-        public string setLevel(string code, int amount)
+        public string SetLevel(string code, int amount)
         {
-            return setLevelCommand + " " + code + " " + amount;
+            return SetLevelCommand + " " + code + " " + amount;
         }
 
-        public string mapCommand(string mode)
+        public string MapCommand(string mode)
         {
             if (mode.Equals("1"))
             {
-                return mapMarkersCommand + " " + 1;
+                return MapMarkersCommand + " " + 1;
             }
             else if (mode.Equals("0"))
             {
-                return mapMarkersCommand + " " + 0;
+                return MapMarkersCommand + " " + 0;
             }
             else if (mode.Equals("1,0,1"))
             {
-                return mapMarkersCommand + " 1,0,1";
+                return MapMarkersCommand + " 1,0,1";
             }
             else
             {
@@ -71,5 +73,26 @@ namespace FalloutBatchMaker
             }
         }
 
+        public void AddAssociation(string category,string type)
+        {
+            if (type == "Item")
+            {
+                Association.Add(category, AddCommand);
+                
+            }
+            else if (type == "NPC")
+            {
+                Association.Add(category, SpawnCommand);
+            }
+            else
+            {
+                Association.Add(category, type);
+            }
+        }
+
+        public Dictionary<string,string> GetAssociations()
+        {
+            return Association;
+        }
     }
 }
