@@ -9,7 +9,7 @@ namespace FalloutBatchMaker
     class Definitions
     {
         private string AddCommand { get; set; }
-        private string SetValCommand { get; set; }
+        private string SetVarCommand { get; set; }
         private string AddPerkCommand { get; set; }
         private string SpawnCommand { get; set; }
         private string SetLevelCommand { get; set; }
@@ -21,7 +21,7 @@ namespace FalloutBatchMaker
         {
             GameName = gname;
             AddCommand = add;
-            SetValCommand = setV;
+            SetVarCommand = setV;
             AddPerkCommand = addP;
             SpawnCommand = spawn;
             SetLevelCommand = setlvl;
@@ -33,9 +33,9 @@ namespace FalloutBatchMaker
             return AddCommand + " " + code + " " + amount;
         }
 
-        public string SetValue (string code, int amount)
+        public string SetVariable (string code)
         {
-            return SetValCommand + " " + code + " " + amount;
+            return SetVarCommand + " " + code;
         }
 
         public string AddPerk(string code)
@@ -48,9 +48,9 @@ namespace FalloutBatchMaker
             return SpawnCommand + " " + code + " " + amount;
         }
 
-        public string SetLevel(string code, int amount)
+        public string SetLevel(string level)
         {
-            return SetLevelCommand + " " + code + " " + amount;
+            return SetLevelCommand + " " + level;
         }
 
         public string MapCommand(string mode)

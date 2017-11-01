@@ -14,6 +14,7 @@ namespace FalloutBatchMaker
         OpenFileDialog fd = new OpenFileDialog();
         private Definitions definition;
         private List<JObject> master_values = new List<JObject>();
+        private List<string[]> exportList = new List<string[]>();
 
         public MainForm()
         {
@@ -41,6 +42,7 @@ namespace FalloutBatchMaker
                             parsed_json["Definitions"]["setLevel"].ToString(),
                             parsed_json["Definitions"]["mapCommand"].ToString()
                             );
+                        this.Text = this.Text + " - " + definition.GameName;
                     }
                 }
                 catch
@@ -48,6 +50,11 @@ namespace FalloutBatchMaker
                     MessageBox.Show("Failed to create definitions!" + Environment.NewLine + "Check definitions file syntax.");
                     Close();
                 }
+            }
+            else
+            {
+                MessageBox.Show("No definitions file selected, exiting");
+                this.Close();
             }
         }
 
@@ -114,35 +121,66 @@ namespace FalloutBatchMaker
 
         private void ExtractInfo_Click(object sender, EventArgs e)
         {
-            List<string[]> extractioner = new List<string[]>();
-            Dictionary<string, int> extractionList = new Dictionary<string, int>();
+            // Take care of DataGridView Items
             foreach (TabPage item in tabControl1.TabPages)
             {
-                DataGridView dgv = (DataGridView)item.Controls.OfType<DataGridView>().Single();
-                var associations = definition.GetAssociations();
+                
+                DataGridView dgv = item.Controls.OfType<DataGridView>().Single();
+                Dictionary<string, string> associations = definition.GetAssociations();
+
                 foreach (DataGridViewRow row in dgv.Rows.Cast<DataGridViewRow>().Where(r => !r.Cells["Amount"].Value.ToString().Equals("")))
                 {
-                      string command = associations.Where(x => x.Key == row.Cells[0].Value.ToString()).First().Value;
-                    extractioner.Add(new string[] { row.Cells[2].Value.ToString(), row.Cells[3].Value.ToString(), command });
-                    //extractionList.Add();
+                    string command = associations[item.Text];
+                    exportList.Add(new string[] { command,row.Cells[2].Value.ToString(), row.Cells[3].Value.ToString() });
                 } 
             }
 
+            // Take care of Player GroupBox
+            if (!Level_txtbx.Text.Equals(""))
+            {
+                exportList.Add(new string[] { definition.SetLevel(Level_txtbx.Text), "", "" });
+            }
+            if (!Money_txtbx.Text.Equals(""))
+            {
+                exportList.Add(new string[] { definition.Additem("f", int.Parse(Money_txtbx.Text)), "", "" });
+            }
+
+            // Take care of Perk GroupBox
+            if (Perks_lstbx.Items.Count > 0)
+            {
+                foreach (var item in Perks_lstbx.Items)
+                {
+                    exportList.Add(new string[] { definition.AddPerk(item.ToString()), "", "" });
+                }
+            }
+
+            // Take care of Variable GroupBox
+            if (Variables_lstbx.Items.Count > 0)
+            {
+                foreach (var item in Variables_lstbx.Items)
+                {
+                    exportList.Add(new string[] { definition.SetVariable(item.ToString()), "", "" });
+                }
+            }
+
+
+            // Start writing to a file
             StreamWriter sw;
             SaveFileDialog sfd = new SaveFileDialog();
 
             sfd.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
-            sfd.FilterIndex = 2;
-            sfd.RestoreDirectory = true;
+            sfd.DefaultExt = "txt";
+            sfd.AddExtension = true;
 
             if (sfd.ShowDialog() == DialogResult.OK)
             {
                 sw = new StreamWriter(sfd.FileName);
-                foreach (var item in extractioner)
+                foreach (var item in exportList)
                 {
-                    sw.WriteLine(item[2] + " " + item[0] + " " + item[1]);
+                    sw.WriteLine(item[0] + " " + item[1] + " " + item[2]);
                 }
                 sw.Close();
+                exportList.Clear();
                 MessageBox.Show("Extraction complete!");
             }
             else
@@ -245,9 +283,10 @@ namespace FalloutBatchMaker
 
 
             dgv.DataError += Dgv_DataError;
+
+            // On cell value change
             dgv.CellValueChanged += (o, s) =>
             {
-
                 var count = dgv.Rows.Cast<DataGridViewRow>()
                     .Count(row => row.Cells["Amount"].Value.ToString() != "");
                 tsl2c.Text = count.ToString();
@@ -298,10 +337,76 @@ namespace FalloutBatchMaker
 
         private void button3_Click(object sender, EventArgs e)
         {
-            foreach (KeyValuePair<string,string> item in definition.GetAssociations())
+            foreach (var item in exportList)
             {
-                MessageBox.Show(item.Key + ": " + item.Value);
+                MessageBox.Show(item[0] + " " + item[1] + " " + item[2]);
             }
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton1.Checked == true)
+            {
+                exportList.Add(new string[] { definition.MapCommand("1"), "", "" });
+            }
+            else
+            {
+                exportList.RemoveAll(x => x[0] == definition.MapCommand("1"));
+            }
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton2.Checked == true)
+            {
+                exportList.Add(new string[] { definition.MapCommand("1,0,1"), "", "" });
+            }
+            else
+            {
+                exportList.RemoveAll(x => x[0] == definition.MapCommand("1,0,1"));
+            }
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton3.Checked == true)
+            {
+                exportList.Add(new string[] { definition.MapCommand("0"), "", "" });
+            }
+            else
+            {
+                exportList.RemoveAll(x => x[0] == definition.MapCommand("0"));
+            }
+        }
+
+        private void PerkAdd_btn_Click(object sender, EventArgs e)
+        {
+            if (!Perk_txtbx.Text.Equals(""))
+            {
+                Perks_lstbx.Items.Add(Perk_txtbx.Text);
+                Perk_txtbx.Text = "";
+            }
+        }
+
+        private void PerkRem_btn_Click(object sender, EventArgs e)
+        {
+            Perk_txtbx.Text = Perks_lstbx.SelectedItem.ToString();
+            Perks_lstbx.Items.Remove(Perks_lstbx.SelectedItem);
+        }
+
+        private void VarAdd_btn_Click(object sender, EventArgs e)
+        {
+            if (!Var_txtbx.Text.Equals(""))
+            {
+                Variables_lstbx.Items.Add(Var_txtbx.Text);
+                Var_txtbx.Text = "";
+            }
+        }
+
+        private void VarRem_btn_Click(object sender, EventArgs e)
+        {
+            Var_txtbx.Text = Variables_lstbx.SelectedItem.ToString();
+            Variables_lstbx.Items.Remove(Variables_lstbx.SelectedItem);
         }
     }
 
