@@ -8,6 +8,7 @@ namespace FalloutBatchMaker
 {
     class Definitions
     {
+        public static string[] functionalityList = { "Add Items", "Set Variables", "Add Perk", "Spawn NPC", "Set Level", "Map Marker" };
         private string AddCommand { get; set; }
         private string SetVarCommand { get; set; }
         private string AddPerkCommand { get; set; }

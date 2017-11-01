@@ -56,6 +56,18 @@
     <Compile Include="AssociationPopup.Designer.cs">
       <DependentUpon>AssociationPopup.cs</DependentUpon>
     </Compile>
+    <Compile Include="CreateDefPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateDefPopup.Designer.cs">
+      <DependentUpon>CreateDefPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateResPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateResPopup.Designer.cs">
+      <DependentUpon>CreateResPopup.cs</DependentUpon>
+    </Compile>
     <Compile Include="Definitions.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -67,6 +79,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AssociationPopup.resx">
       <DependentUpon>AssociationPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateDefPopup.resx">
+      <DependentUpon>CreateDefPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateResPopup.resx">
+      <DependentUpon>CreateResPopup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

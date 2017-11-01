@@ -35,17 +35,17 @@
             this.loadCategoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.Level_txtbx = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Player_grpbx = new System.Windows.Forms.GroupBox();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.Perk_grpbx = new System.Windows.Forms.GroupBox();
             this.Perks_lstbx = new System.Windows.Forms.ListBox();
             this.button3 = new System.Windows.Forms.Button();
             this.Money_txtbx = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.Var_grpbx = new System.Windows.Forms.GroupBox();
+            this.Map_grpbx = new System.Windows.Forms.GroupBox();
             this.Perk_txtbx = new System.Windows.Forms.TextBox();
             this.PerkAdd_btn = new System.Windows.Forms.Button();
             this.PerkRem_btn = new System.Windows.Forms.Button();
@@ -61,10 +61,10 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.versionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
+            this.Player_grpbx.SuspendLayout();
+            this.Perk_grpbx.SuspendLayout();
+            this.Var_grpbx.SuspendLayout();
+            this.Map_grpbx.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -132,18 +132,18 @@
             this.Level_txtbx.Size = new System.Drawing.Size(58, 20);
             this.Level_txtbx.TabIndex = 8;
             // 
-            // groupBox1
+            // Player_grpbx
             // 
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.Money_txtbx);
-            this.groupBox1.Controls.Add(this.Level_txtbx);
-            this.groupBox1.Location = new System.Drawing.Point(6, 27);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(133, 72);
-            this.groupBox1.TabIndex = 9;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Player";
+            this.Player_grpbx.Controls.Add(this.label3);
+            this.Player_grpbx.Controls.Add(this.label1);
+            this.Player_grpbx.Controls.Add(this.Money_txtbx);
+            this.Player_grpbx.Controls.Add(this.Level_txtbx);
+            this.Player_grpbx.Location = new System.Drawing.Point(6, 27);
+            this.Player_grpbx.Name = "Player_grpbx";
+            this.Player_grpbx.Size = new System.Drawing.Size(133, 72);
+            this.Player_grpbx.TabIndex = 9;
+            this.Player_grpbx.TabStop = false;
+            this.Player_grpbx.Text = "Player";
             // 
             // radioButton3
             // 
@@ -185,18 +185,18 @@
             this.radioButton1.UseVisualStyleBackColor = true;
             this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
-            // groupBox2
+            // Perk_grpbx
             // 
-            this.groupBox2.Controls.Add(this.Perk_txtbx);
-            this.groupBox2.Controls.Add(this.PerkRem_btn);
-            this.groupBox2.Controls.Add(this.PerkAdd_btn);
-            this.groupBox2.Controls.Add(this.Perks_lstbx);
-            this.groupBox2.Location = new System.Drawing.Point(145, 27);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(102, 148);
-            this.groupBox2.TabIndex = 10;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Perks";
+            this.Perk_grpbx.Controls.Add(this.Perk_txtbx);
+            this.Perk_grpbx.Controls.Add(this.PerkRem_btn);
+            this.Perk_grpbx.Controls.Add(this.PerkAdd_btn);
+            this.Perk_grpbx.Controls.Add(this.Perks_lstbx);
+            this.Perk_grpbx.Location = new System.Drawing.Point(145, 27);
+            this.Perk_grpbx.Name = "Perk_grpbx";
+            this.Perk_grpbx.Size = new System.Drawing.Size(102, 148);
+            this.Perk_grpbx.TabIndex = 10;
+            this.Perk_grpbx.TabStop = false;
+            this.Perk_grpbx.Text = "Perks";
             // 
             // Perks_lstbx
             // 
@@ -235,30 +235,30 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Money:";
             // 
-            // groupBox3
+            // Var_grpbx
             // 
-            this.groupBox3.Controls.Add(this.Var_txtbx);
-            this.groupBox3.Controls.Add(this.Variables_lstbx);
-            this.groupBox3.Controls.Add(this.VarRem_btn);
-            this.groupBox3.Controls.Add(this.VarAdd_btn);
-            this.groupBox3.Location = new System.Drawing.Point(253, 27);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(106, 148);
-            this.groupBox3.TabIndex = 12;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Variables";
+            this.Var_grpbx.Controls.Add(this.Var_txtbx);
+            this.Var_grpbx.Controls.Add(this.Variables_lstbx);
+            this.Var_grpbx.Controls.Add(this.VarRem_btn);
+            this.Var_grpbx.Controls.Add(this.VarAdd_btn);
+            this.Var_grpbx.Location = new System.Drawing.Point(253, 27);
+            this.Var_grpbx.Name = "Var_grpbx";
+            this.Var_grpbx.Size = new System.Drawing.Size(106, 148);
+            this.Var_grpbx.TabIndex = 12;
+            this.Var_grpbx.TabStop = false;
+            this.Var_grpbx.Text = "Variables";
             // 
-            // groupBox4
+            // Map_grpbx
             // 
-            this.groupBox4.Controls.Add(this.radioButton3);
-            this.groupBox4.Controls.Add(this.radioButton1);
-            this.groupBox4.Controls.Add(this.radioButton2);
-            this.groupBox4.Location = new System.Drawing.Point(7, 99);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(132, 76);
-            this.groupBox4.TabIndex = 0;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Map";
+            this.Map_grpbx.Controls.Add(this.radioButton3);
+            this.Map_grpbx.Controls.Add(this.radioButton1);
+            this.Map_grpbx.Controls.Add(this.radioButton2);
+            this.Map_grpbx.Location = new System.Drawing.Point(7, 99);
+            this.Map_grpbx.Name = "Map_grpbx";
+            this.Map_grpbx.Size = new System.Drawing.Size(132, 76);
+            this.Map_grpbx.TabIndex = 0;
+            this.Map_grpbx.TabStop = false;
+            this.Map_grpbx.Text = "Map";
             // 
             // Perk_txtbx
             // 
@@ -356,18 +356,21 @@
             this.clearAllToolStripMenuItem.Name = "clearAllToolStripMenuItem";
             this.clearAllToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.clearAllToolStripMenuItem.Text = "Clear All";
+            this.clearAllToolStripMenuItem.Click += new System.EventHandler(this.clearAllToolStripMenuItem_Click);
             // 
             // createDefinitionFileToolStripMenuItem
             // 
             this.createDefinitionFileToolStripMenuItem.Name = "createDefinitionFileToolStripMenuItem";
             this.createDefinitionFileToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.createDefinitionFileToolStripMenuItem.Text = "Create Definition File";
+            this.createDefinitionFileToolStripMenuItem.Click += new System.EventHandler(this.createDefinitionFileToolStripMenuItem_Click);
             // 
             // createResourceFileToolStripMenuItem
             // 
             this.createResourceFileToolStripMenuItem.Name = "createResourceFileToolStripMenuItem";
             this.createResourceFileToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.createResourceFileToolStripMenuItem.Text = "Create Resource File";
+            this.createResourceFileToolStripMenuItem.Click += new System.EventHandler(this.createResourceFileToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -386,11 +389,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(462, 379);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.Var_grpbx);
+            this.Controls.Add(this.Map_grpbx);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.Perk_grpbx);
+            this.Controls.Add(this.Player_grpbx);
             this.Controls.Add(this.ExtractInfo);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.menuStrip1);
@@ -399,14 +402,14 @@
             this.Text = "Ultimate Batch File Maker";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
+            this.Player_grpbx.ResumeLayout(false);
+            this.Player_grpbx.PerformLayout();
+            this.Perk_grpbx.ResumeLayout(false);
+            this.Perk_grpbx.PerformLayout();
+            this.Var_grpbx.ResumeLayout(false);
+            this.Var_grpbx.PerformLayout();
+            this.Map_grpbx.ResumeLayout(false);
+            this.Map_grpbx.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -420,23 +423,23 @@
         private System.Windows.Forms.ToolStripMenuItem loadCategoryToolStripMenuItem;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox Level_txtbx;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox Player_grpbx;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox Perk_grpbx;
         private System.Windows.Forms.ListBox Perks_lstbx;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox Money_txtbx;
         private System.Windows.Forms.TextBox Perk_txtbx;
         private System.Windows.Forms.Button PerkRem_btn;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox Var_grpbx;
         private System.Windows.Forms.TextBox Var_txtbx;
         private System.Windows.Forms.ListBox Variables_lstbx;
         private System.Windows.Forms.Button VarRem_btn;
         private System.Windows.Forms.Button VarAdd_btn;
-        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.GroupBox Map_grpbx;
         private System.Windows.Forms.ToolStripMenuItem toolsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clearAllToolStripMenuItem;

@@ -205,6 +205,7 @@ namespace FalloutBatchMaker
                 dr["Category"] = row.Property("itemCategory").Value; ;
                 dr["Name"] = row.Property("name").Value;
                 dr["Code"] = row.Property("code").Value;
+                dr["Amount"] = 0;
                 dt.Rows.Add(dr);
             }
             return dt;
@@ -217,7 +218,6 @@ namespace FalloutBatchMaker
             tabControl1.Controls.Add(tp);
 
             DataGridView dgv = new DataGridView();
-            dgv.DataSource = "";
             dgv.Dock = DockStyle.Fill;
             dgv.Name = category + "DGView";
             dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
@@ -226,6 +226,7 @@ namespace FalloutBatchMaker
             dgv.EditMode = DataGridViewEditMode.EditOnEnter;
             dgv.DataSource = dt;
             tp.Controls.Add(dgv);
+
 
 
 
@@ -407,6 +408,53 @@ namespace FalloutBatchMaker
         {
             Var_txtbx.Text = Variables_lstbx.SelectedItem.ToString();
             Variables_lstbx.Items.Remove(Variables_lstbx.SelectedItem);
+        }
+
+        private void clearAllToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                exportList.Clear();
+                foreach (TabPage item in tabControl1.TabPages)
+                {
+                    DataGridView dgv = item.Controls.OfType<DataGridView>().Single();
+
+                    foreach (DataGridViewRow row in dgv.Rows.Cast<DataGridViewRow>().Where(r => !r.Cells["Amount"].Value.ToString().Equals("")))
+                    {
+                        row.Cells[3].Value = 0;
+                    }
+                }
+                
+                foreach (var txtbx in Player_grpbx.Controls.OfType<TextBox>())
+                {
+                    txtbx.Text = "";
+                }
+
+                foreach (var radiobtn in Map_grpbx.Controls.OfType<RadioButton>())
+                {
+                    radiobtn.Checked = false;
+                }
+
+                Perks_lstbx.Items.Clear();
+                Variables_lstbx.Items.Clear();
+            }
+            catch
+            {
+                MessageBox.Show("Nothing to clear");
+            }
+        }
+
+        private void createDefinitionFileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using(CreateDefPopup cdf = new CreateDefPopup())
+            {
+                var ans = cdf.ShowDialog();
+            }
+        }
+
+        private void createResourceFileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 
