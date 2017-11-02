@@ -78,7 +78,7 @@ namespace FalloutBatchMaker
                 }
                 else
                 {
-                    MessageBox.Show("Save location not picked, aborting");
+                    MessageBox.Show("No save location, aborting");
                 }
             }
         }

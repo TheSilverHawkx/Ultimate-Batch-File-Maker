@@ -98,7 +98,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "AssociationPopup";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "AssociationPopup";
+            this.Text = "Association";
             this.ResumeLayout(false);
             this.PerformLayout();
 

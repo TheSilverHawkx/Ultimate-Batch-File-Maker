@@ -128,7 +128,7 @@ namespace FalloutBatchMaker
                 DataGridView dgv = item.Controls.OfType<DataGridView>().Single();
                 Dictionary<string, string> associations = definition.GetAssociations();
 
-                foreach (DataGridViewRow row in dgv.Rows.Cast<DataGridViewRow>().Where(r => !r.Cells["Amount"].Value.ToString().Equals("")))
+                foreach (DataGridViewRow row in dgv.Rows.Cast<DataGridViewRow>().Where(r => int.Parse(r.Cells["Amount"].Value.ToString()) > 0))
                 {
                     string command = associations[item.Text];
                     exportList.Add(new string[] { command,row.Cells[2].Value.ToString(), row.Cells[3].Value.ToString() });
@@ -289,7 +289,7 @@ namespace FalloutBatchMaker
             dgv.CellValueChanged += (o, s) =>
             {
                 var count = dgv.Rows.Cast<DataGridViewRow>()
-                    .Count(row => row.Cells["Amount"].Value.ToString() != "");
+                    .Count(row => int.Parse(row.Cells["Amount"].Value.ToString()) > 0);
                 tsl2c.Text = count.ToString();
             };
             bn.Items.Add(tsl1);
@@ -454,7 +454,18 @@ namespace FalloutBatchMaker
 
         private void createResourceFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            using (CreateResFormBasic crf = new CreateResFormBasic())
+            {
+                var ans = crf.ShowDialog();
+            }
+        }
 
+        private void createResourceFileAdvToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (CreateResFormAdv crf = new CreateResFormAdv())
+            {
+                var ans = crf.ShowDialog();
+            }
         }
     }
 
