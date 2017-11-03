@@ -27,21 +27,28 @@ namespace FalloutBatchMaker
         {
             groupBox1.Text = "Output";
             int index = 0;
-            string title;
-            foreach (string line in Input_txtbx.Text.Split('\n'))
+            string title = "";
+            string output = "";
+            string[] input = Input_rtxtbx.Text.Split('\n');
+            Input_rtxtbx.Text = "";
+
+            Input_rtxtbx.Text = "game = game name" + Environment.NewLine + "category name" + Environment.NewLine;
+            foreach (string line in input)
             {
                 if (line.Contains(" = "))
                 {
                     string name = Regex.Split(line, "\\s=\\s")[0];
                     string code = Regex.Split(line, "\\s=\\s")[1];
-                    //string output = title
-                    //"  $title[$i]`n    name = " + $name + "`n    code = " + $code
+                    output = "  " + title + "[" + index + "]" + Environment.NewLine + "    name = " + name + Environment.NewLine + "    code = " + code + Environment.NewLine;
+                    Input_rtxtbx.Text += output;
+                    index++;
                 }
                 else
                 {
                     title = line;
                     index = 0;
                 }
+                
             }
 
         }

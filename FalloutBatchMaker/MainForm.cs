@@ -288,6 +288,13 @@ namespace FalloutBatchMaker
             // On cell value change
             dgv.CellValueChanged += (o, s) =>
             {
+                List<DataGridViewRow> list = dgv.Rows.Cast<DataGridViewRow>().Where(row => row.Cells["Amount"].Value.ToString().Equals("")).ToList();
+                foreach (var item in list)
+                {
+                    item.Cells["Amount"].Value = 0;
+                }
+
+
                 var count = dgv.Rows.Cast<DataGridViewRow>()
                     .Count(row => int.Parse(row.Cells["Amount"].Value.ToString()) > 0);
                 tsl2c.Text = count.ToString();
@@ -463,6 +470,14 @@ namespace FalloutBatchMaker
         private void createResourceFileAdvToolStripMenuItem_Click(object sender, EventArgs e)
         {
             using (CreateResFormAdv crf = new CreateResFormAdv())
+            {
+                var ans = crf.ShowDialog();
+            }
+        }
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (HelpForm crf = new HelpForm())
             {
                 var ans = crf.ShowDialog();
             }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateResFormBasic));
             this.label1 = new System.Windows.Forms.Label();
             this.Category_txtbx = new System.Windows.Forms.TextBox();
             this.Name_txtbx = new System.Windows.Forms.TextBox();
@@ -38,10 +39,10 @@
             this.Code_txtbx = new System.Windows.Forms.TextBox();
             this.CreateRes_btn = new System.Windows.Forms.Button();
             this.Resource_lstv = new System.Windows.Forms.ListView();
-            this.label4 = new System.Windows.Forms.Label();
-            this.Game_txtbx = new System.Windows.Forms.TextBox();
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label4 = new System.Windows.Forms.Label();
+            this.Game_txtbx = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -90,6 +91,7 @@
             // 
             // AddRes_btn
             // 
+            this.AddRes_btn.Image = ((System.Drawing.Image)(resources.GetObject("AddRes_btn.Image")));
             this.AddRes_btn.Location = new System.Drawing.Point(41, 115);
             this.AddRes_btn.Name = "AddRes_btn";
             this.AddRes_btn.Size = new System.Drawing.Size(32, 23);
@@ -100,6 +102,7 @@
             // 
             // RemRes_btn
             // 
+            this.RemRes_btn.Image = ((System.Drawing.Image)(resources.GetObject("RemRes_btn.Image")));
             this.RemRes_btn.Location = new System.Drawing.Point(150, 115);
             this.RemRes_btn.Name = "RemRes_btn";
             this.RemRes_btn.Size = new System.Drawing.Size(32, 23);
@@ -139,6 +142,17 @@
             this.Resource_lstv.UseCompatibleStateImageBehavior = false;
             this.Resource_lstv.View = System.Windows.Forms.View.Details;
             // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Name";
+            this.columnHeader2.Width = 100;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Code";
+            this.columnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader3.Width = 100;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -156,18 +170,7 @@
             this.Game_txtbx.Size = new System.Drawing.Size(80, 20);
             this.Game_txtbx.TabIndex = 1;
             // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Name";
-            this.columnHeader2.Width = 100;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Code";
-            this.columnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader3.Width = 100;
-            // 
-            // CreateResForm
+            // CreateResFormBasic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -184,8 +187,11 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.Category_txtbx);
             this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "CreateResForm";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "CreateResFormBasic";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Create Resource File";
             this.ResumeLayout(false);
             this.PerformLayout();

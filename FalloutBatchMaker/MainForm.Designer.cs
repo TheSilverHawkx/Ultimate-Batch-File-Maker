@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.ExtractInfo = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -37,6 +38,7 @@
             this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.createDefinitionFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.createResourceFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.createResourceFileAdvToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.versionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -60,7 +62,6 @@
             this.VarRem_btn = new System.Windows.Forms.Button();
             this.VarAdd_btn = new System.Windows.Forms.Button();
             this.Map_grpbx = new System.Windows.Forms.GroupBox();
-            this.createResourceFileAdvToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.Player_grpbx.SuspendLayout();
             this.Perk_grpbx.SuspendLayout();
@@ -112,8 +113,8 @@
             // loadCategoryToolStripMenuItem
             // 
             this.loadCategoryToolStripMenuItem.Name = "loadCategoryToolStripMenuItem";
-            this.loadCategoryToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
-            this.loadCategoryToolStripMenuItem.Text = "Load File";
+            this.loadCategoryToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.loadCategoryToolStripMenuItem.Text = "Load Resource";
             this.loadCategoryToolStripMenuItem.Click += new System.EventHandler(this.loadFileToolStripMenuItem_Click);
             // 
             // clearAllToolStripMenuItem
@@ -130,13 +131,13 @@
             this.createResourceFileToolStripMenuItem,
             this.createResourceFileAdvToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
             this.toolsToolStripMenuItem.Text = "Tools";
             // 
             // createDefinitionFileToolStripMenuItem
             // 
             this.createDefinitionFileToolStripMenuItem.Name = "createDefinitionFileToolStripMenuItem";
-            this.createDefinitionFileToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.createDefinitionFileToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
             this.createDefinitionFileToolStripMenuItem.Text = "Create Definition File";
             this.createDefinitionFileToolStripMenuItem.Click += new System.EventHandler(this.createDefinitionFileToolStripMenuItem_Click);
             // 
@@ -146,6 +147,13 @@
             this.createResourceFileToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
             this.createResourceFileToolStripMenuItem.Text = "Create Resource File (basic)";
             this.createResourceFileToolStripMenuItem.Click += new System.EventHandler(this.createResourceFileToolStripMenuItem_Click);
+            // 
+            // createResourceFileAdvToolStripMenuItem
+            // 
+            this.createResourceFileAdvToolStripMenuItem.Name = "createResourceFileAdvToolStripMenuItem";
+            this.createResourceFileAdvToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
+            this.createResourceFileAdvToolStripMenuItem.Text = "Create Resource File (Adv)";
+            this.createResourceFileAdvToolStripMenuItem.Click += new System.EventHandler(this.createResourceFileAdvToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
@@ -159,13 +167,14 @@
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.helpToolStripMenuItem.Text = "Help";
+            this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
             // 
             // versionToolStripMenuItem
             // 
             this.versionToolStripMenuItem.Name = "versionToolStripMenuItem";
-            this.versionToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.versionToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.versionToolStripMenuItem.Text = "Version";
             // 
             // label1
@@ -222,7 +231,7 @@
             this.radioButton3.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.radioButton3.Location = new System.Drawing.Point(6, 56);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(78, 18);
+            this.radioButton3.Size = new System.Drawing.Size(77, 17);
             this.radioButton3.TabIndex = 10;
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Remove All";
@@ -235,7 +244,7 @@
             this.radioButton2.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.radioButton2.Location = new System.Drawing.Point(6, 36);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(99, 18);
+            this.radioButton2.Size = new System.Drawing.Size(93, 17);
             this.radioButton2.TabIndex = 10;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Show Markers ";
@@ -248,7 +257,7 @@
             this.radioButton1.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.radioButton1.Location = new System.Drawing.Point(6, 16);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(115, 18);
+            this.radioButton1.Size = new System.Drawing.Size(114, 17);
             this.radioButton1.TabIndex = 10;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Complete Discover";
@@ -281,6 +290,7 @@
             // 
             this.PerkRem_btn.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.PerkRem_btn.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PerkRem_btn.Image = ((System.Drawing.Image)(resources.GetObject("PerkRem_btn.Image")));
             this.PerkRem_btn.Location = new System.Drawing.Point(65, 38);
             this.PerkRem_btn.Name = "PerkRem_btn";
             this.PerkRem_btn.Size = new System.Drawing.Size(33, 22);
@@ -293,6 +303,7 @@
             // 
             this.PerkAdd_btn.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.PerkAdd_btn.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PerkAdd_btn.Image = ((System.Drawing.Image)(resources.GetObject("PerkAdd_btn.Image")));
             this.PerkAdd_btn.Location = new System.Drawing.Point(6, 38);
             this.PerkAdd_btn.Name = "PerkAdd_btn";
             this.PerkAdd_btn.Size = new System.Drawing.Size(33, 22);
@@ -354,6 +365,7 @@
             // 
             this.VarRem_btn.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.VarRem_btn.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VarRem_btn.Image = ((System.Drawing.Image)(resources.GetObject("VarRem_btn.Image")));
             this.VarRem_btn.Location = new System.Drawing.Point(67, 38);
             this.VarRem_btn.Name = "VarRem_btn";
             this.VarRem_btn.Size = new System.Drawing.Size(33, 22);
@@ -366,6 +378,7 @@
             // 
             this.VarAdd_btn.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.VarAdd_btn.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VarAdd_btn.Image = ((System.Drawing.Image)(resources.GetObject("VarAdd_btn.Image")));
             this.VarAdd_btn.Location = new System.Drawing.Point(3, 38);
             this.VarAdd_btn.Name = "VarAdd_btn";
             this.VarAdd_btn.Size = new System.Drawing.Size(33, 22);
@@ -386,13 +399,6 @@
             this.Map_grpbx.TabStop = false;
             this.Map_grpbx.Text = "Map";
             // 
-            // createResourceFileAdvToolStripMenuItem
-            // 
-            this.createResourceFileAdvToolStripMenuItem.Name = "createResourceFileAdvToolStripMenuItem";
-            this.createResourceFileAdvToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
-            this.createResourceFileAdvToolStripMenuItem.Text = "Create Resource File (Adv)";
-            this.createResourceFileAdvToolStripMenuItem.Click += new System.EventHandler(this.createResourceFileAdvToolStripMenuItem_Click);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -406,6 +412,7 @@
             this.Controls.Add(this.ExtractInfo);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
             this.Text = "Ultimate Batch File Maker";

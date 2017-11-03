@@ -28,26 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Input_txtbx = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Input_rtxtbx = new System.Windows.Forms.RichTextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // Input_txtbx
-            // 
-            this.Input_txtbx.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Input_txtbx.Location = new System.Drawing.Point(3, 16);
-            this.Input_txtbx.Multiline = true;
-            this.Input_txtbx.Name = "Input_txtbx";
-            this.Input_txtbx.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.Input_txtbx.Size = new System.Drawing.Size(355, 122);
-            this.Input_txtbx.TabIndex = 2;
-            // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.Input_txtbx);
+            this.groupBox1.Controls.Add(this.Input_rtxtbx);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
@@ -55,6 +45,15 @@
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Input";
+            // 
+            // Input_rtxtbx
+            // 
+            this.Input_rtxtbx.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Input_rtxtbx.Location = new System.Drawing.Point(3, 16);
+            this.Input_rtxtbx.Name = "Input_rtxtbx";
+            this.Input_rtxtbx.Size = new System.Drawing.Size(355, 122);
+            this.Input_rtxtbx.TabIndex = 6;
+            this.Input_rtxtbx.Text = "";
             // 
             // button1
             // 
@@ -86,20 +85,23 @@
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "CreateResFormAdv";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Create Resource Advanced";
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.TextBox Input_txtbx;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.RichTextBox Input_rtxtbx;
     }
 }

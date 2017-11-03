@@ -117,19 +117,38 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="AddRes_btn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAAEhJREFUOE/tjDEKACAMxDr4bDcfrnU4UGxrK4iLgYwJ3SCxVdHFH7waFFYKLDM7
-        EZksMfBM1BhYk20MpIk7BuMkHIM+OY4dEDXzwFrCw8FGHgAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="RemRes_btn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAAFBJREFUOE9joDVoBuIaCJN0ANL8H4pJNqQJiGGaSTYEm2YYJmhIIxBj04iMcRpC
-        jGYYxjCkAYixKcSHcbqEBYixafgDxESBUQMGgwEkAAYGAKOcWqRV8YmsAAAAAElFTkSuQmCC
-</value>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>How it works:
+=========
+Creating Batch File
+-------------------------
+1. Load Resources through File &gt; Load Resource
+2. Fill Variables
+3. Press 'Create File
+
+Creating Definitio File
+----------------------------
+1. Enter menu through Tools &gt; Create Definition File.
+2. Enter desired game name (e.g Fallout 4, Skyrim, Oblivion).
+3. Fill suitable command in each field.
+4. Press 'Create Definition File'.
+
+
+Creating Basic Resource file (no sub-categories)
+-------------------------------------
+1. Enter menu through Tools &gt; Create Resource File (basic).
+2. Enter desired game name (must be exactly like in the definition file).
+3. Enter Resource name (category name).
+4. Add entries in name:code pairs and press the down arrow.
+5. When done, Press 'Create Resource File'.
+
+Creating Basic Resource file (with sub-categories)
+-------------------------------------
+1. Enter menu through Tools &gt; Create Resource File (adv).
+2. In the 'Input' field add sub-categories and entries as shown in the '' image.
+3. Press 'Process input'
+4. Copy the output, open objGen website (link included) and paste the ouput in the new window.
+5. Change 'game_name' and 'category_name' into relevant names.
+6. Save as a '.json' file</value>
   </data>
 </root>
