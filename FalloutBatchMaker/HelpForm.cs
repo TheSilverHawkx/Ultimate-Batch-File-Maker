@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FalloutBatchMaker
+namespace UltimateBatchFileMaker
 {
     public partial class HelpForm : Form
     {

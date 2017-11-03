@@ -8,7 +8,7 @@ using System.Windows.Forms;
 using Newtonsoft.Json.Linq;
 using System.IO;
 
-namespace FalloutBatchMaker
+namespace UltimateBatchFileMaker
 {
     public partial class CreateDefPopup : Form
     {

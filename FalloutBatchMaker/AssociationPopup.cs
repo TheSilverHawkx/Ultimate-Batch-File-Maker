@@ -8,10 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FalloutBatchMaker
+namespace UltimateBatchFileMaker
 {
     public partial class AssociationPopup : Form
     {
+        public string CategoryName { get; set; }
         public string ReturnValue { get; set; }
 
         public AssociationPopup()
@@ -38,6 +39,11 @@ namespace FalloutBatchMaker
             }
             this.Close();
             
+        }
+
+        private void AssociationPopup_Load(object sender, EventArgs e)
+        {
+            this.Text = this.Text + " - " + CategoryName;
         }
     }
 }

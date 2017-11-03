@@ -1,4 +1,4 @@
-﻿namespace FalloutBatchMaker
+﻿namespace UltimateBatchFileMaker
 {
     partial class MainForm
     {
@@ -55,7 +55,6 @@
             this.PerkRem_btn = new System.Windows.Forms.Button();
             this.PerkAdd_btn = new System.Windows.Forms.Button();
             this.Perks_lstbx = new System.Windows.Forms.ListBox();
-            this.button3 = new System.Windows.Forms.Button();
             this.Var_grpbx = new System.Windows.Forms.GroupBox();
             this.Var_txtbx = new System.Windows.Forms.TextBox();
             this.Variables_lstbx = new System.Windows.Forms.ListBox();
@@ -80,9 +79,9 @@
             // 
             // ExtractInfo
             // 
-            this.ExtractInfo.Location = new System.Drawing.Point(365, 69);
+            this.ExtractInfo.Location = new System.Drawing.Point(365, 27);
             this.ExtractInfo.Name = "ExtractInfo";
-            this.ExtractInfo.Size = new System.Drawing.Size(86, 103);
+            this.ExtractInfo.Size = new System.Drawing.Size(86, 145);
             this.ExtractInfo.TabIndex = 5;
             this.ExtractInfo.Text = "Create File";
             this.ExtractInfo.UseVisualStyleBackColor = true;
@@ -174,8 +173,9 @@
             // versionToolStripMenuItem
             // 
             this.versionToolStripMenuItem.Name = "versionToolStripMenuItem";
-            this.versionToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
+            this.versionToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.versionToolStripMenuItem.Text = "Version";
+            this.versionToolStripMenuItem.Click += new System.EventHandler(this.versionToolStripMenuItem_Click);
             // 
             // label1
             // 
@@ -321,16 +321,6 @@
             this.Perks_lstbx.Size = new System.Drawing.Size(96, 82);
             this.Perks_lstbx.TabIndex = 0;
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(365, 27);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(86, 35);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "Preview";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
             // Var_grpbx
             // 
             this.Var_grpbx.Controls.Add(this.Var_txtbx);
@@ -406,7 +396,6 @@
             this.ClientSize = new System.Drawing.Size(462, 379);
             this.Controls.Add(this.Var_grpbx);
             this.Controls.Add(this.Map_grpbx);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.Perk_grpbx);
             this.Controls.Add(this.Player_grpbx);
             this.Controls.Add(this.ExtractInfo);
@@ -415,7 +404,9 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(478, 418);
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ultimate Batch File Maker";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -446,7 +437,6 @@
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.GroupBox Perk_grpbx;
         private System.Windows.Forms.ListBox Perks_lstbx;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox Money_txtbx;
         private System.Windows.Forms.TextBox Perk_txtbx;

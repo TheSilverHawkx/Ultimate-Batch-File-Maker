@@ -7,8 +7,8 @@
     <ProjectGuid>{CFA8A488-4DE0-4171-9F38-C8ECB2B9573B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FalloutBatchMaker</RootNamespace>
-    <AssemblyName>FalloutBatchMaker</AssemblyName>
+    <RootNamespace>UltimateBatchFileMaker</RootNamespace>
+    <AssemblyName>Ultimate Batch File Maker</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <PublishUrl>publish\</PublishUrl>
@@ -133,6 +133,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\Item_list_Code.datasource" />

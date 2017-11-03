@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using Newtonsoft.Json.Linq;
 using System.IO;
 
-namespace FalloutBatchMaker
+namespace UltimateBatchFileMaker
 {
     public partial class CreateResFormBasic : Form
     {
@@ -55,7 +55,7 @@ namespace FalloutBatchMaker
                 List<string[]> exportList = new List<string[]>();
                 foreach (ListViewItem item in Resource_lstv.Items)
                 {
-                    exportList.Add(new string[] { item.SubItems[0].ToString(), item.SubItems[1].ToString() });
+                    exportList.Add(new string[] { item.SubItems[0].Text, item.SubItems[1].Text });
                 }
 
                 string category_name = Category_txtbx.Text;
@@ -63,8 +63,8 @@ namespace FalloutBatchMaker
                     new JProperty("Game", Game_txtbx.Text),
                     new JProperty(category_name,
                         new JArray(from p in exportList select new JObject(
-                            new JProperty("name",Name_txtbx.Text),
-                            new JProperty("code",Code_txtbx.Text)
+                            new JProperty("name",p[0]),
+                            new JProperty("code",p[1])
                             )
                         )
                     )

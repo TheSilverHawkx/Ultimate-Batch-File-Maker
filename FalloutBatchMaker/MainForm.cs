@@ -7,7 +7,7 @@ using Newtonsoft.Json.Linq;
 using System.Drawing;
 using System.IO;
 
-namespace FalloutBatchMaker
+namespace UltimateBatchFileMaker
 {
     public partial class MainForm : Form
     {
@@ -80,7 +80,7 @@ namespace FalloutBatchMaker
 
                         if (parsed_json[category_name].First().Count() != 2)
                         {
-                            foreach (JObject child in parsed_json.Children().Last().Values())
+                            foreach (JObject child in parsed_json[category_name].Children<JObject>())
                             {
                                 string item_category = child.Properties().Select(p => p.Name).ToList()[0];
 
@@ -213,7 +213,10 @@ namespace FalloutBatchMaker
 
         private void createTab(string category, DataTable dt)
         {
-            associateCategory(category);
+            if (!associateCategory(category))
+            {
+                return;
+            }
             TabPage tp = new TabPage(category);
             tabControl1.Controls.Add(tp);
 
@@ -315,7 +318,7 @@ namespace FalloutBatchMaker
             // Empty, but not letting you put string in Amount column which is good :)
         }
 
-        private void associateCategory(string category_name)
+        private bool associateCategory(string category_name)
         {
             if (category_name == "Weapons" || category_name ==  "Ammo" || category_name == "Armor")
             {
@@ -329,26 +332,23 @@ namespace FalloutBatchMaker
             {
                 using (AssociationPopup frm = new AssociationPopup())
                 {
+                    frm.CategoryName = category_name;
                     var ans = frm.ShowDialog();
                     if ( ans == DialogResult.OK)
                     {
                         string val = frm.ReturnValue;
                         definition.AddAssociation(category_name, val);
+                        return true;
                     }
                     else
                     {
                         MessageBox.Show("No association specified, skipping");
+                        return false;
                     }
                 }
-            }
-        }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            foreach (var item in exportList)
-            {
-                MessageBox.Show(item[0] + " " + item[1] + " " + item[2]);
             }
+            return true;
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
@@ -481,6 +481,14 @@ namespace FalloutBatchMaker
             {
                 var ans = crf.ShowDialog();
             }
+        }
+
+        private void versionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string text = "Ultime Batch File Maker by TheSilverHawk (a.k.a MuffinDragon)" + Environment.NewLine
+                        + "Version v1.0" + Environment.NewLine
+                        + "This Program is made for free use on Nexus Mods";
+            MessageBox.Show(text);
         }
     }
 

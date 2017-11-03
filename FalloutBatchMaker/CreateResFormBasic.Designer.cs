@@ -1,4 +1,4 @@
-﻿namespace FalloutBatchMaker
+﻿namespace UltimateBatchFileMaker
 {
     partial class CreateResFormBasic
     {

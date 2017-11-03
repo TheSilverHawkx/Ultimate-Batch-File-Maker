@@ -1,4 +1,4 @@
-﻿namespace FalloutBatchMaker
+﻿namespace UltimateBatchFileMaker
 {
     partial class AssociationPopup
     {
@@ -101,6 +101,7 @@
             this.Name = "AssociationPopup";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Association";
+            this.Load += new System.EventHandler(this.AssociationPopup_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
