@@ -17,6 +17,7 @@ namespace UltimateBatchFileMaker
         public CreateResFormBasic()
         {
             InitializeComponent();
+            //
             
         }
         private void AddRes_btn_Click(object sender, EventArgs e)
