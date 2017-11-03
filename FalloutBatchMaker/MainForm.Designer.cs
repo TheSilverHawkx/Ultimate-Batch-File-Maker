@@ -113,14 +113,14 @@
             // loadCategoryToolStripMenuItem
             // 
             this.loadCategoryToolStripMenuItem.Name = "loadCategoryToolStripMenuItem";
-            this.loadCategoryToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.loadCategoryToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.loadCategoryToolStripMenuItem.Text = "Load Resource";
             this.loadCategoryToolStripMenuItem.Click += new System.EventHandler(this.loadFileToolStripMenuItem_Click);
             // 
             // clearAllToolStripMenuItem
             // 
             this.clearAllToolStripMenuItem.Name = "clearAllToolStripMenuItem";
-            this.clearAllToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.clearAllToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.clearAllToolStripMenuItem.Text = "Clear All";
             this.clearAllToolStripMenuItem.Click += new System.EventHandler(this.clearAllToolStripMenuItem_Click);
             // 
@@ -167,7 +167,7 @@
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.helpToolStripMenuItem.Text = "Help";
             this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
             // 
@@ -414,6 +414,7 @@
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
             this.Name = "MainForm";
             this.Text = "Ultimate Batch File Maker";
             this.menuStrip1.ResumeLayout(false);

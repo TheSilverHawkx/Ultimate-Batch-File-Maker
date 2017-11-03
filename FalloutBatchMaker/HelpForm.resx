@@ -145,7 +145,7 @@ Creating Basic Resource file (no sub-categories)
 Creating Basic Resource file (with sub-categories)
 -------------------------------------
 1. Enter menu through Tools &gt; Create Resource File (adv).
-2. In the 'Input' field add sub-categories and entries as shown in the '' image.
+2. In the 'Input' field add sub-categories and entries as shown in 'Create-Sub-categories.png'.
 3. Press 'Process input'
 4. Copy the output, open objGen website (link included) and paste the ouput in the new window.
 5. Change 'game_name' and 'category_name' into relevant names.
