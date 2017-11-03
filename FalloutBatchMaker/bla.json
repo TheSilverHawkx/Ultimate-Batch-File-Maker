@@ -1,0 +1,1011 @@
+{
+  "Game": "Fallout4",
+  "Variables": {
+    "Weapons": [
+      {
+        "Laser": [
+          {
+            "name": "Laser Musket",
+            "code": "0001dacf"
+          },
+          {
+            "name": "Laser Pistol",
+            "code": "0009983b"
+          },
+          {
+            "name": "Laser Rifle",
+            "code": "0009983b"
+          },
+          {
+            "name": "Laser Gatling",
+            "code": "000e27bc"
+          }
+        ]
+      },
+      {
+        "Other": [
+          {
+            "name": "Gamma Gun",
+            "code": "000ddb7c"
+          },
+          {
+            "name": "Gauss Rifle",
+            "code": "000d1eb0"
+          },
+          {
+            "name": "Alien Blaster Pistol",
+            "code": "000ff995"
+          },
+          {
+            "name": "Cryolator",
+            "code": "00171b2b"
+          }
+        ]
+      },
+      {
+        "Thrown": [
+          {
+            "name": "Cyro Grenade",
+            "code": "000eebed"
+          },
+          {
+            "name": "Frag Grenade",
+            "code": "000eebed"
+          },
+          {
+            "name": "Gas Grenade",
+            "code": "000e98e5"
+          },
+          {
+            "name": "Nuka Grenade",
+            "code": "000e5750"
+          },
+          {
+            "name": "Molotov Cocktail",
+            "code": "0010c3c6"
+          },
+          {
+            "name": "Baseball Grenade",
+            "code": "00107bd6"
+          },
+          {
+            "name": "Pulse Grenade",
+            "code": "000ff21f"
+          },
+          {
+            "name": "Plasma Grenade",
+            "code": "0010a33d"
+          }
+        ]
+      },
+      {
+        "Mines": [
+          {
+            "name": "Nuke Mine",
+            "code": "0010a340"
+          },
+          {
+            "name": "Bottlecap Mine",
+            "code": "0010771f"
+          },
+          {
+            "name": "Frag Mine",
+            "code": "000e56c2"
+          },
+          {
+            "name": "Plasma Mine",
+            "code": "0010a342"
+          },
+          {
+            "name": "Pulse Mine",
+            "code": "0010a340"
+          },
+          {
+            "name": "Cryo Mine",
+            "code": "0010c669"
+          }
+        ]
+      },
+      {
+        "Blade": [
+          {
+            "name": "Chainsaw Sword",
+            "code": "00147be4"
+          },
+          {
+            "name": "Combat Knife",
+            "code": "000913ca"
+          },
+          {
+            "name": "Knife",
+            "code": "00062aa3"
+          },
+          {
+            "name": "Machete",
+            "code": "00033fe0"
+          },
+          {
+            "name": "Revolutionary Sword",
+            "code": "00143ab5"
+          },
+          {
+            "name": "Ripper",
+            "code": "000fa2f6"
+          },
+          {
+            "name": "Shishkebab",
+            "code": "000fa2fb"
+          },
+          {
+            "name": "Switchblade",
+            "code": "000fdc81"
+          }
+        ]
+      },
+      {
+        "Blunt": [
+          {
+            "name": "Baseball Bat",
+            "code": "0008e736"
+          },
+          {
+            "name": "Board",
+            "code": "0005c250"
+          },
+          {
+            "name": "PoolCue",
+            "code": "000fa3e8"
+          },
+          {
+            "name": "Security Baton",
+            "code": "0008c14d"
+          },
+          {
+            "name": "Super Sledge hammer",
+            "code": "000ff964"
+          },
+          {
+            "name": "Sledge Hammer",
+            "code": "000e7ab9"
+          },
+          {
+            "name": "Walking Cane",
+            "code": "000fdc7d"
+          },
+          {
+            "name": "Tire Iron",
+            "code": "00185d25"
+          }
+        ]
+      },
+      {
+        "Fist": [
+          {
+            "name": "Deathclaw Gauntlet",
+            "code": "000d8576"
+          },
+          {
+            "name": "Knuckles",
+            "code": "0005524b"
+          },
+          {
+            "name": "Power Fist",
+            "code": "0011b336"
+          },
+          {
+            "name": "Boxing Glove",
+            "code": "0016498f"
+          }
+        ]
+      },
+      {
+        "Pistols": [
+          {
+            "name": ".44 Pistol",
+            "code": "ce97d"
+          },
+          {
+            "name": "10mm Pistol",
+            "code": "04822"
+          },
+          {
+            "name": "Flare Gun",
+            "code": "169632"
+          },
+          {
+            "name": "Pipe Gun",
+            "code": "00024f55"
+          },
+          {
+            "name": "Pipe Bolt-  Action",
+            "code": "0014831a"
+          },
+          {
+            "name": "Pipe revolver",
+            "code": "14831b"
+          }
+        ]
+      },
+      {
+        "Rifles": [
+          {
+            "name": "Assault Rifle",
+            "code": "0463f"
+          },
+          {
+            "name": "Combat Rifle",
+            "code": "df42e"
+          },
+          {
+            "name": "Gauss Rifle",
+            "code": "000d1eb0"
+          },
+          {
+            "name": "Hunting Rifle",
+            "code": "4f46a"
+          },
+          {
+            "name": "Railway Rifle",
+            "code": "000fe268"
+          },
+          {
+            "name": "Submachine Gun",
+            "code": "0015b043"
+          },
+          {
+            "name": "Syringer",
+            "code": "0014d09e"
+          }
+        ]
+      },
+      {
+        "Shotguns": [
+          {
+            "name": "Double-Barrle Shotgun",
+            "code": "5df30"
+          },
+          {
+            "name": "Combat Shotgun",
+            "code": "14831c"
+          }
+        ]
+      },
+      {
+        "HeavyWeapons": [
+          {
+            "name": "Fat Man",
+            "code": "bd56f"
+          },
+          {
+            "name": "Flamer",
+            "code": "e5881"
+          },
+          {
+            "name": "Junk Jet",
+            "code": "e942b"
+          },
+          {
+            "name": "Minigun",
+            "code": "1f669"
+          },
+          {
+            "name": "Missile Launcher",
+            "code": "3f6f8"
+          }
+        ]
+      }
+    ],
+    "Actors": [
+      {
+        "name": "Ghoul",
+        "code": "758AD"
+      },
+      {
+        "name": "Raider",
+        "code": "4AF21"
+      },
+      {
+        "name": "Super Mutant",
+        "code": "A1471"
+      },
+      {
+        "name": "Brahmin",
+        "code": "20480"
+      },
+      {
+        "name": "MoleRat",
+        "code": "1A966"
+      },
+      {
+        "name": "Mongle",
+        "code": "1D1SA"
+      },
+      {
+        "name": "Mutant Hound",
+        "code": "9OC37"
+      },
+      {
+        "name": "Rad Stag",
+        "code": "8CA3C"
+      },
+      {
+        "name": "Yao Guai",
+        "code": "AOF33"
+      },
+      {
+        "name": "Death Claw",
+        "code": "1DB4C"
+      },
+      {
+        "name": "Bloat Fly",
+        "code": "29469"
+      },
+      {
+        "name": "Blood Bug",
+        "code": "28669"
+      },
+      {
+        "name": "Mirelurk",
+        "code": "24002"
+      },
+      {
+        "name": "Stingwing",
+        "code": "5FBB3"
+      },
+      {
+        "name": "Radroach",
+        "code": "475DF"
+      },
+      {
+        "name": "Rad Scorpion",
+        "code": "636AA"
+      },
+      {
+        "name": "Alien",
+        "code": "184C51"
+      },
+      {
+        "name": "Glowing Mole",
+        "code": "ff0044E0"
+      },
+      {
+        "name": "Dog",
+        "code": "1d162"
+      }
+    ],
+    "Ammo": [
+      {
+        "name": ".308 Ammo",
+        "code": "0001f66b"
+      },
+      {
+        "name": ".38 Ammo",
+        "code": "0004ce87"
+      },
+      {
+        "name": ".44 Ammo",
+        "code": "0009221c"
+      },
+      {
+        "name": ".45 Ammo",
+        "code": "0001f66a"
+      },
+      {
+        "name": ".50 Caliber Ammo",
+        "code": "0001f279"
+      },
+      {
+        "name": "10mm Ammo",
+        "code": "0001f276"
+      },
+      {
+        "name": "5mm Ammo",
+        "code": "0001f66c"
+      },
+      {
+        "name": "5.56mm Ammo",
+        "code": "0001f278"
+      },
+      {
+        "name": "Shotgun Shell",
+        "code": "0001f673"
+      },
+      {
+        "name": "Railway Spike",
+        "code": "000fe269"
+      },
+      {
+        "name": "Cryo Cell",
+        "code": "0018abe2"
+      },
+      {
+        "name": "Energy Cell",
+        "code": "000c1897"
+      },
+      {
+        "name": "Plasma Cartridge",
+        "code": "0001dbb7"
+      },
+      {
+        "name": "Fusion Core",
+        "code": "00075fe4"
+      },
+      {
+        "name": "Fusion Cell",
+        "code": "000c1897"
+      },
+      {
+        "name": "2mm EC",
+        "code": "0018abdf"
+      },
+      {
+        "name": "Gamma Round",
+        "code": "000df279"
+      },
+      {
+        "name": "Alien Blaster Round",
+        "code": "001025aa"
+      },
+      {
+        "name": "Missile",
+        "code": "000caba3"
+      },
+      {
+        "name": "Flare",
+        "code": "001025ae"
+      },
+      {
+        "name": "Junk",
+        "code": "000e942c"
+      },
+      {
+        "name": "Cannonball",
+        "code": "000fd11c"
+      }
+    ],
+    "Resources": [
+      {
+        "name": "Acid",
+        "code": "001BF72D"
+      },
+      {
+        "name": "Adhesive",
+        "code": "001BF72E"
+      },
+      {
+        "name": "Aluminum",
+        "code": "0006907A"
+      },
+      {
+        "name": "Antiseptic",
+        "code": "001BF72F"
+      },
+      {
+        "name": "Asbestos",
+        "code": "000AEC5C"
+      },
+      {
+        "name": "Ballistic Fiber",
+        "code": "000AEC5B"
+      },
+      {
+        "name": "Bone",
+        "code": "000AEC5D"
+      },
+      {
+        "name": "Ceramic",
+        "code": "000AEC5E"
+      },
+      {
+        "name": "Circuitry",
+        "code": "0006907B"
+      },
+      {
+        "name": "Cloth",
+        "code": "000AEC5F"
+      },
+      {
+        "name": "ConCrete",
+        "code": "00106D99"
+      },
+      {
+        "name": "Copper",
+        "code": "0006907C"
+      },
+      {
+        "name": "Cork",
+        "code": "000AEC60"
+      },
+      {
+        "name": "Crystal",
+        "code": "0006907D"
+      },
+      {
+        "name": "Fertilizer",
+        "code": "001BF730"
+      },
+      {
+        "name": "Fiber Optics",
+        "code": "00069087"
+      },
+      {
+        "name": "Fiberglass",
+        "code": "000AEC61"
+      },
+      {
+        "name": "Gears",
+        "code": "0006907E"
+      },
+      {
+        "name": "Glass",
+        "code": "00069085"
+      },
+      {
+        "name": "Gold",
+        "code": "000AEC62"
+      },
+      {
+        "name": "Lead",
+        "code": "000AEC63"
+      },
+      {
+        "name": "Leather",
+        "code": "000AEC64"
+      },
+      {
+        "name": "Nuclear Material",
+        "code": "00069086"
+      },
+      {
+        "name": "Oil",
+        "code": "001BF732"
+      },
+      {
+        "name": "Plastic",
+        "code": "0006907F"
+      },
+      {
+        "name": "Rubber",
+        "code": "00106D98"
+      },
+      {
+        "name": "Screw",
+        "code": "00069081"
+      },
+      {
+        "name": "Silver",
+        "code": "000AEC66"
+      },
+      {
+        "name": "Spring",
+        "code": "00069082"
+      },
+      {
+        "name": "Steel",
+        "code": "000731A4"
+      },
+      {
+        "name": "Wood",
+        "code": "000731A3"
+      }
+    ],
+    "Crops": [
+      {
+        "name": "Carrot",
+        "code": "000F742E"
+      },
+      {
+        "name": "Corn",
+        "code": "000330F8"
+      },
+      {
+        "name": "Gourd",
+        "code": "000EF24D"
+      },
+      {
+        "name": "Melon",
+        "code": "000FAFEB"
+      },
+      {
+        "name": "Mutfruit",
+        "code": "000d3EA7"
+      },
+      {
+        "name": "Razorgrain",
+        "code": "000E0043"
+      },
+      {
+        "name": "Tato",
+        "code": "009DCC4"
+      }
+    ],
+    "Consumables": [
+      {
+        "name": "Bloafy Meat",
+        "code": "000330f4"
+      },
+      {
+        "name": "Brahmin Meat",
+        "code": "0004a13f"
+      },
+      {
+        "name": "Cram",
+        "code": "000330ee"
+      },
+      {
+        "name": "Deathclaw Meat",
+        "code": "00074d0e"
+      },
+      {
+        "name": "Porks & Beans",
+        "code": "000330f0"
+      },
+      {
+        "name": "Salsbury Steak",
+        "code": "000366ba"
+      },
+      {
+        "name": "Sugar Bombs",
+        "code": "000330f2"
+      },
+      {
+        "name": "Blood Pack",
+        "code": "00052409"
+      },
+      {
+        "name": "Dirty Water",
+        "code": "000366bf"
+      },
+      {
+        "name": "Nuka Cola",
+        "code": "0004835d"
+      },
+      {
+        "name": "Stimpack",
+        "code": "00023736"
+      },
+      {
+        "name": "Nuka Quantum",
+        "code": "0004835f"
+      },
+      {
+        "name": "Purified Water",
+        "code": "000366c0"
+      },
+      {
+        "name": "Beer",
+        "code": "0011ea93"
+      },
+      {
+        "name": "Whisky",
+        "code": "000366c1"
+      },
+      {
+        "name": "Wine",
+        "code": "000366c2"
+      },
+      {
+        "name": "Buffout",
+        "code": "00033778"
+      },
+      {
+        "name": "Jet",
+        "code": "000366c5"
+      },
+      {
+        "name": "Med X",
+        "code": "00033779"
+      },
+      {
+        "name": "Mentats",
+        "code": "0003377b"
+      },
+      {
+        "name": "Psycho",
+        "code": "0003377d"
+      },
+      {
+        "name": "Rad X",
+        "code": "00024057"
+      },
+      {
+        "name": "Rad Away",
+        "code": "00023742"
+      }
+    ],
+    "Armor": [
+      {
+        "BodyArmor": [
+          {
+            "name": "Raider chest piece",
+            "code": "0018e415"
+          },
+          {
+            "name": "Raider left arm",
+            "code": "0018e411"
+          },
+          {
+            "name": "Raider right arm",
+            "code": "0018e413"
+          },
+          {
+            "name": "Raider left leg",
+            "code": "0018e40f"
+          },
+          {
+            "name": "Raider right leg",
+            "code": "0018e40d"
+          },
+          {
+            "name": "Leather chest piece",
+            "code": "0007b9c6"
+          },
+          {
+            "name": "Leather left arm",
+            "code": "0007b9c7"
+          },
+          {
+            "name": "Leather right arm",
+            "code": "0007b9c3"
+          },
+          {
+            "name": "Leather left leg",
+            "code": "0007b9c4"
+          },
+          {
+            "name": "Leather right leg",
+            "code": "0007b9c5"
+          },
+          {
+            "name": "Metal helmet",
+            "code": "000787d3"
+          },
+          {
+            "name": "Metal chest piece",
+            "code": "000536c4"
+          },
+          {
+            "name": "Metal left arm",
+            "code": "0004b933"
+          },
+          {
+            "name": "Metal right arm",
+            "code": "000536c1"
+          },
+          {
+            "name": "Metal left leg",
+            "code": "000536c2"
+          },
+          {
+            "name": "Metal right leg",
+            "code": "000536c3"
+          },
+          {
+            "name": "Combat armor helmet",
+            "code": "0011e2c8"
+          },
+          {
+            "name": "Combat armor left arm",
+            "code": "0011d3c3"
+          },
+          {
+            "name": "Combat armor left arm",
+            "code": "0011d3c7"
+          },
+          {
+            "name": "Combat armor right arm",
+            "code": "0011d3c6"
+          },
+          {
+            "name": "Combat armor left leg",
+            "code": "0011d3c5"
+          },
+          {
+            "name": "Combat armor right leg",
+            "code": "0011d3c4"
+          },
+          {
+            "name": "Synth helmet",
+            "code": "00187976"
+          },
+          {
+            "name": "Synth field helmet",
+            "code": "0018796a"
+          },
+          {
+            "name": "Synth chest piece",
+            "code": "00187974"
+          },
+          {
+            "name": "Synth left arm",
+            "code": "0018796c"
+          },
+          {
+            "name": "Synth right arm",
+            "code": "0018796e"
+          },
+          {
+            "name": "Synth left leg",
+            "code": "00187972"
+          },
+          {
+            "name": "Synth right leg",
+            "code": "00187970"
+          },
+          {
+            "name": "DC guard helm",
+            "code": "000af0f6"
+          },
+          {
+            "name": "DC guard heavy helmet",
+            "code": "000af0f7"
+          },
+          {
+            "name": "DC guard umpire's pads",
+            "code": "000af0ee"
+          },
+          {
+            "name": "DC guard left arm armor",
+            "code": "000af0f1"
+          },
+          {
+            "name": "DC guard right arm armor",
+            "code": "000af0f2"
+          },
+          {
+            "name": "DC guard left shoulder",
+            "code": "000af0ea"
+          },
+          {
+            "name": "DC guard right shoulder",
+            "code": "000af0ed"
+          },
+          {
+            "name": "DC guard left forearm",
+            "code": "000af0eb"
+          },
+          {
+            "name": "DC guard right forearm",
+            "code": "000af0ec"
+          },
+          {
+            "name": "Vault-Tec security helmet (clean)",
+            "code": "001d8853"
+          },
+          {
+            "name": "Vault-Tec security helmet (dirty)",
+            "code": "000821b6"
+          },
+          {
+            "name": "Security helmet",
+            "code": "00156c0b"
+          },
+          {
+            "name": "Vault 81 security armor (dirty)",
+            "code": "00154f10"
+          },
+          {
+            "name": "Vault-Tec security armor (Vault 111 dirty)",
+            "code": "000821b4"
+          },
+          {
+            "name": "Vault-Tec security armor (Vault 111 clean)",
+            "code": "001d884f"
+          },
+          {
+            "name": "Covenant security armor",
+            "code": "00156c0d"
+          }
+        ]
+      },
+      {
+        "clothing": [
+          {
+            "name": "BOS officer uniform",
+            "code": "00134294"
+          },
+          {
+            "name": "BOS uniform orange",
+            "code": "000dedeb"
+          },
+          {
+            "name": "BOS uniform grey",
+            "code": "002223e3"
+          },
+          {
+            "name": "Corset",
+            "code": "001921d6"
+          },
+          {
+            "name": "Flannel shirt and jeans",
+            "code": "00117eb9"
+          },
+          {
+            "name": "Gunner flannel shirt and jeans",
+            "code": "0000223c"
+          },
+          {
+            "name": "Gunner guard outfit",
+            "code": "00223cfa"
+          },
+          {
+            "name": "Gunner harness",
+            "code": "00223cfb"
+          },
+          {
+            "name": "Gunner leather",
+            "code": "00223cfc"
+          },
+          {
+            "name": "Harness armor",
+            "code": "0008158d"
+          },
+          {
+            "name": "Long Johns",
+            "code": "00019568"
+          },
+          {
+            "name": "Raider leathers",
+            "code": "0018e3f7"
+          },
+          {
+            "name": "Road leathers",
+            "code": "000af0e2"
+          },
+          {
+            "name": "Synth uniform",
+            "code": "0012b91d"
+          }
+        ]
+      },
+      {
+        "HeadWear": [
+          {
+            "name": "Assault gas mask",
+            "code": "0007239e"
+          },
+          {
+            "name": "Brotherhood of Steel hood",
+            "code": "000e1a39"
+          },
+          {
+            "name": "Brown flight helmet",
+            "code": "000d4166"
+          },
+          {
+            "name": "Flight helmet",
+            "code": "000e1af8"
+          },
+          {
+            "name": "Gas mask",
+            "code": "000787d8"
+          },
+          {
+            "name": "Gas mask with goggles",
+            "code": "001184c1"
+          },
+          {
+            "name": "Green hood",
+            "code": "000787ec"
+          },
+          {
+            "name": "Sack hood",
+            "code": "0018e417"
+          },
+          {
+            "name": "Sack hood with hoses",
+            "code": "0018e419"
+          },
+          {
+            "name": "Sack hood with straps",
+            "code": "0018e41b"
+          },
+          {
+            "name": "Yellow flight helmet",
+            "code": "00042565"
+          }
+        ]
+      }
+    ]
+  }
+}

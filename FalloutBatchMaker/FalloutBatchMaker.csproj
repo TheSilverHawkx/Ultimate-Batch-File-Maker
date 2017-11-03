@@ -7,10 +7,25 @@
     <ProjectGuid>{CFA8A488-4DE0-4171-9F38-C8ECB2B9573B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FalloutBatchMaker</RootNamespace>
-    <AssemblyName>FalloutBatchMaker</AssemblyName>
+    <RootNamespace>UltimateBatchFileMaker</RootNamespace>
+    <AssemblyName>Ultimate Batch File Maker</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,11 +47,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>fallout_new_vegas_die_icon_by_shoedude-d31dqhf.ico</ApplicationIcon>
+    <ApplicationIcon>file_pen_write_48_copy_Ohs_icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Management.Automation, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\System.Management.Automation.dll.10.0.10586.0\lib\net40\System.Management.Automation.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,23 +68,62 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Actors.cs" />
-    <Compile Include="Classes\Weaponry\Explosives.cs" />
-    <Compile Include="Classes\Functionality.cs" />
-    <Compile Include="Classes\Items.cs" />
-    <Compile Include="Classes\Weaponry\Energy.cs" />
-    <Compile Include="Classes\Weaponry\Melee.cs" />
-    <Compile Include="Classes\Weaponry\Projectiles.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="AssociationPopup.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="AssociationPopup.Designer.cs">
+      <DependentUpon>AssociationPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateDefPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateDefPopup.Designer.cs">
+      <DependentUpon>CreateDefPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateResFormBasic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateResFormBasic.Designer.cs">
+      <DependentUpon>CreateResFormBasic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateResFormAdv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateResFormAdv.Designer.cs">
+      <DependentUpon>CreateResFormAdv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Definitions.cs" />
+    <Compile Include="HelpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelpForm.Designer.cs">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="AssociationPopup.resx">
+      <DependentUpon>AssociationPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateDefPopup.resx">
+      <DependentUpon>CreateDefPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateResFormBasic.resx">
+      <DependentUpon>CreateResFormBasic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateResFormAdv.resx">
+      <DependentUpon>CreateResFormAdv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpForm.resx">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -73,7 +133,9 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\DataSources\Item_list_Code.datasource" />
     <None Include="Properties\DataSources\Item_List_Values.datasource" />
     <None Include="Properties\Settings.settings">
@@ -90,7 +152,19 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fallout_new_vegas_die_icon_by_shoedude-d31dqhf.ico" />
+    <Content Include="file_pen_write_48_copy_Ohs_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

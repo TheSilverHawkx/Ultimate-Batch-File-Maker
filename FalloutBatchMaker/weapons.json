@@ -1,0 +1,293 @@
+{
+	"Game": "Fallout 4",
+	"Weapons": [
+      {
+        "Laser": [
+          {
+            "name": "Laser Musket",
+            "code": "0001dacf"
+          },
+          {
+            "name": "Laser Pistol",
+            "code": "0009983b"
+          },
+          {
+            "name": "Laser Rifle",
+            "code": "0009983b"
+          },
+          {
+            "name": "Laser Gatling",
+            "code": "000e27bc"
+          }
+        ]
+      },
+      {
+        "Other": [
+          {
+            "name": "Gamma Gun",
+            "code": "000ddb7c"
+          },
+          {
+            "name": "Alien Blaster Pistol",
+            "code": "000ff995"
+          },
+          {
+            "name": "Cryolator",
+            "code": "00171b2b"
+          }
+        ]
+      },
+      {
+        "Thrown": [
+          {
+            "name": "Cyro Grenade",
+            "code": "000eebed"
+          },
+          {
+            "name": "Frag Grenade",
+            "code": "000eebed"
+          },
+          {
+            "name": "Gas Grenade",
+            "code": "000e98e5"
+          },
+          {
+            "name": "Nuka Grenade",
+            "code": "000e5750"
+          },
+          {
+            "name": "Molotov Cocktail",
+            "code": "0010c3c6"
+          },
+          {
+            "name": "Baseball Grenade",
+            "code": "00107bd6"
+          },
+          {
+            "name": "Pulse Grenade",
+            "code": "000ff21f"
+          },
+          {
+            "name": "Plasma Grenade",
+            "code": "0010a33d"
+          }
+        ]
+      },
+      {
+        "Mines": [
+          {
+            "name": "Nuke Mine",
+            "code": "0010a340"
+          },
+          {
+            "name": "Bottlecap Mine",
+            "code": "0010771f"
+          },
+          {
+            "name": "Frag Mine",
+            "code": "000e56c2"
+          },
+          {
+            "name": "Plasma Mine",
+            "code": "0010a342"
+          },
+          {
+            "name": "Pulse Mine",
+            "code": "0010a340"
+          },
+          {
+            "name": "Cryo Mine",
+            "code": "0010c669"
+          }
+        ]
+      },
+      {
+        "Blade": [
+          {
+            "name": "Chainsaw Sword",
+            "code": "00147be4"
+          },
+          {
+            "name": "Combat Knife",
+            "code": "000913ca"
+          },
+          {
+            "name": "Knife",
+            "code": "00062aa3"
+          },
+          {
+            "name": "Machete",
+            "code": "00033fe0"
+          },
+          {
+            "name": "Revolutionary Sword",
+            "code": "00143ab5"
+          },
+          {
+            "name": "Ripper",
+            "code": "000fa2f6"
+          },
+          {
+            "name": "Shishkebab",
+            "code": "000fa2fb"
+          },
+          {
+            "name": "Switchblade",
+            "code": "000fdc81"
+          }
+        ]
+      },
+      {
+        "Blunt": [
+          {
+            "name": "Baseball Bat",
+            "code": "0008e736"
+          },
+          {
+            "name": "Board",
+            "code": "0005c250"
+          },
+          {
+            "name": "PoolCue",
+            "code": "000fa3e8"
+          },
+          {
+            "name": "Security Baton",
+            "code": "0008c14d"
+          },
+          {
+            "name": "Super Sledge hammer",
+            "code": "000ff964"
+          },
+          {
+            "name": "Sledge Hammer",
+            "code": "000e7ab9"
+          },
+          {
+            "name": "Walking Cane",
+            "code": "000fdc7d"
+          },
+          {
+            "name": "Tire Iron",
+            "code": "00185d25"
+          }
+        ]
+      },
+      {
+        "Fist": [
+          {
+            "name": "Deathclaw Gauntlet",
+            "code": "000d8576"
+          },
+          {
+            "name": "Knuckles",
+            "code": "0005524b"
+          },
+          {
+            "name": "Power Fist",
+            "code": "0011b336"
+          },
+          {
+            "name": "Boxing Glove",
+            "code": "0016498f"
+          }
+        ]
+      },
+      {
+        "Pistols": [
+          {
+            "name": ".44 Pistol",
+            "code": "ce97d"
+          },
+          {
+            "name": "10mm Pistol",
+            "code": "04822"
+          },
+          {
+            "name": "Flare Gun",
+            "code": "169632"
+          },
+          {
+            "name": "Pipe Gun",
+            "code": "00024f55"
+          },
+          {
+            "name": "Pipe Bolt-  Action",
+            "code": "0014831a"
+          },
+          {
+            "name": "Pipe revolver",
+            "code": "14831b"
+          }
+        ]
+      },
+      {
+        "Rifles": [
+          {
+            "name": "Assault Rifle",
+            "code": "0463f"
+          },
+          {
+            "name": "Combat Rifle",
+            "code": "df42e"
+          },
+          {
+            "name": "Gauss Rifle",
+            "code": "000d1eb0"
+          },
+          {
+            "name": "Hunting Rifle",
+            "code": "4f46a"
+          },
+          {
+            "name": "Railway Rifle",
+            "code": "000fe268"
+          },
+          {
+            "name": "Submachine Gun",
+            "code": "0015b043"
+          },
+          {
+            "name": "Syringer",
+            "code": "0014d09e"
+          }
+        ]
+      },
+      {
+        "Shotguns": [
+          {
+            "name": "Double-Barrle Shotgun",
+            "code": "5df30"
+          },
+          {
+            "name": "Combat Shotgun",
+            "code": "14831c"
+          }
+        ]
+      },
+      {
+        "Heavy Weapons": [
+          {
+            "name": "Fat Man",
+            "code": "bd56f"
+          },
+          {
+            "name": "Flamer",
+            "code": "e5881"
+          },
+          {
+            "name": "Junk Jet",
+            "code": "e942b"
+          },
+          {
+            "name": "Minigun",
+            "code": "1f669"
+          },
+          {
+            "name": "Missile Launcher",
+            "code": "3f6f8"
+          }
+        ]
+      }
+    ]
+}
