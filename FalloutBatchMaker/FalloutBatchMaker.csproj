@@ -107,6 +107,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResourceDetectionPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResourceDetectionPopup.Designer.cs">
+      <DependentUpon>ResourceDetectionPopup.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AssociationPopup.resx">
       <DependentUpon>AssociationPopup.cs</DependentUpon>
     </EmbeddedResource>
@@ -135,6 +141,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ResourceDetectionPopup.resx">
+      <DependentUpon>ResourceDetectionPopup.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\Item_list_Code.datasource" />
     <None Include="Properties\DataSources\Item_List_Values.datasource" />
