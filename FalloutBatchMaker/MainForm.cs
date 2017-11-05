@@ -12,6 +12,7 @@ namespace UltimateBatchFileMaker
     public partial class MainForm : Form
     {
         OpenFileDialog fd = new OpenFileDialog();
+        FolderBrowserDialog fbd = new FolderBrowserDialog();
         private Definitions definition;
         private List<JObject> master_values = new List<JObject>();
         private List<string[]> exportList = new List<string[]>();
@@ -19,43 +20,6 @@ namespace UltimateBatchFileMaker
         public MainForm()
         {
             InitializeComponent();
-
-            fd.Filter = "Definition file | *definitions*.json";
-            fd.Title = "Please select Definitions file";
-
-            if (fd.ShowDialog() == DialogResult.OK)
-            {
-                string raw_json = System.IO.File.ReadAllText(fd.FileName);
-
-                try
-                {
-                    JObject parsed_json = JObject.Parse(raw_json);
-                    if (parsed_json["Definitions"].HasValues)
-                    {
-
-                        definition = new Definitions(
-                            parsed_json["Game"].ToString(),
-                            parsed_json["Definitions"]["addItem"].ToString(),
-                            parsed_json["Definitions"]["setValue"].ToString(),
-                            parsed_json["Definitions"]["addPerk"].ToString(),
-                            parsed_json["Definitions"]["spawnNPC"].ToString(),
-                            parsed_json["Definitions"]["setLevel"].ToString(),
-                            parsed_json["Definitions"]["mapCommand"].ToString()
-                            );
-                        this.Text = this.Text + " - " + definition.GameName;
-                    }
-                }
-                catch
-                {
-                    MessageBox.Show("Failed to create definitions!" + Environment.NewLine + "Check definitions file syntax.");
-                    Close();
-                }
-            }
-            else
-            {
-                MessageBox.Show("No definitions file selected, exiting");
-                this.Close();
-            }
         }
 
         private void loadFileToolStripMenuItem_Click(object sender, EventArgs e)
@@ -489,6 +453,113 @@ namespace UltimateBatchFileMaker
                         + "Version v1.0" + Environment.NewLine
                         + "This Program is made for free use on Nexus Mods";
             MessageBox.Show(text);
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            fd.Filter = "Definition file | *definitions*.json";
+            fd.Title = "Please select Definitions file";
+
+            if (fd.ShowDialog() == DialogResult.OK)
+            {
+                string raw_json = System.IO.File.ReadAllText(fd.FileName);
+
+                try
+                {
+                    JObject parsed_json = JObject.Parse(raw_json);
+                    if (parsed_json["Definitions"].HasValues)
+                    {
+
+                        definition = new Definitions(
+                            parsed_json["Game"].ToString(),
+                            parsed_json["Definitions"]["addItem"].ToString(),
+                            parsed_json["Definitions"]["setValue"].ToString(),
+                            parsed_json["Definitions"]["addPerk"].ToString(),
+                            parsed_json["Definitions"]["spawnNPC"].ToString(),
+                            parsed_json["Definitions"]["setLevel"].ToString(),
+                            parsed_json["Definitions"]["mapCommand"].ToString()
+                            );
+                        this.Text = this.Text + " - " + definition.GameName;
+                    }
+                }
+                catch
+                {
+                    MessageBox.Show("Failed to create definitions!" + Environment.NewLine + "Check definitions file syntax.");
+                    Close();
+                }
+            }
+            else
+            {
+                MessageBox.Show("No definitions file selected, exiting.");
+                this.Close();
+            }
+
+            fbd.Description = "Select Resources folder";
+            if (fbd.ShowDialog() == DialogResult.OK)
+            {
+                using (ResourceDetectionPopup rdp = new ResourceDetectionPopup())
+                {
+                    foreach (var file in Directory.GetFiles(fbd.SelectedPath))
+                    {
+                        rdp.detectedFiles.Add(file);
+                    }
+                    if (rdp.ShowDialog() == DialogResult.OK)
+                    {
+                        List<string> importedFiles = rdp.importList;
+                        foreach (string filepath in importedFiles)
+                        {
+                            string raw_json = System.IO.File.ReadAllText(filepath);
+
+
+                            JObject parsed_json = JObject.Parse(raw_json);
+
+                            if (parsed_json["Game"].Value<string>() == definition.GameName)
+                            {
+                                string category_name = parsed_json.Properties().Select(p => p.Name).ToList()[1];
+
+
+                                if (parsed_json[category_name].First().Count() != 2)
+                                {
+                                    foreach (JObject child in parsed_json[category_name].Children<JObject>())
+                                    {
+                                        string item_category = child.Properties().Select(p => p.Name).ToList()[0];
+
+                                        foreach (JObject item in child.Children().First().Values())
+                                        {
+                                            item.Add("itemCategory", item_category);
+                                            master_values.Add(item);
+                                        }
+                                    }
+                                    DataTable dt = populateTable(master_values);
+                                    createTab(category_name, dt);
+                                    master_values.Clear();
+                                }
+                                else
+                                {
+                                    foreach (JObject child in parsed_json[category_name].Children<JObject>())
+                                    {
+                                        child.Add("itemCategory", category_name);
+                                        master_values.Add(child);
+
+                                    }
+                                    DataTable dt = populateTable(master_values);
+                                    createTab(category_name, dt);
+                                    master_values.Clear();
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show(filepath + " does not belong to " + definition.GameName);
+                            }
+                        }
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("No Resource folder selected, exiting.");
+                this.Close();
+            }
         }
     }
 
