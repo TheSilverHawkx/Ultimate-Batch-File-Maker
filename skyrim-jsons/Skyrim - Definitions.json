@@ -1,0 +1,11 @@
+{
+  "Game": "Skyrim",
+  "Definitions": {
+    "addItem": "player.additem",
+    "setValue": "player.setValue",
+    "addPerk": "player.addPerk",
+    "spawnNPC": "player.placeatme",
+    "setLevel": "setlevel",
+    "mapCommand": "tmm"
+  }
+}
