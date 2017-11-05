@@ -61,6 +61,7 @@
             this.VarRem_btn = new System.Windows.Forms.Button();
             this.VarAdd_btn = new System.Windows.Forms.Button();
             this.Map_grpbx = new System.Windows.Forms.GroupBox();
+            this.loadFolderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.Player_grpbx.SuspendLayout();
             this.Perk_grpbx.SuspendLayout();
@@ -104,6 +105,7 @@
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.loadCategoryToolStripMenuItem,
+            this.loadFolderToolStripMenuItem,
             this.clearAllToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
@@ -112,14 +114,14 @@
             // loadCategoryToolStripMenuItem
             // 
             this.loadCategoryToolStripMenuItem.Name = "loadCategoryToolStripMenuItem";
-            this.loadCategoryToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.loadCategoryToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.loadCategoryToolStripMenuItem.Text = "Load Resource";
             this.loadCategoryToolStripMenuItem.Click += new System.EventHandler(this.loadFileToolStripMenuItem_Click);
             // 
             // clearAllToolStripMenuItem
             // 
             this.clearAllToolStripMenuItem.Name = "clearAllToolStripMenuItem";
-            this.clearAllToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.clearAllToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.clearAllToolStripMenuItem.Text = "Clear All";
             this.clearAllToolStripMenuItem.Click += new System.EventHandler(this.clearAllToolStripMenuItem_Click);
             // 
@@ -389,6 +391,13 @@
             this.Map_grpbx.TabStop = false;
             this.Map_grpbx.Text = "Map";
             // 
+            // loadFolderToolStripMenuItem
+            // 
+            this.loadFolderToolStripMenuItem.Name = "loadFolderToolStripMenuItem";
+            this.loadFolderToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.loadFolderToolStripMenuItem.Text = "Load Folder";
+            this.loadFolderToolStripMenuItem.Click += new System.EventHandler(this.loadFolderToolStripMenuItem_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -457,5 +466,6 @@
         private System.Windows.Forms.ToolStripMenuItem versionToolStripMenuItem;
         private System.Windows.Forms.Button PerkAdd_btn;
         private System.Windows.Forms.ToolStripMenuItem createResourceFileAdvToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem loadFolderToolStripMenuItem;
     }
 }

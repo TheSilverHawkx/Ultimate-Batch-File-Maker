@@ -73,6 +73,7 @@
             this.MinimizeBox = false;
             this.Name = "ResourceDetectionPopup";
             this.Text = "ResourceDetectionPopup";
+            this.Load += new System.EventHandler(this.ResourceDetectionPopup_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

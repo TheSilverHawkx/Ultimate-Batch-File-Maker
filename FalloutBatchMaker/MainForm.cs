@@ -177,13 +177,23 @@ namespace UltimateBatchFileMaker
 
         private void createTab(string category, DataTable dt)
         {
+            foreach (TabPage item in tabControl1.TabPages)
+            {
+                if (item.Text == category)
+                {
+                    MessageBox.Show(category + " Already exists, skipping.");
+                    return;
+                }
+            }
+
             if (!associateCategory(category))
             {
                 return;
             }
+
             TabPage tp = new TabPage(category);
             tabControl1.Controls.Add(tp);
-
+            
             DataGridView dgv = new DataGridView();
             dgv.Dock = DockStyle.Fill;
             dgv.Name = category + "DGView";
@@ -493,72 +503,86 @@ namespace UltimateBatchFileMaker
                 MessageBox.Show("No definitions file selected, exiting.");
                 this.Close();
             }
+        }
 
+        private void loadFolderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
             fbd.Description = "Select Resources folder";
+            List<string> importedFiles = new List<string>();
             if (fbd.ShowDialog() == DialogResult.OK)
             {
                 using (ResourceDetectionPopup rdp = new ResourceDetectionPopup())
                 {
                     foreach (var file in Directory.GetFiles(fbd.SelectedPath))
                     {
-                        rdp.detectedFiles.Add(file);
+                        if (!file.ToLower().Contains("definition"))
+                        {
+                            rdp.detectedFiles.Add(file);
+                        }
                     }
+                    
                     if (rdp.ShowDialog() == DialogResult.OK)
                     {
-                        List<string> importedFiles = rdp.importList;
-                        foreach (string filepath in importedFiles)
-                        {
-                            string raw_json = System.IO.File.ReadAllText(filepath);
-
-
-                            JObject parsed_json = JObject.Parse(raw_json);
-
-                            if (parsed_json["Game"].Value<string>() == definition.GameName)
-                            {
-                                string category_name = parsed_json.Properties().Select(p => p.Name).ToList()[1];
-
-
-                                if (parsed_json[category_name].First().Count() != 2)
-                                {
-                                    foreach (JObject child in parsed_json[category_name].Children<JObject>())
-                                    {
-                                        string item_category = child.Properties().Select(p => p.Name).ToList()[0];
-
-                                        foreach (JObject item in child.Children().First().Values())
-                                        {
-                                            item.Add("itemCategory", item_category);
-                                            master_values.Add(item);
-                                        }
-                                    }
-                                    DataTable dt = populateTable(master_values);
-                                    createTab(category_name, dt);
-                                    master_values.Clear();
-                                }
-                                else
-                                {
-                                    foreach (JObject child in parsed_json[category_name].Children<JObject>())
-                                    {
-                                        child.Add("itemCategory", category_name);
-                                        master_values.Add(child);
-
-                                    }
-                                    DataTable dt = populateTable(master_values);
-                                    createTab(category_name, dt);
-                                    master_values.Clear();
-                                }
-                            }
-                            else
-                            {
-                                MessageBox.Show(filepath + " does not belong to " + definition.GameName);
-                            }
-                        }
+                        importedFiles = rdp.detectedFiles;
+                    }
+                    else
+                    {
+                        MessageBox.Show("No Resource files to import.");
+                        return;
                     }
                 }
             }
             else
             {
                 MessageBox.Show("No Resource folder selected, exiting.");
-                this.Close();
+                return;
+            }
+
+            foreach (string filepath in importedFiles)
+            {
+                string raw_json = System.IO.File.ReadAllText(filepath);
+
+
+                JObject parsed_json = JObject.Parse(raw_json);
+
+                if (parsed_json["Game"].Value<string>() == definition.GameName)
+                {
+                    string category_name = parsed_json.Properties().Select(p => p.Name).ToList()[1];
+
+
+                    if (parsed_json[category_name].First().Count() != 2)
+                    {
+                        foreach (JObject child in parsed_json[category_name].Children<JObject>())
+                        {
+                            string item_category = child.Properties().Select(p => p.Name).ToList()[0];
+
+                            foreach (JObject item in child.Children().First().Values())
+                            {
+                                item.Add("itemCategory", item_category);
+                                master_values.Add(item);
+                            }
+                        }
+                        DataTable dt = populateTable(master_values);
+                        createTab(category_name, dt);
+                        master_values.Clear();
+                    }
+                    else
+                    {
+                        foreach (JObject child in parsed_json[category_name].Children<JObject>())
+                        {
+                            child.Add("itemCategory", category_name);
+                            master_values.Add(child);
+
+                        }
+                        DataTable dt = populateTable(master_values);
+                        createTab(category_name, dt);
+                        master_values.Clear();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show(filepath + " does not belong to " + definition.GameName);
+                }
             }
         }
     }
