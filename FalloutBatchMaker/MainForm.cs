@@ -538,6 +538,11 @@ namespace UltimateBatchFileMaker
                 return;
             }
 
+            if (importedFiles.Count == 0)
+            {
+                MessageBox.Show("No file to import");
+                return;
+            }
             foreach (string filepath in importedFiles)
             {
                 string raw_json = System.IO.File.ReadAllText(filepath);
