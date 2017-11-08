@@ -1,0 +1,263 @@
+
+
+================================
+Game = Skyrim
+Weapons[0]
+  Arrows[0]
+    name = Falmer Arrow
+    code = 38341
+  Arrows[1]
+    name = Daedric Arrow
+    code = 000139C0
+  Arrows[2]
+    name = Ancient Nord Arrow
+    code = 34182
+  Arrows[3]
+    name = Ebony Arrow
+    code = 139BF
+  Arrows[4]
+    name = Glass Arrow
+    code = 139BE
+  Arrows[5]
+    name = Elven Arrow
+    code = 139BD
+  Arrows[6]
+    name = Dwarven Arrow
+    code = 139BC
+  Arrows[7]
+    name = Orcish Arrow
+    code = 139BB
+  Arrows[8]
+    name = Steel Arrow
+    code = 1397F
+  Arrows[9]
+    name = Iron Arrow
+    code = 1397D
+  Arrows[10]
+    name = Nord Hero Arrow
+    code = EAFDF
+  Arrows[11]
+    name = Rusty Arrow
+    code = E738A
+  Arrows[12]
+    name = Forsworn Arrow
+    code = CEE9E
+  Arrows[13]
+    name = Practice Arrow
+    code = CAB52
+Weapons[1]
+  BladeWeapons[0]
+    name = Iron Dagger
+    code = 0001397E
+  BladeWeapons[1]
+    name = Alessandra's Dagger
+    code = 00043E1E
+  BladeWeapons[2]
+    name = Shiv
+    code = 000426C8
+  BladeWeapons[3]
+    name = Steel Dagger
+    code = 00013986
+  BladeWeapons[4]
+    name = Bloodthorn
+    code = 000A4DCE
+  BladeWeapons[5]
+    name = Valdr's Lucky Dagger
+    code = 000B994E
+  BladeWeapons[6]
+    name = Skyforge Steel Dagger
+    code = 0009F25D
+  BladeWeapons[7]
+    name = Orcish Dagger
+    code = 0001398E
+  BladeWeapons[8]
+    name = Dragon Priest Dagger
+    code = 0001C1FE
+  BladeWeapons[9]
+    name = Kahvozein's Fang
+    code = 000D0758
+  BladeWeapons[10]
+    name = Dwarven Dagger
+    code =  00013996
+  BladeWeapons[11]
+    name = Elven Dagger
+    code = 0001399E
+  BladeWeapons[12]
+    name = Borvir's Dagger
+    code = 000ECD54
+  BladeWeapons[13]
+    name = Keening
+    code = 0006A13C
+  BladeWeapons[14]
+    name = Glass Dagger
+    code = 000139A6
+  BladeWeapons[15]
+    name = Ebony Dagger  
+    code = 000139AE
+  BladeWeapons[16]
+    name = Blade of Sacrifice
+    code = 00079B1D
+  BladeWeapons[17]
+    name = Nettlebane
+    code = 0001C492
+  BladeWeapons[18]
+    name = Daedric Dagger
+    code = 000139B6
+  BladeWeapons[19]
+    name = Blade of Woe
+    code = 0009CCDC
+  BladeWeapons[20]
+    name = Mehrunes' Razor
+    code = 000240D2
+Weapons[2]
+  OneHanded[0]
+    name = Amren's Family Sword
+    code = 000647AC
+  OneHanded[1]
+    name = Ancient Nord Sword
+    code = 0002C66F
+  OneHanded[2]
+    name = Blades Sword
+    code = 0003AEB9
+  OneHanded[3]
+    name = Bolar's Oathblade
+    code = 000C1989
+  OneHanded[4]
+    name = Ceremonial Sword
+    code = 0008ADFC
+  OneHanded[5]
+    name = Daedric Sword
+    code = 000139B9
+  OneHanded[6]
+    name = Dawnbreaker
+    code = 0004E4EE
+  OneHanded[7]
+    name = Drainheart sword
+    code = 000F71DD
+  OneHanded[8]
+    name = Dwarven Sword
+    code = 00013999
+  OneHanded[9]
+    name = Ebony Sword
+    code = 000139B1
+  OneHanded[10]
+    name = Eduj
+    code = 0008FFDF
+  OneHanded[11]
+    name = Elven Sword
+    code = 000139A1
+  OneHanded[12]
+    name = Falmer Sword
+    code = 0002E6D1
+  OneHanded[13]
+    name = Forsworn Sword
+    code = 000CADE9
+  OneHanded[14]
+    name = Ghostblade
+    code = 00094A2B
+  OneHanded[15]
+    name = Glass Sword
+    code = 000139A9
+  OneHanded[16]
+    name = Grimsever
+    code = 00053379
+  OneHanded[17]
+    name = Hjalti's Sword
+    code = 00068976
+  OneHanded[18]
+    name = Honed Ancient Nord Sword
+    code = 0005BF14
+  OneHanded[19]
+    name = Honed Falmer Sword
+    code = 0006F6FF
+  OneHanded[20]
+    name = Imperial Sword
+    code = 000135B8
+  OneHanded[21]
+    name = Iron Sword
+    code = 00012EB7
+  OneHanded[22]
+    name = Lunar Iron Sword
+    code = 0003B0C4
+  OneHanded[23]
+    name = Lunar Steel Sword
+    code = 0003B0BD
+  OneHanded[24]
+    name = Nord Hero Sword
+    code = 00068C7B
+  OneHanded[25]
+    name = Orcish Sword
+    code = 00013991
+  OneHanded[26]
+    name = Phantom Sword
+    code = 000771B9
+  OneHanded[27]
+    name = Queen Freydis's Sword
+    code = 000AB85D
+  OneHanded[28]
+    name = Red Eagle's Bane
+    code = 000AB703
+  OneHanded[29]
+    name = Red Eagle's Fury
+    code = 0009FD50
+  OneHanded[30]
+    name = Scimitar
+    code = 0007A91A
+  OneHanded[31]
+    name = Silver Sword
+    code = 0010AA19
+  OneHanded[32]
+    name = Skyforge Steel Sword
+    code = 0009F25C
+  OneHanded[33]
+    name = Steel Sword
+    code = 000557F5
+  OneHanded[34]
+    name = Windshear
+    code = 0006EA8B
+Weapons[3]
+  TwoHanded[0]
+    name = Ancient Nord Greatsword
+    code = 000236A5
+  TwoHanded[1]
+    name = Balgruuf's Greatsword
+    code = 000946FC
+  TwoHanded[2]
+    name = Iron Greatsword
+    code = 0001359D
+  TwoHanded[3]
+    name = Dwarven Greatsword
+    code = 00013997
+  TwoHanded[4]
+    name = Ebony Greatsword
+    code = 000139AF
+  TwoHanded[5]
+    name = Ebony Blade
+    code = 0004A38F
+  TwoHanded[6]
+    name = Elven Greatsword
+    code = 0001399F
+  TwoHanded[7]
+    name = Glass Greatsword
+    code = 000139A7
+  TwoHanded[8]
+    name = Honed Ancient Nord Greatsword
+    code = 0005BF13
+  TwoHanded[9]
+    name = Daedric Greatsword
+    code = 000139B7
+  TwoHanded[10]
+    name = Nord Hero Greatsword
+    code = 000A3115
+  TwoHanded[11]
+    name = Orcish Greatsword
+    code =  0001398F
+  TwoHanded[12]
+    name = Silver Greatsword
+    code = 0010C6FB
+  TwoHanded[13]
+    name = Skyforge Steel Greatsword
+    code = 0009F25E
+  TwoHanded[14]
+    name = Steel Greatsword
+    code = 00013987
