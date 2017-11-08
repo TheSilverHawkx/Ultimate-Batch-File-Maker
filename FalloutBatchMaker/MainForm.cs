@@ -320,7 +320,9 @@ namespace UltimateBatchFileMaker
 
         private bool associateCategory(string category_name)
         {
-            if (category_name == "Weapons" || category_name ==  "Ammo" || category_name == "Armor")
+            string[] item_types = { "Weapons", "Ammo", "Armor", "Items", "Food" };
+
+            if (item_types.Contains(category_name))
             {
                 definition.AddAssociation(category_name, "Item");
             }

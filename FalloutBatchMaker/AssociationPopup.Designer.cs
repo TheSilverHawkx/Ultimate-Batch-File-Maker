@@ -51,7 +51,8 @@
             this.categories_cmbx.FormattingEnabled = true;
             this.categories_cmbx.Items.AddRange(new object[] {
             "Item",
-            "NPC"});
+            "NPC",
+            "Spell"});
             this.categories_cmbx.Location = new System.Drawing.Point(32, 38);
             this.categories_cmbx.Name = "categories_cmbx";
             this.categories_cmbx.Size = new System.Drawing.Size(154, 21);
