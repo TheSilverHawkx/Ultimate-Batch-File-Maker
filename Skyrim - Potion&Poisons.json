@@ -1,0 +1,1105 @@
+{
+  "Game": "Skyrim",
+  "Potions&Poisons": [
+    {
+      "Potion": [
+        {
+          "name": "Potion of Cure Disease",
+          "code": "000AE723"
+        },
+        {
+          "name": "Potion of Cure Poison",
+          "code": "00065A64"
+        },
+        {
+          "name": "Potion of Alteration",
+          "code": "0003EB36"
+        },
+        {
+          "name": "Draught of Alteration",
+          "code": "0003988E"
+        },
+        {
+          "name": "Philter of Alteration",
+          "code": "00039899"
+        },
+        {
+          "name": "Elixir of Alteration",
+          "code": "0003989A"
+        },
+        {
+          "name": "Potion of Plunder",
+          "code": "000F84C1"
+        },
+        {
+          "name": "Draught of Plunder",
+          "code": "000F84C2"
+        },
+        {
+          "name": "Philter of Plunder",
+          "code": "000F84C3"
+        },
+        {
+          "name": "Elixir of Plunder",
+          "code": "000F84C4"
+        },
+        {
+          "name": "Grand Elixir of Plunder",
+          "code": "000F84C5"
+        },
+        {
+          "name": "Prime Elixir of Plunder",
+          "code": "000F84C6"
+        },
+        {
+          "name": "Potion of Conflict",
+          "code": "000F84B5"
+        },
+        {
+          "name": "Draught of Conflict",
+          "code": "000F84B6"
+        },
+        {
+          "name": "Philter of Conflict",
+          "code": "000F84B7"
+        },
+        {
+          "name": "Elixir of Conflict",
+          "code": "000F84B8"
+        },
+        {
+          "name": "Grand Elixir of Conflict",
+          "code": "000F84B9"
+        },
+        {
+          "name": "Prime Elixir of Conflict",
+          "code": "000F84BA"
+        },
+        {
+          "name": "Potion of Larceny",
+          "code": "000F84A7"
+        },
+        {
+          "name": "Draught of Larceny",
+          "code": "000F84A8"
+        },
+        {
+          "name": "Philter of Larceny",
+          "code": "000F84A9"
+        },
+        {
+          "name": "Elixir of Larceny",
+          "code": "000F84AA"
+        },
+        {
+          "name": "Grand Elixir of Larceny",
+          "code": "000F84AB"
+        },
+        {
+          "name": "Prime Elixir of Larceny",
+          "code": "000F84AC"
+        },
+        {
+          "name": "Potion of Alteration",
+          "code": "0003EB36"
+        },
+        {
+          "name": "Draught of Alteration",
+          "code": "0003988E"
+        },
+        {
+          "name": "Philter of Alteration",
+          "code": "00039899"
+        },
+        {
+          "name": "Elixir of Alteration",
+          "code": "0003989A"
+        },
+        {
+          "name": "Potion of Haggling",
+          "code": "0003EB35"
+        },
+        {
+          "name": "Draught of Haggling",
+          "code": "00039970"
+        },
+        {
+          "name": "Philter of Haggling",
+          "code": "00039971"
+        },
+        {
+          "name": "Elixir of Haggling",
+          "code": "00039973"
+        },
+        {
+          "name": "Potion of the Defender",
+          "code": "0003EB32"
+        },
+        {
+          "name": "Draught of the Defender",
+          "code": "0003989B"
+        },
+        {
+          "name": "Philter of the Defender",
+          "code": "000398AB"
+        },
+        {
+          "name": "Elixir of the Defender",
+          "code": "000398AC"
+        },
+        {
+          "name": "Potion of Strength",
+          "code": "0003EB02"
+        },
+        {
+          "name": "Draught of Strength",
+          "code": "0003EB05"
+        },
+        {
+          "name": "Solution of Strength",
+          "code": "0003EB03"
+        },
+        {
+          "name": "Philter of Strength",
+          "code": "0003EB04"
+        },
+        {
+          "name": "Elixir of Strength",
+          "code": "000FF9FE"
+        },
+        {
+          "name": "Potion of Keenshot",
+          "code": "000F84BB"
+        },
+        {
+          "name": "Draught of Keenshot",
+          "code": "000F84BC"
+        },
+        {
+          "name": "Philter of Keenshot",
+          "code": "000F84BD"
+        },
+        {
+          "name": "Elixir of Keenshot",
+          "code": "000F84BE"
+        },
+        {
+          "name": "Grand Elixir of Keenshot",
+          "code": "000F84BF"
+        },
+        {
+          "name": "Prime Elixir of Keenshot",
+          "code": "000F84C0"
+        },
+        {
+          "name": "Conjurer's Potion",
+          "code": "0003EB37"
+        },
+        {
+          "name": "Conjurer's Draught",
+          "code": "000398AD"
+        },
+        {
+          "name": "Conjurer's Philter",
+          "code": "000398EC"
+        },
+        {
+          "name": "Conjurer's Elixir",
+          "code": "000398ED"
+        },
+        {
+          "name": "Potion of Escape",
+          "code": "000F84AE"
+        },
+        {
+          "name": "Draught of Escape",
+          "code": "000F84AF"
+        },
+        {
+          "name": "Philter of Escape",
+          "code": "000F84B0"
+        },
+        {
+          "name": "Elixir of Escape",
+          "code": "000F84B1"
+        },
+        {
+          "name": "Grand Elixir of Escape",
+          "code": "000F84B2"
+        },
+        {
+          "name": "Prime Elixir of Escape",
+          "code": "000F84B3"
+        },
+        {
+          "name": "Potion of Destruction",
+          "code": "0003EB38"
+        },
+        {
+          "name": "Draught of Destruction",
+          "code": "000398EE"
+        },
+        {
+          "name": "Philter of Destruction",
+          "code": "000398F1"
+        },
+        {
+          "name": "Elixir of Destruction",
+          "code": "000398F3"
+        },
+        {
+          "name": "Enchanter's Potion",
+          "code": "00039CFB"
+        },
+        {
+          "name": "Enchanter's Draught",
+          "code": "00039D02"
+        },
+        {
+          "name": "Enchanter's Philter",
+          "code": "00039D0A"
+        },
+        {
+          "name": "Enchanter's Elixir",
+          "code": "00039D12"
+        },
+        {
+          "name": "Potion of Health",
+          "code": "0003EAF2"
+        },
+        {
+          "name": "Draught of Health",
+          "code": "0003EAF4"
+        },
+        {
+          "name": "Solution of Health",
+          "code": "0003EAF6"
+        },
+        {
+          "name": "Philter of Health",
+          "code": "0003EAF5"
+        },
+        {
+          "name": "Elixir of Health",
+          "code": "000FF9FC"
+        },
+        {
+          "name": "Potion of the Knight",
+          "code": "0003EB2F"
+        },
+        {
+          "name": "Draught of the Knight",
+          "code": "000398F4"
+        },
+        {
+          "name": "Philter of the Knight",
+          "code": "000398F5"
+        },
+        {
+          "name": "Elixir of the Knight",
+          "code": "000398F6"
+        },
+        {
+          "name": "Potion of Escape",
+          "code": "000F84AE"
+        },
+        {
+          "name": "Draught of Escape",
+          "code": "000F84AF"
+        },
+        {
+          "name": "Philter of Escape",
+          "code": "000F84B0"
+        },
+        {
+          "name": "Elixir of Escape",
+          "code": "000F84B1"
+        },
+        {
+          "name": "Grand Elixir of Escape",
+          "code": "000F84B2"
+        },
+        {
+          "name": "Prime Elixir of Escape",
+          "code": "000F84B3"
+        },
+        {
+          "name": "Esbern's Potion",
+          "code": "000E6DF5"
+        },
+        {
+          "name": "Falmer Blood Elixir",
+          "code": "00076F17"
+        },
+        {
+          "name": "Ice Wraith Essence",
+          "code": "000F9642"
+        },
+        {
+          "name": "Philter of the Phantom",
+          "code": "000663E1"
+        },
+        {
+          "name": "Vaermina's Torpor",
+          "code": "0005F6DF"
+        },
+        {
+          "name": "Potion of the Knight",
+          "code": "0003EB2F"
+        },
+        {
+          "name": "Draught of the Knight",
+          "code": "000398F4"
+        },
+        {
+          "name": "Philter of the Knight",
+          "code": "000398F5"
+        },
+        {
+          "name": "Elixir of the Knight",
+          "code": "000398F6"
+        },
+        {
+          "name": "Potion of Illusion",
+          "code": "0003EB39"
+        },
+        {
+          "name": "Draught of Illusion",
+          "code": "0003994F"
+        },
+        {
+          "name": "Philter of Illusion",
+          "code": "00039950"
+        },
+        {
+          "name": "Elixir of Illusion",
+          "code": "00039951"
+        },
+        {
+          "name": "Skirmisher's Potion",
+          "code": "0003EB30"
+        },
+        {
+          "name": "Skirmisher's Draught",
+          "code": "000398FD"
+        },
+        {
+          "name": "Skirmisher's Philter",
+          "code": "00039903"
+        },
+        {
+          "name": "Skirmisher's Elixir",
+          "code": "00039904"
+        },
+        {
+          "name": "Potion of Lockpicking",
+          "code": "00039930"
+        },
+        {
+          "name": "Draught of Lockpicking",
+          "code": "00039945"
+        },
+        {
+          "name": "Philter of Lockpicking",
+          "code": "00039946"
+        },
+        {
+          "name": "Elixir of Lockpicking",
+          "code": "00039948"
+        },
+        {
+          "name": "Potion of Extra Magicka",
+          "code": "0003EAF7"
+        },
+        {
+          "name": "Draught of Extra Magicka",
+          "code": "0003EAFA"
+        },
+        {
+          "name": "Solution of Extra Magicka",
+          "code": "0003EAFB"
+        },
+        {
+          "name": "Philter of Extra Magicka",
+          "code": "0003EAFC"
+        },
+        {
+          "name": "Elixir of Extra Magicka",
+          "code": "000FF9FD"
+        },
+        {
+          "name": "Potion of True Shot",
+          "code": "0003EB2C"
+        },
+        {
+          "name": "Draught of True Shot",
+          "code": "00039949"
+        },
+        {
+          "name": "Philter of True Shot",
+          "code": "0003994B"
+        },
+        {
+          "name": "Elixir of True Shot",
+          "code": "0003994E"
+        },
+        {
+          "name": "Potion of the Warrior",
+          "code": "0003EB2A"
+        },
+        {
+          "name": "Draught of the Warrior",
+          "code": "00039954"
+        },
+        {
+          "name": "Philter of the Warrior",
+          "code": "00039955"
+        },
+        {
+          "name": "Elixir of the Warrior",
+          "code": "00039956"
+        },
+        {
+          "name": "Potion of Pickpocketing",
+          "code": "0003EB31"
+        },
+        {
+          "name": "Draught of Pickpocketing",
+          "code": "00039957"
+        },
+        {
+          "name": "Philter of Pickpocketing",
+          "code": "00039959"
+        },
+        {
+          "name": "Elixir of Pickpocketing",
+          "code": "00039958"
+        },
+        {
+          "name": "Potion of the Healer",
+          "code": "0003EB3A"
+        },
+        {
+          "name": "Draught of the Healer",
+          "code": "0003995A"
+        },
+        {
+          "name": "Philter of the Healer",
+          "code": "0003995B"
+        },
+        {
+          "name": "Elixir of the Healer",
+          "code": "0003995C"
+        },
+        {
+          "name": "Blacksmith's Potion",
+          "code": "0003EB2E"
+        },
+        {
+          "name": "Blacksmith's Draught",
+          "code": "0003995D"
+        },
+        {
+          "name": "Blacksmith's Philter",
+          "code": "00039962"
+        },
+        {
+          "name": "Blacksmith's Elixir",
+          "code": "00039967"
+        },
+        {
+          "name": "Potion of Light Feet",
+          "code": "0003EB33"
+        },
+        {
+          "name": "Draught of Light Feet",
+          "code": "00039968"
+        },
+        {
+          "name": "Philter of Light Feet",
+          "code": "00039969"
+        },
+        {
+          "name": "Elixir of Light Feet",
+          "code": "0003996F"
+        },
+        {
+          "name": "Potion of Glibness",
+          "code": "000D6948"
+        },
+        {
+          "name": "Draught of Glibness",
+          "code": "000D6949"
+        },
+        {
+          "name": "Philter of Glibness",
+          "code": "000D697F"
+        },
+        {
+          "name": "Elixir of Glibness",
+          "code": "000D6980"
+        },
+        {
+          "name": "Potion of Enhanced Stamina",
+          "code": "0003EAFD"
+        },
+        {
+          "name": "Draught of Enhanced Stamina",
+          "code": "0003EB00"
+        },
+        {
+          "name": "Solution of Enhanced Stamina",
+          "code": "0003EAFE"
+        },
+        {
+          "name": "Philter of Enhanced Stamina",
+          "code": "0003EAFF"
+        },
+        {
+          "name": "Elixir of Enhanced Stamina",
+          "code": "000FFA01"
+        },
+        {
+          "name": "Potion of the Berserker",
+          "code": "0003EB2B"
+        },
+        {
+          "name": "Draught of the Berserker",
+          "code": "00039974"
+        },
+        {
+          "name": "Philter of the Berserker",
+          "code": "00039980"
+        },
+        {
+          "name": "Elixir of the Berserker",
+          "code": "00039AA6"
+        },
+        {
+          "name": "Potion of Brief Invisibility",
+          "code": "0003EB3E"
+        },
+        {
+          "name": "Potion of Extended Invisibility",
+          "code": "0003EB40"
+        },
+        {
+          "name": "Potion of Enduring Invisibility",
+          "code": "0003EB3F"
+        },
+        {
+          "name": "Potion of Prolonged Invisibility",
+          "code": "0003EB41"
+        },
+        {
+          "name": "Potion of Regeneration",
+          "code": "0003EB09"
+        },
+        {
+          "name": "Draught of Regeneration",
+          "code": "0003EB0A"
+        },
+        {
+          "name": "Solution of Regeneration",
+          "code": "0003EB0B"
+        },
+        {
+          "name": "Philter of Regeneration",
+          "code": "0003EB0C"
+        },
+        {
+          "name": "Elixir of Regeneration",
+          "code": "000FF9FF"
+        },
+        {
+          "name": "Potion of Lasting Potency",
+          "code": "0003EB0D"
+        },
+        {
+          "name": "Draught of Lasting Potency",
+          "code": "0003EB0E"
+        },
+        {
+          "name": "Solution of Lasting Potency",
+          "code": "0003EB0F"
+        },
+        {
+          "name": "Philter of Lasting Potency",
+          "code": "0003EB10"
+        },
+        {
+          "name": "Elixir of Lasting Potency",
+          "code": "000FFA00"
+        },
+        {
+          "name": "Potion of Vigor",
+          "code": "0003EB11"
+        },
+        {
+          "name": "Draught of Vigor",
+          "code": "0003EB12"
+        },
+        {
+          "name": "Solution of Vigor",
+          "code": "00039B0C"
+        },
+        {
+          "name": "Philter of Vigor",
+          "code": "0003EB14"
+        },
+        {
+          "name": "Elixir of Vigor",
+          "code": "000FFA02"
+        },
+        {
+          "name": "Potion of Resist Fire",
+          "code": "00039B4A"
+        },
+        {
+          "name": "Draught of Resist Fire",
+          "code": "0003EAE9"
+        },
+        {
+          "name": "Philter of Resist Fire",
+          "code": "00039B4B"
+        },
+        {
+          "name": "Elixir of Resist Fire",
+          "code": "0003EAEF"
+        },
+        {
+          "name": "Potion of Resist Cold",
+          "code": "00039B8A"
+        },
+        {
+          "name": "Draught of Resist Cold",
+          "code": "0003EAED"
+        },
+        {
+          "name": "Philter of Resist Cold",
+          "code": "00039BDF"
+        },
+        {
+          "name": "Elixir of Resist Cold",
+          "code": "0003EAF0"
+        },
+        {
+          "name": "Potion of Resist Magic",
+          "code": "00039E52"
+        },
+        {
+          "name": "Draught of Resist Magic",
+          "code": "00039E53"
+        },
+        {
+          "name": "Philter of Resist Magic",
+          "code": "00039E54"
+        },
+        {
+          "name": "Potion of Resist Shock",
+          "code": "00039BE1"
+        },
+        {
+          "name": "Draught of Resist Shock",
+          "code": "0003EAEE"
+        },
+        {
+          "name": "Philter of Resist Shock",
+          "code": "00039BE3"
+        },
+        {
+          "name": "Elixir of Resist Shock",
+          "code": "0003EAF1"
+        },
+        {
+          "name": "Potion of Minor Healing",
+          "code": "0003EADD"
+        },
+        {
+          "name": "Potion of Healing",
+          "code": "0003EADE"
+        },
+        {
+          "name": "Potion of Plentiful Healing",
+          "code": "0003EADF"
+        },
+        {
+          "name": "Potion of Vigorous Healing",
+          "code": "0003EAE3"
+        },
+        {
+          "name": "Potion of Extreme Healing",
+          "code": "00039BE4"
+        },
+        {
+          "name": "Potion of Ultimate Healing",
+          "code": "00039BE5"
+        },
+        {
+          "name": "Potion of Minor Magicka",
+          "code": "0003EAE0"
+        },
+        {
+          "name": "Potion of Magicka",
+          "code": "0003EAE1"
+        },
+        {
+          "name": "Potion of Plentiful Magicka",
+          "code": "0003EAE2"
+        },
+        {
+          "name": "Potion of Vigorous Magicka",
+          "code": "0003EAE4"
+        },
+        {
+          "name": "Potion of Extreme Magicka",
+          "code": "00039BE6"
+        },
+        {
+          "name": "Potion of Ultimate Magicka",
+          "code": "00039BE7"
+        },
+        {
+          "name": "Potion of Minor Stamina",
+          "code": "0003EAE5"
+        },
+        {
+          "name": "Potion of Stamina",
+          "code": "00039BE8"
+        },
+        {
+          "name": "Potion of Plentiful Stamina",
+          "code": "0003EAE7"
+        },
+        {
+          "name": "Potion of Vigorous Stamina",
+          "code": "0003EAE8"
+        },
+        {
+          "name": "Potion of Extreme Stamina",
+          "code": "0003EAE6"
+        },
+        {
+          "name": "Potion of Ultimate Stamina",
+          "code": "00039CF3"
+        },
+        {
+          "name": "Potion of Waterbreathing",
+          "code": "0003AC2E"
+        },
+        {
+          "name": "Draught of Waterbreathing",
+          "code": "0003AC2F"
+        },
+        {
+          "name": "Philter of Waterbreathing",
+          "code": "0003AC30"
+        },
+        {
+          "name": "Elixir of Waterbreathing",
+          "code": "0003AC31"
+        }
+      ]
+    },
+    {
+      "Poisons": [
+        {
+          "name": "Weak Poison",
+          "code": "0003A5A4"
+        },
+        {
+          "name": "Poison",
+          "code": "00073F31"
+        },
+        {
+          "name": "Potent Poison",
+          "code": "00073F32"
+        },
+        {
+          "name": "Virulent Poison",
+          "code": "00073F33"
+        },
+        {
+          "name": "Deadly Poison",
+          "code": "00073F34"
+        },
+        {
+          "name": "Weak Magicka Poison",
+          "code": "00065A65"
+        },
+        {
+          "name": "Magicka Poison",
+          "code": "00073F39"
+        },
+        {
+          "name": "Potent Magicka Poison",
+          "code": "00073F3A"
+        },
+        {
+          "name": "Malign Magicka Poison",
+          "code": "00073F3B"
+        },
+        {
+          "name": "Deadly Magicka Poison",
+          "code": "00073F3C"
+        },
+        {
+          "name": "Weak Recovery Poison",
+          "code": "00073F90"
+        },
+        {
+          "name": "Magicka Recovery Poison",
+          "code": "00073F91"
+        },
+        {
+          "name": "Potent Recovery Poison",
+          "code": "00073F92"
+        },
+        {
+          "name": "Malign Recovery Poison",
+          "code": "00073F93"
+        },
+        {
+          "name": "Deadly Recovery Poison",
+          "code": "00073F94"
+        },
+        {
+          "name": "Weak Stamina Poison",
+          "code": "00065A66"
+        },
+        {
+          "name": "Stamina Poison",
+          "code": "00073F41"
+        },
+        {
+          "name": "Potent Stamina Poison",
+          "code": "00073F42"
+        },
+        {
+          "name": "Virulent Stamina Poison",
+          "code": "00073F43"
+        },
+        {
+          "name": "Deadly Stamina Poison",
+          "code": "00073F44"
+        },
+        {
+          "name": "Weak Vigor Poison",
+          "code": "00073F8B"
+        },
+        {
+          "name": "Vigor Poison",
+          "code": "00073F8C"
+        },
+        {
+          "name": "Potent Vigor Poison",
+          "code": "00073F8D"
+        },
+        {
+          "name": "Malign Vigor Poison",
+          "code": "00073F8E"
+        },
+        {
+          "name": "Weak Fear Poison",
+          "code": "00065A68"
+        },
+        {
+          "name": "Fear Poison",
+          "code": "00073F5E"
+        },
+        {
+          "name": "Potent Fear Poison",
+          "code": "00073F5F"
+        },
+        {
+          "name": "Virulent Fear Poison",
+          "code": "00073F60"
+        },
+        {
+          "name": "Deadly Fear Poison",
+          "code": "00073F61"
+        },
+        {
+          "name": "Weak Frenzy Poison",
+          "code": "00065A69"
+        },
+        {
+          "name": "Frenzy Poison",
+          "code": "00073F5A"
+        },
+        {
+          "name": "Potent Frenzy Poison",
+          "code": "00073F5B"
+        },
+        {
+          "name": "Virulent Frenzy Poison",
+          "code": "00073F5C"
+        },
+        {
+          "name": "Deadly Frenzy Poison",
+          "code": "00073F5D"
+        },
+        {
+          "name": "Weak Lingering Poison",
+          "code": "00065A6F"
+        },
+        {
+          "name": "Lingering Poison",
+          "code": "00073F35"
+        },
+        {
+          "name": "Potent Lingering Poison",
+          "code": "00073F36"
+        },
+        {
+          "name": "Malign Lingering Poison",
+          "code": "00073F37"
+        },
+        {
+          "name": "Deadly Lingering Poison",
+          "code": "00073F38"
+        },
+        {
+          "name": "Lingering Magicka Poison",
+          "code": "00065A70"
+        },
+        {
+          "name": "Enduring Magicka Poison",
+          "code": "00073F3D"
+        },
+        {
+          "name": "Lasting Magicka Poison",
+          "code": "00073F3E"
+        },
+        {
+          "name": "Persisting Magicka Poison",
+          "code": "00073F3F"
+        },
+        {
+          "name": "Unceasing Magicka Poison",
+          "code": "00073F40"
+        },
+        {
+          "name": "Lingering Stamina Poison",
+          "code": "00065A71"
+        },
+        {
+          "name": "Enduring Stamina Poison",
+          "code": "00073F45"
+        },
+        {
+          "name": "Lasting Stamina Poison",
+          "code": "00073F46"
+        },
+        {
+          "name": "Persisting Stamina Poison",
+          "code": "00073F47"
+        },
+        {
+          "name": "Unceasing Stamina Poison",
+          "code": "00073F48"
+        },
+        {
+          "name": "Weak Paralysis Poison",
+          "code": "00065A6A"
+        },
+        {
+          "name": "Paralysis Poison",
+          "code": "00074A38"
+        },
+        {
+          "name": "Potent Paralysis Poison",
+          "code": "00074A39"
+        },
+        {
+          "name": "Virulent Paralysis Poison",
+          "code": "00074A3A"
+        },
+        {
+          "name": "Deadly Paralysis Poison",
+          "code": "00074A3B"
+        },
+        {
+          "name": "Weak Aversion to Fire",
+          "code": "00065A6B"
+        },
+        {
+          "name": "Aversion to Fire",
+          "code": "00073F49"
+        },
+        {
+          "name": "Potent Aversion to Fire",
+          "code": "00073F4A"
+        },
+        {
+          "name": "Malign Aversion to Fire",
+          "code": "00073F4B"
+        },
+        {
+          "name": "Deadly Aversion to Fire",
+          "code": "00073F4C"
+        },
+        {
+          "name": "Weak Aversion to Frost",
+          "code": "00065A6C"
+        },
+        {
+          "name": "Aversion to Frost",
+          "code": "00073F4D"
+        },
+        {
+          "name": "Potent Aversion to Frost",
+          "code": "00073F4E"
+        },
+        {
+          "name": "Malign Aversion to Frost",
+          "code": "00073F4F"
+        },
+        {
+          "name": "Deadly Aversion to Frost",
+          "code": "00073F50"
+        },
+        {
+          "name": "Weak Aversion to Magic",
+          "code": "00065A6E"
+        },
+        {
+          "name": "Aversion to Magic",
+          "code": "00073F56"
+        },
+        {
+          "name": "Potent Aversion to Magic",
+          "code": "00073F57"
+        },
+        {
+          "name": "Malign Aversion to Magic",
+          "code": "00073F58"
+        },
+        {
+          "name": "Deadly Aversion to Magic",
+          "code": "00073F59"
+        },
+        {
+          "name": "Weak Aversion to Shock",
+          "code": "00073F52"
+        },
+        {
+          "name": "Aversion to Shock",
+          "code": "00065A6D"
+        },
+        {
+          "name": "Potent Aversion to Shock",
+          "code": "00073F53"
+        },
+        {
+          "name": "Malign Aversion to Shock",
+          "code": "00073F54"
+        },
+        {
+          "name": "Deadly Aversion to Shock",
+          "code": "00073F55"
+        }
+      ]
+    }
+  ]
+}
