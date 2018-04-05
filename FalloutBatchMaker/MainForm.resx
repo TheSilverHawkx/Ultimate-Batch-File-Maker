@@ -121,28 +121,28 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="PerkRem_btn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Perk_remove_btn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         EQAACxEBf2RfkQAAAFBJREFUOE9joDVoBuIaCJN0ANL8H4pJNqQJiGGaSTYEm2YYJmhIIxBj04iMcRpC
         jGYYxjCkAYixKcSHcbqEBYixafgDxESBUQMGgwEkAAYGAKOcWqRV8YmsAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="PerkAdd_btn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Perk_add_btn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         EQAACxEBf2RfkQAAAEhJREFUOE/tjDEKACAMxDr4bDcfrnU4UGxrK4iLgYwJ3SCxVdHFH7waFFYKLDM7
         EZksMfBM1BhYk20MpIk7BuMkHIM+OY4dEDXzwFrCw8FGHgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="VarRem_btn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Var_remove_btn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         EQAACxEBf2RfkQAAAFBJREFUOE9joDVoBuIaCJN0ANL8H4pJNqQJiGGaSTYEm2YYJmhIIxBj04iMcRpC
         jGYYxjCkAYixKcSHcbqEBYixafgDxESBUQMGgwEkAAYGAKOcWqRV8YmsAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="VarAdd_btn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Var_add_btn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         EQAACxEBf2RfkQAAAEhJREFUOE/tjDEKACAMxDr4bDcfrnU4UGxrK4iLgYwJ3SCxVdHFH7waFFYKLDM7

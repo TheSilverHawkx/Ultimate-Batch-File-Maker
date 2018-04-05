@@ -34,10 +34,10 @@
             this.Name_txtbx = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.AddRes_btn = new System.Windows.Forms.Button();
-            this.RemRes_btn = new System.Windows.Forms.Button();
+            this.Resource_add_btn = new System.Windows.Forms.Button();
+            this.Resource_remove_btn = new System.Windows.Forms.Button();
             this.Code_txtbx = new System.Windows.Forms.TextBox();
-            this.CreateRes_btn = new System.Windows.Forms.Button();
+            this.Create_btn = new System.Windows.Forms.Button();
             this.Resource_lstv = new System.Windows.Forms.ListView();
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -89,27 +89,27 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "code";
             // 
-            // AddRes_btn
+            // Resource_add_btn
             // 
-            this.AddRes_btn.Image = ((System.Drawing.Image)(resources.GetObject("AddRes_btn.Image")));
-            this.AddRes_btn.Location = new System.Drawing.Point(41, 115);
-            this.AddRes_btn.Name = "AddRes_btn";
-            this.AddRes_btn.Size = new System.Drawing.Size(32, 23);
-            this.AddRes_btn.TabIndex = 6;
-            this.AddRes_btn.Text = "↓";
-            this.AddRes_btn.UseVisualStyleBackColor = true;
-            this.AddRes_btn.Click += new System.EventHandler(this.AddRes_btn_Click);
+            this.Resource_add_btn.Image = ((System.Drawing.Image)(resources.GetObject("Resource_add_btn.Image")));
+            this.Resource_add_btn.Location = new System.Drawing.Point(41, 115);
+            this.Resource_add_btn.Name = "Resource_add_btn";
+            this.Resource_add_btn.Size = new System.Drawing.Size(32, 23);
+            this.Resource_add_btn.TabIndex = 6;
+            this.Resource_add_btn.Text = "↓";
+            this.Resource_add_btn.UseVisualStyleBackColor = true;
+            this.Resource_add_btn.Click += new System.EventHandler(this.Resource_add_btn_Click);
             // 
-            // RemRes_btn
+            // Resource_remove_btn
             // 
-            this.RemRes_btn.Image = ((System.Drawing.Image)(resources.GetObject("RemRes_btn.Image")));
-            this.RemRes_btn.Location = new System.Drawing.Point(150, 115);
-            this.RemRes_btn.Name = "RemRes_btn";
-            this.RemRes_btn.Size = new System.Drawing.Size(32, 23);
-            this.RemRes_btn.TabIndex = 7;
-            this.RemRes_btn.Text = "↑";
-            this.RemRes_btn.UseVisualStyleBackColor = true;
-            this.RemRes_btn.Click += new System.EventHandler(this.RemRes_btn_Click);
+            this.Resource_remove_btn.Image = ((System.Drawing.Image)(resources.GetObject("Resource_remove_btn.Image")));
+            this.Resource_remove_btn.Location = new System.Drawing.Point(150, 115);
+            this.Resource_remove_btn.Name = "Resource_remove_btn";
+            this.Resource_remove_btn.Size = new System.Drawing.Size(32, 23);
+            this.Resource_remove_btn.TabIndex = 7;
+            this.Resource_remove_btn.Text = "↑";
+            this.Resource_remove_btn.UseVisualStyleBackColor = true;
+            this.Resource_remove_btn.Click += new System.EventHandler(this.Resource_remove_btn_Click);
             // 
             // Code_txtbx
             // 
@@ -118,15 +118,15 @@
             this.Code_txtbx.Size = new System.Drawing.Size(93, 20);
             this.Code_txtbx.TabIndex = 2;
             // 
-            // CreateRes_btn
+            // Create_btn
             // 
-            this.CreateRes_btn.Location = new System.Drawing.Point(12, 255);
-            this.CreateRes_btn.Name = "CreateRes_btn";
-            this.CreateRes_btn.Size = new System.Drawing.Size(199, 23);
-            this.CreateRes_btn.TabIndex = 8;
-            this.CreateRes_btn.Text = "Create Resource File";
-            this.CreateRes_btn.UseVisualStyleBackColor = true;
-            this.CreateRes_btn.Click += new System.EventHandler(this.CreateRes_btn_Click);
+            this.Create_btn.Location = new System.Drawing.Point(12, 255);
+            this.Create_btn.Name = "Create_btn";
+            this.Create_btn.Size = new System.Drawing.Size(199, 23);
+            this.Create_btn.TabIndex = 8;
+            this.Create_btn.Text = "Create Resource File";
+            this.Create_btn.UseVisualStyleBackColor = true;
+            this.Create_btn.Click += new System.EventHandler(this.Create_btn_Click);
             // 
             // Resource_lstv
             // 
@@ -176,9 +176,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(223, 284);
             this.Controls.Add(this.Resource_lstv);
-            this.Controls.Add(this.CreateRes_btn);
-            this.Controls.Add(this.RemRes_btn);
-            this.Controls.Add(this.AddRes_btn);
+            this.Controls.Add(this.Create_btn);
+            this.Controls.Add(this.Resource_remove_btn);
+            this.Controls.Add(this.Resource_add_btn);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Code_txtbx);
@@ -205,10 +205,10 @@
         private System.Windows.Forms.TextBox Name_txtbx;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button AddRes_btn;
-        private System.Windows.Forms.Button RemRes_btn;
+        private System.Windows.Forms.Button Resource_add_btn;
+        private System.Windows.Forms.Button Resource_remove_btn;
         private System.Windows.Forms.TextBox Code_txtbx;
-        private System.Windows.Forms.Button CreateRes_btn;
+        private System.Windows.Forms.Button Create_btn;
         private System.Windows.Forms.ListView Resource_lstv;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox Game_txtbx;

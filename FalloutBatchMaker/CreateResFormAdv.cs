@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
+using UltimateBatchFileMaker.Models;
 
 namespace UltimateBatchFileMaker
 {
@@ -23,47 +24,48 @@ namespace UltimateBatchFileMaker
             System.Diagnostics.Process.Start ("http://www.objgen.com/json");
         }
 
+
         private void button1_Click(object sender, EventArgs e)
         {
             if (button1.Text == "Process input")
             {
-                if (Category_txtbx.Text == "")
+                if (Category_name_txtbx.Text == "" || Game_name_txtbx.Text == "")
                 {
-                    MessageBox.Show("Category name is missing.");
+                    MessageBox.Show("Category or Game name are missing");
                     return;
                 }
 
-                string category = Category_txtbx.Text;
-                int cindex = 0;
-                groupBox1.Text = "Output";
-                int index = 0;
-                string title = "";
-                string output = "";
+                string game_name = Game_name_txtbx.Text, category_name = Category_name_txtbx.Text, subcat_name="", name, code;
+                int? c_index =-1, r_index = -1;
+
                 string[] input = Input_rtxtbx.Text.Split('\n');
+
                 Input_rtxtbx.Text = "";
+                Input_rtxtbx.Text += "Game = " + game_name + Environment.NewLine + "Name = " + category_name + Environment.NewLine;
 
-                Input_rtxtbx.Text = "Game = game_name" + Environment.NewLine;
-                foreach (string line in input)
+                foreach (string row in input)
                 {
-                    if (line.Contains(" = "))
+                    if (!row.Contains(" = ") && row != "")
                     {
-                        string name = Regex.Split(line, "\\s=\\s")[0];
-                        string code = Regex.Split(line, "\\s=\\s")[1];
-
-                        output = "  " + title + "[" + index + "]" + Environment.NewLine + "    name = " + name + Environment.NewLine + "    code = " + code + Environment.NewLine;
-                        Input_rtxtbx.Text += output;
-                        index++;
+                        c_index++;
+                        r_index = 0;
+                        subcat_name = row;
+                        Input_rtxtbx.Text += "Categories[" + c_index + "]" + Environment.NewLine + "  name = " + subcat_name + Environment.NewLine;
                     }
-                    else if (!line.Contains(" = ") && line != "")
+                    else if (row.Contains(" = "))
                     {
-                        title = line;
-                        Input_rtxtbx.Text += category + "[" + cindex + "]" + Environment.NewLine;
-                        index = 0;
-                        cindex++;
+                        name = Regex.Split(row, "\\s=\\s")[0];
+                        code = Regex.Split(row, "\\s=\\s")[1];
+                        Input_rtxtbx.Text += "  Resources[" + r_index + "]" + 
+                            Environment.NewLine + "    name = " + name +
+                            Environment.NewLine + "    code = " + code + Environment.NewLine;
+                        r_index++;
                     }
-
                 }
+
+                groupBox1.Text = "Output";
             }
         }
+
     }
 }

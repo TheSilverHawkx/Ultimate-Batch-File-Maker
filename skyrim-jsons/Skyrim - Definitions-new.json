@@ -1,0 +1,55 @@
+﻿{
+  "Game": "Skyrim",
+  "Definitions": [
+    {
+      "name": "addItem",
+      "command": "player.additem"
+    },
+    {
+      "name": "setValue",
+      "command": "player.setvalue"
+    },
+    {
+      "name": "addPerk",
+      "command": "player.addperk"
+    },
+    {
+      "name": "spawnNPC",
+      "command": "player.placeatme"
+    },
+    {
+      "name": "setLevel",
+      "command": "setlevel"
+    },
+    {
+      "name": "mapCommand",
+      "command": "tmm"
+    }
+  ],
+  "KnownCategories": [
+    {
+      "name": "Weapons",
+      "type": "Item"
+    },
+    {
+      "name": "Ammo",
+      "type": "Item"
+    },
+    {
+      "name": "Armor",
+      "type": "Item"
+    },
+    {
+      "name": "Ingredients",
+      "type": "Item"
+    },
+    {
+      "name": "Items",
+      "type": "Item"
+    },
+    {
+      "name": "Food",
+      "type": "Item"
+    }
+  ]
+}

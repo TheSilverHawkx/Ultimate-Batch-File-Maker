@@ -126,13 +126,12 @@ Creating Batch File
 2. Fill Variables
 3. Press 'Create File
 
-Creating Definitio File
+Creating Definition File
 ----------------------------
 1. Enter menu through Tools &gt; Create Definition File.
 2. Enter desired game name (e.g Fallout 4, Skyrim, Oblivion).
 3. Fill suitable command in each field.
 4. Press 'Create Definition File'.
-
 
 Creating Basic Resource file (no sub-categories)
 -------------------------------------
@@ -142,13 +141,14 @@ Creating Basic Resource file (no sub-categories)
 4. Add entries in name:code pairs and press the down arrow.
 5. When done, Press 'Create Resource File'.
 
-Creating Basic Resource file (with sub-categories)
+Creating Advanced Resource file (with sub-categories)
 -------------------------------------
 1. Enter menu through Tools &gt; Create Resource File (adv).
-2. In the 'Input' field add sub-categories and entries as shown in 'Create-Sub-categories.png'.
-3. Press 'Process input'
-4. Copy the output, open objGen website (link included) and paste the ouput in the new window.
-5. Change 'game_name' and 'category_name' into relevant names.
-6. Save as a '.json' file</value>
+2. Write the name of the game the Resource file will belong to.
+3. Provide a 'main' category name.
+4. In the 'Input' field add sub-categories and entries as shown in 'Create-Sub-categories.png'.
+5. Press 'Process input'.
+6. Copy the output, open objGen website (link included) and paste the ouput in the new window.
+7. Save as a '.json' file</value>
   </data>
 </root>

@@ -37,7 +37,7 @@ namespace UltimateBatchFileMaker
                     detectedFiles.RemoveAll(x => x.ToString().Contains(checkedListBox1.Items[i].ToString()));
                 }
             }
-            this.DialogResult = DialogResult.OK;
+            DialogResult = DialogResult.OK;
             Close();
         }
     }

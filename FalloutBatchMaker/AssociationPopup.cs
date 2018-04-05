@@ -25,25 +25,25 @@ namespace UltimateBatchFileMaker
 
             if (cmd_txtbx.Text != "")
             {
-                this.ReturnValue = cmd_txtbx.Text;
-                this.DialogResult = DialogResult.OK;
+                ReturnValue = cmd_txtbx.Text;
+                DialogResult = DialogResult.OK;
             }
             else if (categories_cmbx.SelectedItem.ToString() != "")
             {
-                this.ReturnValue = categories_cmbx.SelectedItem.ToString();
-                this.DialogResult = DialogResult.OK;
+                ReturnValue = categories_cmbx.SelectedItem.ToString();
+                DialogResult = DialogResult.OK;
             }
             else
             {
-                this.DialogResult = DialogResult.Abort;
+                DialogResult = DialogResult.Abort;
             }
-            this.Close();
+            Close();
             
         }
 
         private void AssociationPopup_Load(object sender, EventArgs e)
         {
-            this.Text = this.Text + " - " + CategoryName;
+            Text = Text + " - " + CategoryName;
         }
     }
 }

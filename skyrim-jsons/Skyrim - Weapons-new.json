@@ -1,0 +1,1490 @@
+{
+  "Game": "Skyrim",
+  "Name": "Weapons",
+  "Categories": [
+    {
+      "name": "Arrows",
+      "Resources": [
+        {
+          "name": "Falmer Arrow",
+          "code": "38341"
+        },
+        {
+          "name": "Daedric Arrow",
+          "code": "000139C0"
+        },
+        {
+          "name": "Ancient Nord Arrow",
+          "code": "34182"
+        },
+        {
+          "name": "Ebony Arrow",
+          "code": "139BF"
+        },
+        {
+          "name": "Glass Arrow",
+          "code": "139BE"
+        },
+        {
+          "name": "Elven Arrow",
+          "code": "139BD"
+        },
+        {
+          "name": "Dwarven Arrow",
+          "code": "139BC"
+        },
+        {
+          "name": "Orcish Arrow",
+          "code": "139BB"
+        },
+        {
+          "name": "Steel Arrow",
+          "code": "1397F"
+        },
+        {
+          "name": "Iron Arrow",
+          "code": "1397D"
+        },
+        {
+          "name": "Nord Hero Arrow",
+          "code": "EAFDF"
+        },
+        {
+          "name": "Rusty Arrow",
+          "code": "E738A"
+        },
+        {
+          "name": "Forsworn Arrow",
+          "code": "CEE9E"
+        },
+        {
+          "name": "Practice Arrow",
+          "code": "CAB52"
+        }
+      ]
+    },
+    {
+      "name": "Dagger",
+      "Resources": [
+        {
+          "name": "Iron Dagger",
+          "code": "0001397E"
+        },
+        {
+          "name": "Alessandra's Dagger",
+          "code": "00043E1E"
+        },
+        {
+          "name": "Shiv",
+          "code": "000426C8"
+        },
+        {
+          "name": "Steel Dagger",
+          "code": "00013986"
+        },
+        {
+          "name": "Bloodthorn",
+          "code": "000A4DCE"
+        },
+        {
+          "name": "Valdr's Lucky Dagger",
+          "code": "000B994E"
+        },
+        {
+          "name": "Skyforge Steel Dagger",
+          "code": "0009F25D"
+        },
+        {
+          "name": "Orcish Dagger",
+          "code": "0001398E"
+        },
+        {
+          "name": "Dragon Priest Dagger",
+          "code": "0001C1FE"
+        },
+        {
+          "name": "Kahvozein's Fang",
+          "code": "000D0758"
+        },
+        {
+          "name": "Dwarven Dagger",
+          "code": "00013996"
+        },
+        {
+          "name": "Elven Dagger",
+          "code": "0001399E"
+        },
+        {
+          "name": "Borvir's Dagger",
+          "code": "000ECD54"
+        },
+        {
+          "name": "Keening",
+          "code": "0006A13C"
+        },
+        {
+          "name": "Glass Dagger",
+          "code": "000139A6"
+        },
+        {
+          "name": "Ebony Dagger",
+          "code": "000139AE"
+        },
+        {
+          "name": "Blade of Sacrifice",
+          "code": "00079B1D"
+        },
+        {
+          "name": "Nettlebane",
+          "code": "0001C492"
+        },
+        {
+          "name": "Daedric Dagger",
+          "code": "000139B6"
+        }
+      ]
+    },
+    {
+      "name": "OneHandedBlade",
+      "Resources": [
+        {
+          "name": "Amren's Family Sword",
+          "code": "000647AC"
+        },
+        {
+          "name": "Ancient Nord Sword",
+          "code": "0002C66F"
+        },
+        {
+          "name": "Blades Sword",
+          "code": "0003AEB9"
+        },
+        {
+          "name": "Bolar's Oathblade",
+          "code": "000C1989"
+        },
+        {
+          "name": "Ceremonial Sword",
+          "code": "0008ADFC"
+        },
+        {
+          "name": "Daedric Sword",
+          "code": "000139B9"
+        },
+        {
+          "name": "Dawnbreaker",
+          "code": "0004E4EE"
+        },
+        {
+          "name": "Drainheart sword",
+          "code": "000F71DD"
+        },
+        {
+          "name": "Dwarven Sword",
+          "code": "00013999"
+        },
+        {
+          "name": "Ebony Sword",
+          "code": "000139B1"
+        },
+        {
+          "name": "Eduj",
+          "code": "0008FFDF"
+        },
+        {
+          "name": "Elven Sword",
+          "code": "000139A1"
+        },
+        {
+          "name": "Falmer Sword",
+          "code": "0002E6D1"
+        },
+        {
+          "name": "Forsworn Sword",
+          "code": "000CADE9"
+        },
+        {
+          "name": "Ghostblade",
+          "code": "00094A2B"
+        },
+        {
+          "name": "Glass Sword",
+          "code": "000139A9"
+        },
+        {
+          "name": "Grimsever",
+          "code": "00053379"
+        },
+        {
+          "name": "Hjalti's Sword",
+          "code": "00068976"
+        },
+        {
+          "name": "Honed Ancient Nord Sword",
+          "code": "0005BF14"
+        },
+        {
+          "name": "Honed Falmer Sword",
+          "code": "0006F6FF"
+        },
+        {
+          "name": "Imperial Sword",
+          "code": "000135B8"
+        },
+        {
+          "name": "Iron Sword",
+          "code": "00012EB7"
+        },
+        {
+          "name": "Lunar Iron Sword",
+          "code": "0003B0C4"
+        },
+        {
+          "name": "Lunar Steel Sword",
+          "code": "0003B0BD"
+        },
+        {
+          "name": "Nord Hero Sword",
+          "code": "00068C7B"
+        },
+        {
+          "name": "Orcish Sword",
+          "code": "00013991"
+        },
+        {
+          "name": "Phantom Sword",
+          "code": "000771B9"
+        },
+        {
+          "name": "Queen Freydis's Sword",
+          "code": "000AB85D"
+        },
+        {
+          "name": "Red Eagle's Bane",
+          "code": "000AB703"
+        },
+        {
+          "name": "Red Eagle's Fury",
+          "code": "0009FD50"
+        },
+        {
+          "name": "Scimitar",
+          "code": "0007A91A"
+        },
+        {
+          "name": "Silver Sword",
+          "code": "0010AA19"
+        },
+        {
+          "name": "Skyforge Steel Sword",
+          "code": "0009F25C"
+        },
+        {
+          "name": "Steel Sword",
+          "code": "000557F5"
+        },
+        {
+          "name": "Windshear",
+          "code": "0006EA8B"
+        }
+      ]
+    },
+    {
+      "name": "TwoHandedBlade",
+      "Resources": [
+        {
+          "name": "Ancient Nord Greatsword",
+          "code": "000236A5"
+        },
+        {
+          "name": "Balgruuf's Greatsword",
+          "code": "000946FC"
+        },
+        {
+          "name": "Iron Greatsword",
+          "code": "0001359D"
+        },
+        {
+          "name": "Dwarven Greatsword",
+          "code": "00013997"
+        },
+        {
+          "name": "Ebony Greatsword",
+          "code": "000139AF"
+        },
+        {
+          "name": "Ebony Blade",
+          "code": "0004A38F"
+        },
+        {
+          "name": "Elven Greatsword",
+          "code": "0001399F"
+        },
+        {
+          "name": "Glass Greatsword",
+          "code": "000139A7"
+        },
+        {
+          "name": "Honed Ancient Nord Greatsword",
+          "code": "0005BF13"
+        },
+        {
+          "name": "Daedric Greatsword",
+          "code": "000139B7"
+        },
+        {
+          "name": "Nord Hero Greatsword",
+          "code": "000A3115"
+        },
+        {
+          "name": "Orcish Greatsword",
+          "code": "0001398F"
+        },
+        {
+          "name": "Silver Greatsword",
+          "code": "0010C6FB"
+        },
+        {
+          "name": "Skyforge Steel Greatsword",
+          "code": "0009F25E"
+        },
+        {
+          "name": "Steel Greatsword",
+          "code": "00013987"
+        }
+      ]
+    },
+    {
+      "name": "RareDagger",
+      "Resources": [
+        {
+          "name": "Iron Dagger of Sapping",
+          "code": "896D5"
+        },
+        {
+          "name": "Iron Dagger of Draining",
+          "code": "896D6"
+        },
+        {
+          "name": "Iron Dagger of Diminishing",
+          "code": "896D7"
+        },
+        {
+          "name": "Iron Dagger of Souls",
+          "code": "896EA"
+        },
+        {
+          "name": "Iron Dagger of Soul Snares",
+          "code": "896EB"
+        },
+        {
+          "name": "Iron Dagger of Binding",
+          "code": "896EC"
+        },
+        {
+          "name": "Blessed Iron Dagger",
+          "code": "896F3"
+        },
+        {
+          "name": "Sanctified Iron Dagger",
+          "code": "896F4"
+        },
+        {
+          "name": "Reverent Iron Dagger",
+          "code": "896F5"
+        },
+        {
+          "name": "Iron Dagger of Fatigue",
+          "code": "896FF"
+        },
+        {
+          "name": "Iron Dagger of Weariness",
+          "code": "89700"
+        },
+        {
+          "name": "Iron Dagger of Torpor",
+          "code": "89701"
+        },
+        {
+          "name": "Iron Dagger of Dismay",
+          "code": "8970B"
+        },
+        {
+          "name": "Iron Dagger of Cowardice",
+          "code": "8970C"
+        },
+        {
+          "name": "Blade of Woe",
+          "code": "9CCDC"
+        },
+        {
+          "name": "Mehrunes' Razor",
+          "code": "240D2"
+        },
+        {
+          "name": "Iron Dagger of Fear",
+          "code": "8970D"
+        },
+        {
+          "name": "Skyforge Steel Dagger",
+          "code": "9F25D"
+        },
+        {
+          "name": "Bloodthorn",
+          "code": "A4DCE"
+        },
+        {
+          "name": "Daedric Dagger",
+          "code": "139B6"
+        }
+      ]
+    },
+    {
+      "name": "RareOneHandedBlade",
+      "Resources": [
+        {
+          "name": "Iron Sword of Soul Snares",
+          "code": "896E0"
+        },
+        {
+          "name": "Iron Sword of Binding",
+          "code": "896E1"
+        },
+        {
+          "name": "Iron Sword of Dismay",
+          "code": "89714"
+        },
+        {
+          "name": "Iron Sword of Cowardice",
+          "code": "89715"
+        },
+        {
+          "name": "Iron Sword of Fear",
+          "code": "89716"
+        },
+        {
+          "name": "Ghostblade",
+          "code": "94A2B"
+        },
+        {
+          "name": "Skyforge Steel Sword",
+          "code": "9F25C"
+        },
+        {
+          "name": "Daedric Sword",
+          "code": "139B9"
+        },
+        {
+          "name": "Eduj",
+          "code": "8FFDF"
+        },
+        {
+          "name": "Ceremonial Sword",
+          "code": "8ADFC"
+        }
+      ]
+    },
+    {
+      "name": "RareTwoHandedBlade",
+      "Resources": [
+        {
+          "name": "Iron Greatsword of Sapping",
+          "code": "896D8"
+        },
+        {
+          "name": "Iron Greatsword of Draining",
+          "code": "896D9"
+        },
+        {
+          "name": "Iron Greatsword of Diminishing",
+          "code": "896DA"
+        },
+        {
+          "name": "Iron Greatsword of Souls",
+          "code": "896ED"
+        },
+        {
+          "name": "Iron Greatsword of Soul Snares",
+          "code": "896EE"
+        },
+        {
+          "name": "Iron Greatsword of Binding",
+          "code": "896EF"
+        },
+        {
+          "name": "Blessed Iron Greatsword",
+          "code": "896F6"
+        },
+        {
+          "name": "Santified Iron Greatsword",
+          "code": "896F7"
+        },
+        {
+          "name": "Reverent Iron Greatsword",
+          "code": "896F8"
+        },
+        {
+          "name": "Iron Greatsword of Fatigue",
+          "code": "89702"
+        },
+        {
+          "name": "Iron Greatsword of Weariness",
+          "code": "89703"
+        },
+        {
+          "name": "Iron Greatsword of Torpor",
+          "code": "89704"
+        },
+        {
+          "name": "Iron Greatsword of Dismay",
+          "code": "8970E"
+        },
+        {
+          "name": "Iron Greatsword of Cowardice",
+          "code": "8970F"
+        },
+        {
+          "name": "Iron Greatsword of Fear",
+          "code": "89710"
+        },
+        {
+          "name": "Balgruuf's Greatsword",
+          "code": "946FC"
+        },
+        {
+          "name": "Skyforge Steel Greatsword",
+          "code": "9F25E"
+        },
+        {
+          "name": "Red Eagle's Fury",
+          "code": "9FD50"
+        },
+        {
+          "name": "Red Eagle's Bane",
+          "code": "AB703"
+        },
+        {
+          "name": "Nord Hero Greatsword",
+          "code": "A3115"
+        },
+        {
+          "name": "Steel Greatsword of Dismay",
+          "code": "A698A"
+        },
+        {
+          "name": "Steel Greatsword of Cowardice",
+          "code": "A698B"
+        },
+        {
+          "name": "Steel Greatsword of Fear",
+          "code": "A698C"
+        },
+        {
+          "name": "Steel Greatsword of Embers",
+          "code": "A698D"
+        },
+        {
+          "name": "Steel Greatsword of Burning",
+          "code": "A698E"
+        },
+        {
+          "name": "Steel Greatsword of Scorching",
+          "code": "A698F"
+        },
+        {
+          "name": "Steel Greatsword of Chills",
+          "code": "A6990"
+        },
+        {
+          "name": "Steel Greatsword of Frost",
+          "code": "A6991"
+        },
+        {
+          "name": "Steel Greatsword of Ice",
+          "code": "A6992"
+        },
+        {
+          "name": "Steel Greatsword of Sapping",
+          "code": "A6993"
+        },
+        {
+          "name": "Steel Greatsword of Draining",
+          "code": "A6994"
+        },
+        {
+          "name": "Steel Greatsword of Diminishing",
+          "code": "A6995"
+        },
+        {
+          "name": "Steel Greatsword of Sparks",
+          "code": "A6996"
+        },
+        {
+          "name": "Steel Greatsword of Arcing",
+          "code": "A6997"
+        },
+        {
+          "name": "Steel Greatsword of Shocks",
+          "code": "A6998"
+        },
+        {
+          "name": "Steel Greatsword of Souls",
+          "code": "A6999"
+        },
+        {
+          "name": "Steel Greatsword of Soul Snares",
+          "code": "A699A"
+        },
+        {
+          "name": "Steel Greatsword of Binding",
+          "code": "A699B"
+        },
+        {
+          "name": "Steel Greatsword of Soul-Ripping",
+          "code": "A699C"
+        },
+        {
+          "name": "Steel Greatsword of Weariness",
+          "code": "A699D"
+        },
+        {
+          "name": "Steel Greatsword of Torpor",
+          "code": "A699E"
+        },
+        {
+          "name": "Blessed Steel Greatsword",
+          "code": "A699F"
+        },
+        {
+          "name": "Sanctified Steel Greatsword",
+          "code": "A69A0"
+        },
+        {
+          "name": "Reverent Steel Greatsword",
+          "code": "A69A1"
+        }
+      ]
+    },
+    {
+      "name": "OneHandedMace",
+      "Resources": [
+        {
+          "name": "Daedric Mace",
+          "code": "000139B8"
+        },
+        {
+          "name": "Dwarven Mace",
+          "code": "00013998"
+        },
+        {
+          "name": "Ebony Mace",
+          "code": "000139B0"
+        },
+        {
+          "name": "Elven Mace",
+          "code": "000139A0"
+        },
+        {
+          "name": "Glass Mace",
+          "code": "000139A8"
+        },
+        {
+          "name": "Iron Mace",
+          "code": "00013982"
+        },
+        {
+          "name": "Lunar Iron Mace",
+          "code": "0003B0C1"
+        },
+        {
+          "name": "Lunar Steel Mace",
+          "code": "3B0BC"
+        },
+        {
+          "name": "Mace of Molag Bal",
+          "code": "000233E3"
+        },
+        {
+          "name": "Orcish Mace",
+          "code": "00013990"
+        },
+        {
+          "name": "Rusty Mace",
+          "code": "00022F0F"
+        },
+        {
+          "name": "Steel Mace",
+          "code": "00013988"
+        }
+      ]
+    },
+    {
+      "name": "RareOneHandedMace",
+      "Resources": [
+        {
+          "name": "Iron Mace of Soul Snares",
+          "code": "A69C4"
+        },
+        {
+          "name": "Iron Mace of Binding",
+          "code": "896DF"
+        },
+        {
+          "name": "Iron Mace of Dismay",
+          "code": "896DF"
+        },
+        {
+          "name": "Iron Mace of Cowardice",
+          "code": "89711"
+        },
+        {
+          "name": "Iron Mace of Fear",
+          "code": "89713"
+        },
+        {
+          "name": "Steel Mace of Dismay",
+          "code": "A69B8"
+        },
+        {
+          "name": "Steel Mace of Cowardice",
+          "code": "A69B9"
+        },
+        {
+          "name": "Steel Mace of Sapping",
+          "code": "A69BA"
+        },
+        {
+          "name": "Steel Mace of Draining",
+          "code": "A69BB"
+        },
+        {
+          "name": "Steel Mace of Diminishing",
+          "code": "A69BC"
+        },
+        {
+          "name": "Steel Mace of Souls",
+          "code": "A69BD"
+        },
+        {
+          "name": "Steel Mace of Soul Snares",
+          "code": "A69BE"
+        },
+        {
+          "name": "Steel Mace of Binding",
+          "code": "A69BF"
+        },
+        {
+          "name": "Steel Mace of Fatigue",
+          "code": "A69C0"
+        },
+        {
+          "name": "Steel Mace of Weariness",
+          "code": "A69C1"
+        },
+        {
+          "name": "Steel Mace of Torpor",
+          "code": "A69C2"
+        },
+        {
+          "name": "Blessed Steel Mace",
+          "code": "A69C3"
+        },
+        {
+          "name": "Sanctified Steel Mace",
+          "code": "A69C4"
+        }
+      ]
+    },
+    {
+      "name": "TwoHandedMace",
+      "Resources": [
+        {
+          "name": "Aegisbane",
+          "code": "000D2AFE"
+        },
+        {
+          "name": "Daedric Warhammer",
+          "code": "000139BA"
+        },
+        {
+          "name": "Dwarven Warhammer",
+          "code": "0001399A"
+        },
+        {
+          "name": "Ebony Warhammer",
+          "code": "000139B2"
+        },
+        {
+          "name": "Elven Warhammer",
+          "code": "000139A2"
+        },
+        {
+          "name": "Glass Warhammer",
+          "code": "000139AA"
+        },
+        {
+          "name": "Iron Warhammer",
+          "code": "00013981"
+        },
+        {
+          "name": "Orcish Warhammer",
+          "code": "00013992"
+        },
+        {
+          "name": "Shagrol's Warhammer",
+          "code": "000223FB"
+        },
+        {
+          "name": "Steel Warhammer",
+          "code": "0001398A"
+        },
+        {
+          "name": "The Longhammer",
+          "code": "000AE085"
+        },
+        {
+          "name": "Trollsbane",
+          "code": "0006AF63"
+        },
+        {
+          "name": "Volendrung",
+          "code": "0002ACD2"
+        }
+      ]
+    },
+    {
+      "name": "RareTwoHandedMace",
+      "Resources": [
+        {
+          "name": "Iron Warhammer of Sapping",
+          "code": "896DB"
+        },
+        {
+          "name": "Iron Warhammer of Draining",
+          "code": "896DC"
+        },
+        {
+          "name": "Iron Warhammer of Diminishing",
+          "code": "896DD"
+        },
+        {
+          "name": "Iron Warhammer of Souls",
+          "code": "896E4"
+        },
+        {
+          "name": "Iron Warhammer of Soul Snares",
+          "code": "896E5"
+        },
+        {
+          "name": "Iron Warhammer of Binding",
+          "code": "896E6"
+        },
+        {
+          "name": "Blessed Iron Warhammer",
+          "code": "896F9"
+        },
+        {
+          "name": "Santified Iron Warhammer",
+          "code": "896FA"
+        },
+        {
+          "name": "Reverent Iron Warhammer",
+          "code": "896FB"
+        },
+        {
+          "name": "Iron Warhammer of Fatigue",
+          "code": "89705"
+        },
+        {
+          "name": "Iron Warhammer of Weariness",
+          "code": "89706"
+        },
+        {
+          "name": "Iron Warhammer of Torpor",
+          "code": "89707"
+        },
+        {
+          "name": "Iron Warhammer of Dismay",
+          "code": "8971A"
+        },
+        {
+          "name": "Iron Warhammer of Cowardice",
+          "code": "8971B"
+        },
+        {
+          "name": "Iron Warhammer of Fear",
+          "code": "8971C"
+        },
+        {
+          "name": "Steel Warhammer of Dismay",
+          "code": "A69A2"
+        },
+        {
+          "name": "Steel Warhammer of Cowardice",
+          "code": "A69A3"
+        },
+        {
+          "name": "Steel Warhammer of Fear",
+          "code": "A69A4"
+        },
+        {
+          "name": "Steel Warhammer of Embers",
+          "code": "A69A5"
+        },
+        {
+          "name": "Steel Warhammer of Burning",
+          "code": "A69A6"
+        },
+        {
+          "name": "Steel Warhammer of Chills",
+          "code": "A69A7"
+        },
+        {
+          "name": "Steel Warhammer of Frost",
+          "code": "A69A8"
+        },
+        {
+          "name": "Steel Warhammer of Sapping",
+          "code": "A69A9"
+        },
+        {
+          "name": "Steel Warhammer of Draining",
+          "code": "A69AA"
+        },
+        {
+          "name": "Steel Warhammer of Diminishing",
+          "code": "A69AB"
+        },
+        {
+          "name": "Steel Warhammer of Sparks",
+          "code": "A69AC"
+        },
+        {
+          "name": "Steel Warhammer of Arcing",
+          "code": "A69AD"
+        },
+        {
+          "name": "Steel Warhammer of Shocks",
+          "code": "A69AE"
+        },
+        {
+          "name": "Steel Warhammer of Souls",
+          "code": "A69AF"
+        },
+        {
+          "name": "Steel Warhammer of Soul Snares",
+          "code": "A69B0"
+        },
+        {
+          "name": "Steel Warhammer of Binding",
+          "code": "A69B1"
+        },
+        {
+          "name": "Steel Warhammer of Fatigue",
+          "code": "A69B2"
+        },
+        {
+          "name": "Steel Warhammer of Weariness",
+          "code": "A69B3"
+        },
+        {
+          "name": "Steel Warhammer of Torpor",
+          "code": "A69B4"
+        },
+        {
+          "name": "Blessed Steel Warhammer",
+          "code": "A69B5"
+        },
+        {
+          "name": "Santified Steel Warhammer",
+          "code": "A69B6"
+        },
+        {
+          "name": "Reverent Steel Warhammer",
+          "code": "A69B7"
+        }
+      ]
+    },
+    {
+      "name": "OneHandedAxe",
+      "Resources": [
+        {
+          "name": "Ancient Nord War Axe",
+          "code": "0002C672"
+        },
+        {
+          "name": "Ceremonial Axe",
+          "code": "0008ABFD"
+        },
+        {
+          "name": "Daedric War Axe",
+          "code": "000139B3"
+        },
+        {
+          "name": "Dwarven War Axe",
+          "code": "00013993"
+        },
+        {
+          "name": "Ebony War Axe",
+          "code": "000139AB"
+        },
+        {
+          "name": "Elven War Axe",
+          "code": "0001399B"
+        },
+        {
+          "name": "Falmer War Axe",
+          "code": "000302CD"
+        },
+        {
+          "name": "Forsworn Axe",
+          "code": "000CC829"
+        },
+        {
+          "name": "Ghorbash's Ancestral Axe",
+          "code": "0006A8FD"
+        },
+        {
+          "name": "Glass War Axe",
+          "code": "000139A3"
+        },
+        {
+          "name": "Honed Draugr War Axe",
+          "code": "0005BF15"
+        },
+        {
+          "name": "Honed Falmer War Axe",
+          "code": "0006F700"
+        },
+        {
+          "name": "Illusory War Axe",
+          "code": "000E7A31"
+        },
+        {
+          "name": "Iron War Axe",
+          "code": "00013790"
+        },
+        {
+          "name": "Lunar Iron War Axe",
+          "code": "0003B0C7"
+        },
+        {
+          "name": "Lunar Steel War Axe",
+          "code": "0003B0BE"
+        },
+        {
+          "name": "Nord Hero War Axe",
+          "code": "00068C63"
+        },
+        {
+          "name": "Notched Pickaxe",
+          "code": "001019D4"
+        },
+        {
+          "name": "Okin",
+          "code": "0008FFDE"
+        },
+        {
+          "name": "Orcish War Axe",
+          "code": "0001398B"
+        },
+        {
+          "name": "Pickaxe",
+          "code": "000E3C16"
+        },
+        {
+          "name": "Poacher's Axe",
+          "code": "000AE086"
+        },
+        {
+          "name": "Skyforge Steel War Axe",
+          "code": "0009F260"
+        },
+        {
+          "name": "Steel War Axe",
+          "code": "00013983"
+        },
+        {
+          "name": "Woodcutter's Axe",
+          "code": "0002F2F4"
+        }
+      ]
+    },
+    {
+      "name": "TwoHandedAxe",
+      "Resources": [
+        {
+          "name": "Ancient Nord Battle Axe",
+          "code": "0001CB64"
+        },
+        {
+          "name": "Daedric Battleaxe",
+          "code": "000139B4"
+        },
+        {
+          "name": "Drainblood Battleaxe",
+          "code": "000F82FA"
+        },
+        {
+          "name": "Dwarven Battleaxe",
+          "code": "00013994"
+        },
+        {
+          "name": "Ebony Battleaxe",
+          "code": "000139AC"
+        },
+        {
+          "name": "Elven Battleaxe",
+          "code": "0001399C"
+        },
+        {
+          "name": "Glass Battleaxe",
+          "code": "000139A4"
+        },
+        {
+          "name": "Headsman's Axe",
+          "code": "000BE25E"
+        },
+        {
+          "name": "Honed Ancient Nord Battle Axe",
+          "code": "0005BF12"
+        },
+        {
+          "name": "Iron Battleaxe",
+          "code": "00013980"
+        },
+        {
+          "name": "Nord Hero Battle Axe",
+          "code": "00068C79"
+        },
+        {
+          "name": "Orcish Battleaxe",
+          "code": "0001398C"
+        },
+        {
+          "name": "Skyforge Steel Battleaxe",
+          "code": "0009F25F"
+        },
+        {
+          "name": "Steel Battleaxe",
+          "code": "00013984"
+        },
+        {
+          "name": "Rueful Axe",
+          "code": "0001C4E6"
+        },
+        {
+          "name": "The Woodsman's Friend",
+          "code": "00022265"
+        },
+        {
+          "name": "Tsun's Battle Axe",
+          "code": "0005BF19"
+        },
+        {
+          "name": "Wuuthrad",
+          "code": "000956B5"
+        }
+      ]
+    },
+    {
+      "name": "RareOneHandedAxe",
+      "Resources": [
+        {
+          "name": "Iron War Axe of Soul Snares",
+          "code": "896E2"
+        },
+        {
+          "name": "Iron War Axe of Binding",
+          "code": "896E3"
+        },
+        {
+          "name": "Iron War Axe of Dismay",
+          "code": "89717"
+        },
+        {
+          "name": "Iron War Axe of Cowardice",
+          "code": "89718"
+        },
+        {
+          "name": "Iron War Axe of Fear",
+          "code": "89719"
+        },
+        {
+          "name": "Skyforge Steel War Axe",
+          "code": "9F260"
+        },
+        {
+          "name": "Okin",
+          "code": "8FFDE"
+        },
+        {
+          "name": "Ceremonial Axe",
+          "code": "8ADFB"
+        }
+      ]
+    },
+    {
+      "name": "RareTwoHanded",
+      "Resources": [
+        {
+          "name": "Iron Battleaxe of Souls",
+          "code": "896E7"
+        },
+        {
+          "name": "Iron Battleaxe of Soul Snares",
+          "code": "896E8"
+        },
+        {
+          "name": "Iron Battleaxe of Binding",
+          "code": "896E9"
+        },
+        {
+          "name": "Blessed Iron Battleaxe",
+          "code": "896F0"
+        },
+        {
+          "name": "Santified Iron Battleaxe",
+          "code": "896F1"
+        },
+        {
+          "name": "Reverent Iron Battleaxe",
+          "code": "896F2"
+        },
+        {
+          "name": "Iron Battleaxe of Fatigue",
+          "code": "896FC"
+        },
+        {
+          "name": "Iron Battleaxe of Weariness",
+          "code": "896FD"
+        },
+        {
+          "name": "Iron Battleaxe of Torpor",
+          "code": "896FE"
+        },
+        {
+          "name": "Iron Battleaxe of Dismay",
+          "code": "89708"
+        },
+        {
+          "name": "Iron Battleaxe of Cowardice",
+          "code": "89709"
+        },
+        {
+          "name": "Iron Battleaxe of Fear",
+          "code": "8970A"
+        },
+        {
+          "name": "Wuuthrad",
+          "code": "956B5"
+        },
+        {
+          "name": "Skyforge Steel Battleaxe",
+          "code": "9F25F"
+        },
+        {
+          "name": "Steel Battleaxe of Embers",
+          "code": "A56CE"
+        },
+        {
+          "name": "Steel Battleaxe of Burning",
+          "code": "A56CF"
+        },
+        {
+          "name": "Steel Battleaxe of Scorching",
+          "code": "A56D0"
+        },
+        {
+          "name": "Steel Battleaxe of Chills",
+          "code": "A6975"
+        },
+        {
+          "name": "Steel Battleaxe of Frost",
+          "code": "A6976"
+        },
+        {
+          "name": "Steel Battleaxe of Ice",
+          "code": "A6977"
+        },
+        {
+          "name": "Steel Battleaxe of Dismay",
+          "code": "A6978"
+        },
+        {
+          "name": "Steel Battleaxe of Cowardice",
+          "code": "A6979"
+        },
+        {
+          "name": "Steel Battleaxe of Fear",
+          "code": "A697A"
+        },
+        {
+          "name": "Battleaxe of Sparks",
+          "code": "A697B"
+        },
+        {
+          "name": "Steel Battleaxe of Arcing",
+          "code": "A697C"
+        },
+        {
+          "name": "Steel Battleaxe of Shocks",
+          "code": "A697D"
+        },
+        {
+          "name": "Steel Battleaxe of Sapping",
+          "code": "A697E"
+        },
+        {
+          "name": "Steel Battleaxe of Draining",
+          "code": "A697F"
+        },
+        {
+          "name": "Steel Battleaxe of Diminishing",
+          "code": "A6980"
+        },
+        {
+          "name": "Steel Battleaxe of Souls",
+          "code": "A6981"
+        },
+        {
+          "name": "Steel Battleaxe of Soul Snares",
+          "code": "A6982"
+        },
+        {
+          "name": "Steel Battleaxe of Binding",
+          "code": "A6983"
+        },
+        {
+          "name": "Steel Battleaxe of Fatigue",
+          "code": "A6984"
+        },
+        {
+          "name": "Steel Battleaxe of Weariness",
+          "code": "A6985"
+        },
+        {
+          "name": "Steel Battleaxe of Torpor",
+          "code": "A6986"
+        },
+        {
+          "name": "Blessed Steel Battleaxe",
+          "code": "A6987"
+        },
+        {
+          "name": "Santified Steel Battleaxe",
+          "code": "A6988"
+        },
+        {
+          "name": "Reverent Steel Battleaxe",
+          "code": "A6989"
+        }
+      ]
+    },
+    {
+      "name": "Bows",
+      "Resources": [
+        {
+          "name": "Ancient Nord Bow",
+          "code": "000302CA"
+        },
+        {
+          "name": "Angi's Bow",
+          "code": "000CC392"
+        },
+        {
+          "name": "Bow of the Hunt",
+          "code": "000AE087"
+        },
+        {
+          "name": "Daedric Bow",
+          "code": "000139B5"
+        },
+        {
+          "name": "Drainspell Bow",
+          "code": "000F82FC"
+        },
+        {
+          "name": "Dravin's Bow",
+          "code": "0006B9AD"
+        },
+        {
+          "name": "Dwarven Bow",
+          "code": "00013995"
+        },
+        {
+          "name": "Ebony Bow",
+          "code": "000139AD"
+        },
+        {
+          "name": "Elven Bow",
+          "code": "0001399D"
+        },
+        {
+          "name": "Falmer Bow",
+          "code": "00038340"
+        },
+        {
+          "name": "Falmer Supple Bow",
+          "code": "00083167"
+        },
+        {
+          "name": "Firiniel's End",
+          "code": "00017059"
+        },
+        {
+          "name": "Forsworn Bow",
+          "code": "000CEE9B"
+        },
+        {
+          "name": "Froki's Bow",
+          "code": "000C0186"
+        },
+        {
+          "name": "Gauldur Blackbow",
+          "code": "000A5DF0"
+        },
+        {
+          "name": "Glass Bow",
+          "code": "000139A5"
+        },
+        {
+          "name": "Hunting Bow",
+          "code": "0010E2DD"
+        },
+        {
+          "name": "Imperial Bow",
+          "code": "00013841"
+        },
+        {
+          "name": "Karliah's Bow",
+          "code": "000DEED8"
+        },
+        {
+          "name": "Long Bow",
+          "code": "0003B562"
+        },
+        {
+          "name": "Nord Hero Bow",
+          "code": "00068C57"
+        },
+        {
+          "name": "Orcish Bow",
+          "code": "0001398D"
+        },
+        {
+          "name": "Supple Ancient Nord Bow",
+          "code": "0005D179"
+        },
+        {
+          "name": "Nightingale Bow",
+          "code": "000F652C"
+        },
+        {
+          "name": "Spectral Bow",
+          "code": "0E0068EB"
+        }
+      ]
+    }
+  ]
+}

@@ -6,6 +6,8 @@ using System.Windows.Forms;
 using Newtonsoft.Json.Linq;
 using System.Drawing;
 using System.IO;
+using UltimateBatchFileMaker.Models;
+using System.Threading;
 
 namespace UltimateBatchFileMaker
 {
@@ -13,16 +15,33 @@ namespace UltimateBatchFileMaker
     {
         OpenFileDialog fd = new OpenFileDialog();
         FolderBrowserDialog fbd = new FolderBrowserDialog();
-        private Definitions definition;
-        private List<JObject> master_values = new List<JObject>();
         private List<string[]> exportList = new List<string[]>();
+        private JsonParser jsonParser;
 
         public MainForm()
         {
             InitializeComponent();
         }
 
-        private void loadFileToolStripMenuItem_Click(object sender, EventArgs e)
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            fd.Filter = "Definition file | *definitions*.json";
+            fd.Title = "Please select Definitions file";
+
+            if (fd.ShowDialog() == DialogResult.OK)
+            {
+                jsonParser = new JsonParser(fd.FileName);
+                Text = Text + " - " + jsonParser.GetGameName();
+            }
+            else
+            {
+                MessageBox.Show("No definitions file selected, exiting.");
+                Close();
+            }
+
+        }
+
+        private void LoadResourceFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
             fd.Filter = "JSON file | *.json";
             fd.Title = "Please select Resource JSON file";
@@ -30,57 +49,203 @@ namespace UltimateBatchFileMaker
 
             if (fd.ShowDialog() == DialogResult.OK)
             {
-                foreach (string filepath in fd.FileNames)
+                foreach (var path in fd.FileNames)
                 {
-                    string raw_json = System.IO.File.ReadAllText(filepath);
-
-
-                    JObject parsed_json = JObject.Parse(raw_json);
-
-                    if (parsed_json["Game"].Value<string>() == definition.GameName)
+                    KeyValuePair<string, DataTable> kv;
+                    try
                     {
-                        string category_name = parsed_json.Properties().Select(p => p.Name).ToList()[1];
+                        kv = jsonParser.LoadResourceFile(path);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                        return;
+                    }
 
+                    CreateTab(kv.Key, kv.Value);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Resource file not found");
+            }
+        }
 
-                        if (parsed_json[category_name].First().Count() != 2)
-                        {
-                            foreach (JObject child in parsed_json[category_name].Children<JObject>())
-                            {
-                                string item_category = child.Properties().Select(p => p.Name).ToList()[0];
+        private void LoadResourceFolderToolStripMenuItem_click(object sender, EventArgs e)
+        {
+            List<string> importedFiles;
+            fbd.Description = "Select Resources folder";
 
-                                foreach (JObject item in child.Children().First().Values())
-                                {
-                                    item.Add("itemCategory", item_category);
-                                    master_values.Add(item);
-                                }
-                            }
-                            DataTable dt = populateTable(master_values);
-                            createTab(category_name, dt);
-                            master_values.Clear();
-                        }
-                        else
-                        {
-                            foreach (JObject child in parsed_json[category_name].Children<JObject>())
-                            {
-                                child.Add("itemCategory", category_name);
-                                master_values.Add(child);
+            if (fbd.ShowDialog() == DialogResult.OK)
+            {
+                using (ResourceDetectionPopup rdp = new ResourceDetectionPopup())
+                {
+                    foreach (var file in Directory.GetFiles(fbd.SelectedPath).Where(x => x.EndsWith(".json") && !x.Contains("definition")))
+                    {
+                        rdp.detectedFiles.Add(file);
+                    }
 
-                            }
-                            DataTable dt = populateTable(master_values);
-                            createTab(category_name, dt);
-                            master_values.Clear();
-                        }
+                    if (rdp.ShowDialog() == DialogResult.OK)
+                    {
+                        importedFiles = rdp.detectedFiles;
                     }
                     else
                     {
-                        MessageBox.Show(filepath + " does not belong to " + definition.GameName);
+                        MessageBox.Show("No Resource files to import");
+                        return;
                     }
                 }
             }
             else
             {
-                MessageBox.Show("Could not find Resource file.");
+                MessageBox.Show("No Resource folder selected, exiting.");
+                return;
             }
+
+            if (importedFiles.Count == 0)
+            {
+                MessageBox.Show("No file to import");
+                return;
+            }
+
+            foreach (string path in importedFiles)
+            {
+                KeyValuePair<string,DataTable> kv = jsonParser.LoadResourceFile(path);
+                CreateTab(kv.Key, kv.Value);
+            }
+        }
+
+        private void Dgv_DataError(object sender, DataGridViewDataErrorEventArgs e)
+        {
+            // Left empty, because it prevents users from putting string in the 'Amount' column :)
+        }
+
+        private void Map_full_rbtn_CheckedChanged(object sender, EventArgs e)
+        {
+            if (Map_full_rbtn.Checked == true)
+            {
+                UpdateMapMode("1");
+            }
+        }
+
+        private void Map_markers_rbtn_CheckedChanged(object sender, EventArgs e)
+        {
+            if (Map_markers_rbtn.Checked == true)
+            {
+                UpdateMapMode("1,0,1");
+            }
+        }
+
+        private void Map_none_rbtn_CheckedChanged(object sender, EventArgs e)
+        {
+            if (Map_none_rbtn.Checked == true)
+            {
+                UpdateMapMode("0");
+            }
+        }
+
+        private void Perk_add_btn_Click(object sender, EventArgs e)
+        {
+            if (!Perk_txtbx.Text.Equals(""))
+            {
+                Perks_lstbx.Items.Add(Perk_txtbx.Text);
+                Perk_txtbx.Text = "";
+            }
+        }
+
+        private void Perk_remove_btn_Click(object sender, EventArgs e)
+        {
+            Perk_txtbx.Text = Perks_lstbx.SelectedItem.ToString();
+            Perks_lstbx.Items.Remove(Perks_lstbx.SelectedItem);
+        }
+
+        private void Var_add_btn_Click(object sender, EventArgs e)
+        {
+            if (!Var_txtbx.Text.Equals(""))
+            {
+                Variables_lstbx.Items.Add(Var_txtbx.Text);
+                Var_txtbx.Text = "";
+            }
+        }
+
+        private void Var_remove_btn_Click(object sender, EventArgs e)
+        {
+            Var_txtbx.Text = Variables_lstbx.SelectedItem.ToString();
+            Variables_lstbx.Items.Remove(Variables_lstbx.SelectedItem);
+        }
+
+        private void ClearAllToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                exportList.Clear();
+                foreach (TabPage item in tabControl1.TabPages)
+                {
+                    DataGridView dgv = item.Controls.OfType<DataGridView>().Single();
+
+                    foreach (DataGridViewRow row in dgv.Rows.Cast<DataGridViewRow>().Where(r => !r.Cells["Amount"].Value.ToString().Equals("")))
+                    {
+                        row.Cells[3].Value = 0;
+                    }
+                }
+                
+                foreach (var txtbx in Player_grpbx.Controls.OfType<TextBox>())
+                {
+                    txtbx.Text = "";
+                }
+
+                foreach (var radiobtn in Map_grpbx.Controls.OfType<RadioButton>())
+                {
+                    radiobtn.Checked = false;
+                }
+
+                Perks_lstbx.Items.Clear();
+                Variables_lstbx.Items.Clear();
+            }
+            catch
+            {
+                MessageBox.Show("Nothing to clear");
+            }
+        }
+
+        private void CreateDefinitionFileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using(CreateDefPopup cdf = new CreateDefPopup())
+            {
+                var ans = cdf.ShowDialog();
+            }
+        }
+
+        private void CreateResourceFileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (CreateResFormBasic crf = new CreateResFormBasic())
+            {
+                var ans = crf.ShowDialog();
+            }
+        }
+
+        private void CreateResourceFileAdvToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (CreateResFormAdv crf = new CreateResFormAdv())
+            {
+                var ans = crf.ShowDialog();
+            }
+        }
+
+        private void HelpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (!IsOpen("HelpForm"))
+            {
+                new Thread(() => new HelpForm().ShowDialog()).Start();
+            }
+        }
+
+        private void versionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string text = "Ultime Batch File Maker by TheSilverHawk (a.k.a MuffinDragon)" + Environment.NewLine
+                        + "Version v1.1" + Environment.NewLine
+                        + "This Program is made for free use on Nexus Mods";
+            MessageBox.Show(text);
         }
 
         private void ExtractInfo_Click(object sender, EventArgs e)
@@ -88,94 +253,77 @@ namespace UltimateBatchFileMaker
             // Take care of DataGridView Items
             foreach (TabPage item in tabControl1.TabPages)
             {
-                
+
                 DataGridView dgv = item.Controls.OfType<DataGridView>().Single();
-                Dictionary<string, string> associations = definition.GetAssociations();
+                Dictionary<string, string> associations = jsonParser.GetAssociations();
 
                 foreach (DataGridViewRow row in dgv.Rows.Cast<DataGridViewRow>().Where(r => int.Parse(r.Cells["Amount"].Value.ToString()) > 0))
                 {
                     string command = associations[item.Text];
-                    exportList.Add(new string[] { command,row.Cells[2].Value.ToString(), row.Cells[3].Value.ToString() });
-                } 
+                    exportList.Add(new string[] { command, row.Cells[2].Value.ToString(), row.Cells[3].Value.ToString() });
+                }
             }
 
             // Take care of Player GroupBox
             if (!Level_txtbx.Text.Equals(""))
             {
-                exportList.Add(new string[] { definition.SetLevel(Level_txtbx.Text), "", "" });
+                exportList.Add(new string[] { jsonParser.GetCommand("Level"), Level_txtbx.Text, "" });
             }
             if (!Money_txtbx.Text.Equals(""))
             {
-                exportList.Add(new string[] { definition.Additem("f", int.Parse(Money_txtbx.Text)), "", "" });
+                exportList.Add(new string[] { jsonParser.GetCommand("Item"), "f", Money_txtbx.Text });
             }
 
             // Take care of Perk GroupBox
             if (Perks_lstbx.Items.Count > 0)
             {
-                foreach (var item in Perks_lstbx.Items)
+                foreach (var perk in Perks_lstbx.Items)
                 {
-                    exportList.Add(new string[] { definition.AddPerk(item.ToString()), "", "" });
+                    exportList.Add(new string[] { jsonParser.GetCommand("Perk"), perk.ToString(), "" });
                 }
             }
 
             // Take care of Variable GroupBox
             if (Variables_lstbx.Items.Count > 0)
             {
-                foreach (var item in Variables_lstbx.Items)
+                foreach (var value in Variables_lstbx.Items)
                 {
-                    exportList.Add(new string[] { definition.SetVariable(item.ToString()), "", "" });
+                    exportList.Add(new string[] { jsonParser.GetCommand("Value"), value.ToString(), "" });
                 }
             }
 
 
             // Start writing to a file
-            StreamWriter sw;
-            SaveFileDialog sfd = new SaveFileDialog();
-
-            sfd.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
-            sfd.DefaultExt = "txt";
-            sfd.AddExtension = true;
-
-            if (sfd.ShowDialog() == DialogResult.OK)
+            using (SaveFileDialog sfd = new SaveFileDialog())
             {
-                sw = new StreamWriter(sfd.FileName);
-                foreach (var item in exportList)
+                sfd.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+                sfd.DefaultExt = "txt";
+                sfd.AddExtension = true;
+
+                if (sfd.ShowDialog() == DialogResult.OK)
                 {
-                    sw.WriteLine(item[0] + " " + item[1] + " " + item[2]);
+                    using (StreamWriter sw = new StreamWriter(sfd.FileName))
+                    {
+                        foreach (var item in exportList)
+                        {
+                            sw.WriteLine(item[0] + " " + item[1] + " " + item[2]);
+                        }
+                        sw.Close();
+                    }
+                    exportList.Clear();
+                    MessageBox.Show("Extraction complete!");
                 }
-                sw.Close();
-                exportList.Clear();
-                MessageBox.Show("Extraction complete!");
-            }
-            else
-            {
-                MessageBox.Show("Operation canceled");
+                else
+                {
+                    MessageBox.Show("Operation canceled");
+                }
             }
         }
 
-        private DataTable populateTable(List<JObject> values)
-        {
-            DataTable dt = new DataTable();
-
-            dt.Columns.Add("Category");
-            dt.Columns.Add("Name");
-            dt.Columns.Add("Code");
-            dt.Columns.Add("Amount", Type.GetType("System.Int32"));
-
-
-            foreach (JObject row in values)
-            {
-                DataRow dr = dt.NewRow();
-                dr["Category"] = row.Property("itemCategory").Value; ;
-                dr["Name"] = row.Property("name").Value;
-                dr["Code"] = row.Property("code").Value;
-                dr["Amount"] = 0;
-                dt.Rows.Add(dr);
-            }
-            return dt;
-        }
-
-        private void createTab(string category, DataTable dt)
+        //
+        // SUPPORT METHODS
+        //
+        private void CreateTab(string category, DataTable dt)
         {
             foreach (TabPage item in tabControl1.TabPages)
             {
@@ -186,14 +334,14 @@ namespace UltimateBatchFileMaker
                 }
             }
 
-            if (!associateCategory(category))
+            if (!jsonParser.AssociateCategory(category))
             {
                 return;
             }
 
             TabPage tp = new TabPage(category);
             tabControl1.Controls.Add(tp);
-            
+
             DataGridView dgv = new DataGridView();
             dgv.Dock = DockStyle.Fill;
             dgv.Name = category + "DGView";
@@ -287,312 +435,24 @@ namespace UltimateBatchFileMaker
             tp.Controls.Add(bn);
         }
 
-        private void Dgv_DataError(object sender, DataGridViewDataErrorEventArgs e)
+        private void UpdateMapMode(string mode)
         {
-            // Empty, but not letting you put string in Amount column which is good :)
+            string mapCommand = jsonParser.GetCommand("map");
+            exportList.RemoveAll(x => x[0].Contains(mapCommand));
+
+            exportList.Add(new string[] { mapCommand + " " + mode,"","" });
         }
 
-        private bool associateCategory(string category_name)
+        private bool IsOpen(string form_name)
         {
-            string[] item_types = { "Weapons", "Ammo", "Armor", "Items", "Food" };
+            FormCollection fc = Application.OpenForms;
 
-            if (item_types.Contains(category_name))
+            foreach (var form in fc)
             {
-                definition.AddAssociation(category_name, "Item");
+                if (form.ToString().IndexOf(form_name) != -1)
+                    return true;
             }
-            else if (category_name ==  "Actors")
-            {
-                definition.AddAssociation(category_name, "NPC");
-            }
-            else
-            {
-                using (AssociationPopup frm = new AssociationPopup())
-                {
-                    frm.CategoryName = category_name;
-                    var ans = frm.ShowDialog();
-                    if ( ans == DialogResult.OK)
-                    {
-                        string val = frm.ReturnValue;
-                        definition.AddAssociation(category_name, val);
-                        return true;
-                    }
-                    else
-                    {
-                        MessageBox.Show("No association specified, skipping");
-                        return false;
-                    }
-                }
-
-            }
-            return true;
-        }
-
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButton1.Checked == true)
-            {
-                exportList.Add(new string[] { definition.MapCommand("1"), "", "" });
-            }
-            else
-            {
-                exportList.RemoveAll(x => x[0] == definition.MapCommand("1"));
-            }
-        }
-
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButton2.Checked == true)
-            {
-                exportList.Add(new string[] { definition.MapCommand("1,0,1"), "", "" });
-            }
-            else
-            {
-                exportList.RemoveAll(x => x[0] == definition.MapCommand("1,0,1"));
-            }
-        }
-
-        private void radioButton3_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButton3.Checked == true)
-            {
-                exportList.Add(new string[] { definition.MapCommand("0"), "", "" });
-            }
-            else
-            {
-                exportList.RemoveAll(x => x[0] == definition.MapCommand("0"));
-            }
-        }
-
-        private void PerkAdd_btn_Click(object sender, EventArgs e)
-        {
-            if (!Perk_txtbx.Text.Equals(""))
-            {
-                Perks_lstbx.Items.Add(Perk_txtbx.Text);
-                Perk_txtbx.Text = "";
-            }
-        }
-
-        private void PerkRem_btn_Click(object sender, EventArgs e)
-        {
-            Perk_txtbx.Text = Perks_lstbx.SelectedItem.ToString();
-            Perks_lstbx.Items.Remove(Perks_lstbx.SelectedItem);
-        }
-
-        private void VarAdd_btn_Click(object sender, EventArgs e)
-        {
-            if (!Var_txtbx.Text.Equals(""))
-            {
-                Variables_lstbx.Items.Add(Var_txtbx.Text);
-                Var_txtbx.Text = "";
-            }
-        }
-
-        private void VarRem_btn_Click(object sender, EventArgs e)
-        {
-            Var_txtbx.Text = Variables_lstbx.SelectedItem.ToString();
-            Variables_lstbx.Items.Remove(Variables_lstbx.SelectedItem);
-        }
-
-        private void clearAllToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                exportList.Clear();
-                foreach (TabPage item in tabControl1.TabPages)
-                {
-                    DataGridView dgv = item.Controls.OfType<DataGridView>().Single();
-
-                    foreach (DataGridViewRow row in dgv.Rows.Cast<DataGridViewRow>().Where(r => !r.Cells["Amount"].Value.ToString().Equals("")))
-                    {
-                        row.Cells[3].Value = 0;
-                    }
-                }
-                
-                foreach (var txtbx in Player_grpbx.Controls.OfType<TextBox>())
-                {
-                    txtbx.Text = "";
-                }
-
-                foreach (var radiobtn in Map_grpbx.Controls.OfType<RadioButton>())
-                {
-                    radiobtn.Checked = false;
-                }
-
-                Perks_lstbx.Items.Clear();
-                Variables_lstbx.Items.Clear();
-            }
-            catch
-            {
-                MessageBox.Show("Nothing to clear");
-            }
-        }
-
-        private void createDefinitionFileToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            using(CreateDefPopup cdf = new CreateDefPopup())
-            {
-                var ans = cdf.ShowDialog();
-            }
-        }
-
-        private void createResourceFileToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            using (CreateResFormBasic crf = new CreateResFormBasic())
-            {
-                var ans = crf.ShowDialog();
-            }
-        }
-
-        private void createResourceFileAdvToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            using (CreateResFormAdv crf = new CreateResFormAdv())
-            {
-                var ans = crf.ShowDialog();
-            }
-        }
-
-        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            using (HelpForm crf = new HelpForm())
-            {
-                var ans = crf.ShowDialog();
-            }
-        }
-
-        private void versionToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            string text = "Ultime Batch File Maker by TheSilverHawk (a.k.a MuffinDragon)" + Environment.NewLine
-                        + "Version v1.0" + Environment.NewLine
-                        + "This Program is made for free use on Nexus Mods";
-            MessageBox.Show(text);
-        }
-
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-            fd.Filter = "Definition file | *definitions*.json";
-            fd.Title = "Please select Definitions file";
-
-            if (fd.ShowDialog() == DialogResult.OK)
-            {
-                string raw_json = System.IO.File.ReadAllText(fd.FileName);
-
-                try
-                {
-                    JObject parsed_json = JObject.Parse(raw_json);
-                    if (parsed_json["Definitions"].HasValues)
-                    {
-
-                        definition = new Definitions(
-                            parsed_json["Game"].ToString(),
-                            parsed_json["Definitions"]["addItem"].ToString(),
-                            parsed_json["Definitions"]["setValue"].ToString(),
-                            parsed_json["Definitions"]["addPerk"].ToString(),
-                            parsed_json["Definitions"]["spawnNPC"].ToString(),
-                            parsed_json["Definitions"]["setLevel"].ToString(),
-                            parsed_json["Definitions"]["mapCommand"].ToString()
-                            );
-                        this.Text = this.Text + " - " + definition.GameName;
-                    }
-                }
-                catch
-                {
-                    MessageBox.Show("Failed to create definitions!" + Environment.NewLine + "Check definitions file syntax.");
-                    Close();
-                }
-            }
-            else
-            {
-                MessageBox.Show("No definitions file selected, exiting.");
-                this.Close();
-            }
-        }
-
-        private void loadFolderToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            fbd.Description = "Select Resources folder";
-            List<string> importedFiles = new List<string>();
-            if (fbd.ShowDialog() == DialogResult.OK)
-            {
-                using (ResourceDetectionPopup rdp = new ResourceDetectionPopup())
-                {
-                    foreach (var file in Directory.GetFiles(fbd.SelectedPath))
-                    {
-                        if (!file.ToLower().Contains("definition"))
-                        {
-                            rdp.detectedFiles.Add(file);
-                        }
-                    }
-                    
-                    if (rdp.ShowDialog() == DialogResult.OK)
-                    {
-                        importedFiles = rdp.detectedFiles;
-                    }
-                    else
-                    {
-                        MessageBox.Show("No Resource files to import.");
-                        return;
-                    }
-                }
-            }
-            else
-            {
-                MessageBox.Show("No Resource folder selected, exiting.");
-                return;
-            }
-
-            if (importedFiles.Count == 0)
-            {
-                MessageBox.Show("No file to import");
-                return;
-            }
-            foreach (string filepath in importedFiles)
-            {
-                string raw_json = System.IO.File.ReadAllText(filepath);
-
-
-                JObject parsed_json = JObject.Parse(raw_json);
-
-                if (parsed_json["Game"].Value<string>() == definition.GameName)
-                {
-                    string category_name = parsed_json.Properties().Select(p => p.Name).ToList()[1];
-
-
-                    if (parsed_json[category_name].First().Count() != 2)
-                    {
-                        foreach (JObject child in parsed_json[category_name].Children<JObject>())
-                        {
-                            string item_category = child.Properties().Select(p => p.Name).ToList()[0];
-
-                            foreach (JObject item in child.Children().First().Values())
-                            {
-                                item.Add("itemCategory", item_category);
-                                master_values.Add(item);
-                            }
-                        }
-                        DataTable dt = populateTable(master_values);
-                        createTab(category_name, dt);
-                        master_values.Clear();
-                    }
-                    else
-                    {
-                        foreach (JObject child in parsed_json[category_name].Children<JObject>())
-                        {
-                            child.Add("itemCategory", category_name);
-                            master_values.Add(child);
-
-                        }
-                        DataTable dt = populateTable(master_values);
-                        createTab(category_name, dt);
-                        master_values.Clear();
-                    }
-                }
-                else
-                {
-                    MessageBox.Show(filepath + " does not belong to " + definition.GameName);
-                }
-            }
+            return false;
         }
     }
-
-    
 }
