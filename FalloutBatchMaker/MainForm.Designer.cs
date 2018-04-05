@@ -34,6 +34,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loadCategoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.loadFolderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clearAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.createDefinitionFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,21 +48,20 @@
             this.Player_grpbx = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.Money_txtbx = new System.Windows.Forms.TextBox();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.Map_none_rbtn = new System.Windows.Forms.RadioButton();
+            this.Map_markers_rbtn = new System.Windows.Forms.RadioButton();
+            this.Map_full_rbtn = new System.Windows.Forms.RadioButton();
             this.Perk_grpbx = new System.Windows.Forms.GroupBox();
             this.Perk_txtbx = new System.Windows.Forms.TextBox();
-            this.PerkRem_btn = new System.Windows.Forms.Button();
-            this.PerkAdd_btn = new System.Windows.Forms.Button();
+            this.Perk_remove_btn = new System.Windows.Forms.Button();
+            this.Perk_add_btn = new System.Windows.Forms.Button();
             this.Perks_lstbx = new System.Windows.Forms.ListBox();
             this.Var_grpbx = new System.Windows.Forms.GroupBox();
             this.Var_txtbx = new System.Windows.Forms.TextBox();
             this.Variables_lstbx = new System.Windows.Forms.ListBox();
-            this.VarRem_btn = new System.Windows.Forms.Button();
-            this.VarAdd_btn = new System.Windows.Forms.Button();
+            this.Var_remove_btn = new System.Windows.Forms.Button();
+            this.Var_add_btn = new System.Windows.Forms.Button();
             this.Map_grpbx = new System.Windows.Forms.GroupBox();
-            this.loadFolderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.Player_grpbx.SuspendLayout();
             this.Perk_grpbx.SuspendLayout();
@@ -114,16 +114,23 @@
             // loadCategoryToolStripMenuItem
             // 
             this.loadCategoryToolStripMenuItem.Name = "loadCategoryToolStripMenuItem";
-            this.loadCategoryToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.loadCategoryToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.loadCategoryToolStripMenuItem.Text = "Load Resource";
-            this.loadCategoryToolStripMenuItem.Click += new System.EventHandler(this.loadFileToolStripMenuItem_Click);
+            this.loadCategoryToolStripMenuItem.Click += new System.EventHandler(this.LoadResourceFileToolStripMenuItem_Click);
+            // 
+            // loadFolderToolStripMenuItem
+            // 
+            this.loadFolderToolStripMenuItem.Name = "loadFolderToolStripMenuItem";
+            this.loadFolderToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.loadFolderToolStripMenuItem.Text = "Load Folder";
+            this.loadFolderToolStripMenuItem.Click += new System.EventHandler(this.LoadResourceFolderToolStripMenuItem_click);
             // 
             // clearAllToolStripMenuItem
             // 
             this.clearAllToolStripMenuItem.Name = "clearAllToolStripMenuItem";
-            this.clearAllToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.clearAllToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.clearAllToolStripMenuItem.Text = "Clear All";
-            this.clearAllToolStripMenuItem.Click += new System.EventHandler(this.clearAllToolStripMenuItem_Click);
+            this.clearAllToolStripMenuItem.Click += new System.EventHandler(this.ClearAllToolStripMenuItem_Click);
             // 
             // toolsToolStripMenuItem
             // 
@@ -132,7 +139,7 @@
             this.createResourceFileToolStripMenuItem,
             this.createResourceFileAdvToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
             this.toolsToolStripMenuItem.Text = "Tools";
             // 
             // createDefinitionFileToolStripMenuItem
@@ -140,21 +147,21 @@
             this.createDefinitionFileToolStripMenuItem.Name = "createDefinitionFileToolStripMenuItem";
             this.createDefinitionFileToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
             this.createDefinitionFileToolStripMenuItem.Text = "Create Definition File";
-            this.createDefinitionFileToolStripMenuItem.Click += new System.EventHandler(this.createDefinitionFileToolStripMenuItem_Click);
+            this.createDefinitionFileToolStripMenuItem.Click += new System.EventHandler(this.CreateDefinitionFileToolStripMenuItem_Click);
             // 
             // createResourceFileToolStripMenuItem
             // 
             this.createResourceFileToolStripMenuItem.Name = "createResourceFileToolStripMenuItem";
             this.createResourceFileToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
             this.createResourceFileToolStripMenuItem.Text = "Create Resource File (basic)";
-            this.createResourceFileToolStripMenuItem.Click += new System.EventHandler(this.createResourceFileToolStripMenuItem_Click);
+            this.createResourceFileToolStripMenuItem.Click += new System.EventHandler(this.CreateResourceFileToolStripMenuItem_Click);
             // 
             // createResourceFileAdvToolStripMenuItem
             // 
             this.createResourceFileAdvToolStripMenuItem.Name = "createResourceFileAdvToolStripMenuItem";
             this.createResourceFileAdvToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
             this.createResourceFileAdvToolStripMenuItem.Text = "Create Resource File (Adv)";
-            this.createResourceFileAdvToolStripMenuItem.Click += new System.EventHandler(this.createResourceFileAdvToolStripMenuItem_Click);
+            this.createResourceFileAdvToolStripMenuItem.Click += new System.EventHandler(this.CreateResourceFileAdvToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
@@ -168,14 +175,14 @@
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.helpToolStripMenuItem.Text = "Help";
-            this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
+            this.helpToolStripMenuItem.Click += new System.EventHandler(this.HelpToolStripMenuItem_Click);
             // 
             // versionToolStripMenuItem
             // 
             this.versionToolStripMenuItem.Name = "versionToolStripMenuItem";
-            this.versionToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.versionToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.versionToolStripMenuItem.Text = "Version";
             this.versionToolStripMenuItem.Click += new System.EventHandler(this.versionToolStripMenuItem_Click);
             // 
@@ -227,51 +234,51 @@
             this.Money_txtbx.Size = new System.Drawing.Size(58, 20);
             this.Money_txtbx.TabIndex = 8;
             // 
-            // radioButton3
+            // Map_none_rbtn
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.radioButton3.Location = new System.Drawing.Point(6, 56);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(78, 18);
-            this.radioButton3.TabIndex = 10;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Remove All";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
+            this.Map_none_rbtn.AutoSize = true;
+            this.Map_none_rbtn.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.Map_none_rbtn.Location = new System.Drawing.Point(6, 56);
+            this.Map_none_rbtn.Name = "Map_none_rbtn";
+            this.Map_none_rbtn.Size = new System.Drawing.Size(77, 17);
+            this.Map_none_rbtn.TabIndex = 10;
+            this.Map_none_rbtn.TabStop = true;
+            this.Map_none_rbtn.Text = "Remove All";
+            this.Map_none_rbtn.UseVisualStyleBackColor = true;
+            this.Map_none_rbtn.CheckedChanged += new System.EventHandler(this.Map_none_rbtn_CheckedChanged);
             // 
-            // radioButton2
+            // Map_markers_rbtn
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.radioButton2.Location = new System.Drawing.Point(6, 36);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(99, 18);
-            this.radioButton2.TabIndex = 10;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Show Markers ";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            this.Map_markers_rbtn.AutoSize = true;
+            this.Map_markers_rbtn.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.Map_markers_rbtn.Location = new System.Drawing.Point(6, 36);
+            this.Map_markers_rbtn.Name = "Map_markers_rbtn";
+            this.Map_markers_rbtn.Size = new System.Drawing.Size(93, 17);
+            this.Map_markers_rbtn.TabIndex = 10;
+            this.Map_markers_rbtn.TabStop = true;
+            this.Map_markers_rbtn.Text = "Show Markers ";
+            this.Map_markers_rbtn.UseVisualStyleBackColor = true;
+            this.Map_markers_rbtn.CheckedChanged += new System.EventHandler(this.Map_markers_rbtn_CheckedChanged);
             // 
-            // radioButton1
+            // Map_full_rbtn
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.radioButton1.Location = new System.Drawing.Point(6, 16);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(115, 18);
-            this.radioButton1.TabIndex = 10;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Complete Discover";
-            this.radioButton1.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.Map_full_rbtn.AutoSize = true;
+            this.Map_full_rbtn.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.Map_full_rbtn.Location = new System.Drawing.Point(6, 16);
+            this.Map_full_rbtn.Name = "Map_full_rbtn";
+            this.Map_full_rbtn.Size = new System.Drawing.Size(114, 17);
+            this.Map_full_rbtn.TabIndex = 10;
+            this.Map_full_rbtn.TabStop = true;
+            this.Map_full_rbtn.Text = "Complete Discover";
+            this.Map_full_rbtn.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.Map_full_rbtn.UseVisualStyleBackColor = true;
+            this.Map_full_rbtn.CheckedChanged += new System.EventHandler(this.Map_full_rbtn_CheckedChanged);
             // 
             // Perk_grpbx
             // 
             this.Perk_grpbx.Controls.Add(this.Perk_txtbx);
-            this.Perk_grpbx.Controls.Add(this.PerkRem_btn);
-            this.Perk_grpbx.Controls.Add(this.PerkAdd_btn);
+            this.Perk_grpbx.Controls.Add(this.Perk_remove_btn);
+            this.Perk_grpbx.Controls.Add(this.Perk_add_btn);
             this.Perk_grpbx.Controls.Add(this.Perks_lstbx);
             this.Perk_grpbx.Location = new System.Drawing.Point(145, 27);
             this.Perk_grpbx.Name = "Perk_grpbx";
@@ -288,31 +295,31 @@
             this.Perk_txtbx.Size = new System.Drawing.Size(96, 20);
             this.Perk_txtbx.TabIndex = 1;
             // 
-            // PerkRem_btn
+            // Perk_remove_btn
             // 
-            this.PerkRem_btn.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.PerkRem_btn.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PerkRem_btn.Image = ((System.Drawing.Image)(resources.GetObject("PerkRem_btn.Image")));
-            this.PerkRem_btn.Location = new System.Drawing.Point(65, 38);
-            this.PerkRem_btn.Name = "PerkRem_btn";
-            this.PerkRem_btn.Size = new System.Drawing.Size(33, 22);
-            this.PerkRem_btn.TabIndex = 13;
-            this.PerkRem_btn.Text = "↑";
-            this.PerkRem_btn.UseVisualStyleBackColor = true;
-            this.PerkRem_btn.Click += new System.EventHandler(this.PerkRem_btn_Click);
+            this.Perk_remove_btn.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.Perk_remove_btn.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Perk_remove_btn.Image = ((System.Drawing.Image)(resources.GetObject("Perk_remove_btn.Image")));
+            this.Perk_remove_btn.Location = new System.Drawing.Point(65, 38);
+            this.Perk_remove_btn.Name = "Perk_remove_btn";
+            this.Perk_remove_btn.Size = new System.Drawing.Size(33, 22);
+            this.Perk_remove_btn.TabIndex = 13;
+            this.Perk_remove_btn.Text = "↑";
+            this.Perk_remove_btn.UseVisualStyleBackColor = true;
+            this.Perk_remove_btn.Click += new System.EventHandler(this.Perk_remove_btn_Click);
             // 
-            // PerkAdd_btn
+            // Perk_add_btn
             // 
-            this.PerkAdd_btn.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.PerkAdd_btn.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PerkAdd_btn.Image = ((System.Drawing.Image)(resources.GetObject("PerkAdd_btn.Image")));
-            this.PerkAdd_btn.Location = new System.Drawing.Point(6, 38);
-            this.PerkAdd_btn.Name = "PerkAdd_btn";
-            this.PerkAdd_btn.Size = new System.Drawing.Size(33, 22);
-            this.PerkAdd_btn.TabIndex = 13;
-            this.PerkAdd_btn.Text = "↓";
-            this.PerkAdd_btn.UseVisualStyleBackColor = true;
-            this.PerkAdd_btn.Click += new System.EventHandler(this.PerkAdd_btn_Click);
+            this.Perk_add_btn.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.Perk_add_btn.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Perk_add_btn.Image = ((System.Drawing.Image)(resources.GetObject("Perk_add_btn.Image")));
+            this.Perk_add_btn.Location = new System.Drawing.Point(6, 38);
+            this.Perk_add_btn.Name = "Perk_add_btn";
+            this.Perk_add_btn.Size = new System.Drawing.Size(33, 22);
+            this.Perk_add_btn.TabIndex = 13;
+            this.Perk_add_btn.Text = "↓";
+            this.Perk_add_btn.UseVisualStyleBackColor = true;
+            this.Perk_add_btn.Click += new System.EventHandler(this.Perk_add_btn_Click);
             // 
             // Perks_lstbx
             // 
@@ -327,8 +334,8 @@
             // 
             this.Var_grpbx.Controls.Add(this.Var_txtbx);
             this.Var_grpbx.Controls.Add(this.Variables_lstbx);
-            this.Var_grpbx.Controls.Add(this.VarRem_btn);
-            this.Var_grpbx.Controls.Add(this.VarAdd_btn);
+            this.Var_grpbx.Controls.Add(this.Var_remove_btn);
+            this.Var_grpbx.Controls.Add(this.Var_add_btn);
             this.Var_grpbx.Location = new System.Drawing.Point(253, 27);
             this.Var_grpbx.Name = "Var_grpbx";
             this.Var_grpbx.Size = new System.Drawing.Size(106, 148);
@@ -353,50 +360,43 @@
             this.Variables_lstbx.Size = new System.Drawing.Size(100, 82);
             this.Variables_lstbx.TabIndex = 14;
             // 
-            // VarRem_btn
+            // Var_remove_btn
             // 
-            this.VarRem_btn.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.VarRem_btn.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VarRem_btn.Image = ((System.Drawing.Image)(resources.GetObject("VarRem_btn.Image")));
-            this.VarRem_btn.Location = new System.Drawing.Point(67, 38);
-            this.VarRem_btn.Name = "VarRem_btn";
-            this.VarRem_btn.Size = new System.Drawing.Size(33, 22);
-            this.VarRem_btn.TabIndex = 13;
-            this.VarRem_btn.Text = "↑";
-            this.VarRem_btn.UseVisualStyleBackColor = true;
-            this.VarRem_btn.Click += new System.EventHandler(this.VarRem_btn_Click);
+            this.Var_remove_btn.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.Var_remove_btn.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Var_remove_btn.Image = ((System.Drawing.Image)(resources.GetObject("Var_remove_btn.Image")));
+            this.Var_remove_btn.Location = new System.Drawing.Point(67, 38);
+            this.Var_remove_btn.Name = "Var_remove_btn";
+            this.Var_remove_btn.Size = new System.Drawing.Size(33, 22);
+            this.Var_remove_btn.TabIndex = 13;
+            this.Var_remove_btn.Text = "↑";
+            this.Var_remove_btn.UseVisualStyleBackColor = true;
+            this.Var_remove_btn.Click += new System.EventHandler(this.Var_remove_btn_Click);
             // 
-            // VarAdd_btn
+            // Var_add_btn
             // 
-            this.VarAdd_btn.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.VarAdd_btn.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VarAdd_btn.Image = ((System.Drawing.Image)(resources.GetObject("VarAdd_btn.Image")));
-            this.VarAdd_btn.Location = new System.Drawing.Point(3, 38);
-            this.VarAdd_btn.Name = "VarAdd_btn";
-            this.VarAdd_btn.Size = new System.Drawing.Size(33, 22);
-            this.VarAdd_btn.TabIndex = 13;
-            this.VarAdd_btn.Text = "↓";
-            this.VarAdd_btn.UseVisualStyleBackColor = true;
-            this.VarAdd_btn.Click += new System.EventHandler(this.VarAdd_btn_Click);
+            this.Var_add_btn.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.Var_add_btn.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Var_add_btn.Image = ((System.Drawing.Image)(resources.GetObject("Var_add_btn.Image")));
+            this.Var_add_btn.Location = new System.Drawing.Point(3, 38);
+            this.Var_add_btn.Name = "Var_add_btn";
+            this.Var_add_btn.Size = new System.Drawing.Size(33, 22);
+            this.Var_add_btn.TabIndex = 13;
+            this.Var_add_btn.Text = "↓";
+            this.Var_add_btn.UseVisualStyleBackColor = true;
+            this.Var_add_btn.Click += new System.EventHandler(this.Var_add_btn_Click);
             // 
             // Map_grpbx
             // 
-            this.Map_grpbx.Controls.Add(this.radioButton3);
-            this.Map_grpbx.Controls.Add(this.radioButton1);
-            this.Map_grpbx.Controls.Add(this.radioButton2);
+            this.Map_grpbx.Controls.Add(this.Map_none_rbtn);
+            this.Map_grpbx.Controls.Add(this.Map_full_rbtn);
+            this.Map_grpbx.Controls.Add(this.Map_markers_rbtn);
             this.Map_grpbx.Location = new System.Drawing.Point(7, 99);
             this.Map_grpbx.Name = "Map_grpbx";
             this.Map_grpbx.Size = new System.Drawing.Size(132, 76);
             this.Map_grpbx.TabIndex = 0;
             this.Map_grpbx.TabStop = false;
             this.Map_grpbx.Text = "Map";
-            // 
-            // loadFolderToolStripMenuItem
-            // 
-            this.loadFolderToolStripMenuItem.Name = "loadFolderToolStripMenuItem";
-            this.loadFolderToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.loadFolderToolStripMenuItem.Text = "Load Folder";
-            this.loadFolderToolStripMenuItem.Click += new System.EventHandler(this.loadFolderToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -410,6 +410,7 @@
             this.Controls.Add(this.ExtractInfo);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
@@ -442,20 +443,20 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox Level_txtbx;
         private System.Windows.Forms.GroupBox Player_grpbx;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton Map_none_rbtn;
+        private System.Windows.Forms.RadioButton Map_markers_rbtn;
+        private System.Windows.Forms.RadioButton Map_full_rbtn;
         private System.Windows.Forms.GroupBox Perk_grpbx;
         private System.Windows.Forms.ListBox Perks_lstbx;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox Money_txtbx;
         private System.Windows.Forms.TextBox Perk_txtbx;
-        private System.Windows.Forms.Button PerkRem_btn;
+        private System.Windows.Forms.Button Perk_remove_btn;
         private System.Windows.Forms.GroupBox Var_grpbx;
         private System.Windows.Forms.TextBox Var_txtbx;
         private System.Windows.Forms.ListBox Variables_lstbx;
-        private System.Windows.Forms.Button VarRem_btn;
-        private System.Windows.Forms.Button VarAdd_btn;
+        private System.Windows.Forms.Button Var_remove_btn;
+        private System.Windows.Forms.Button Var_add_btn;
         private System.Windows.Forms.GroupBox Map_grpbx;
         private System.Windows.Forms.ToolStripMenuItem toolsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
@@ -464,7 +465,7 @@
         private System.Windows.Forms.ToolStripMenuItem createResourceFileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem versionToolStripMenuItem;
-        private System.Windows.Forms.Button PerkAdd_btn;
+        private System.Windows.Forms.Button Perk_add_btn;
         private System.Windows.Forms.ToolStripMenuItem createResourceFileAdvToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loadFolderToolStripMenuItem;
     }

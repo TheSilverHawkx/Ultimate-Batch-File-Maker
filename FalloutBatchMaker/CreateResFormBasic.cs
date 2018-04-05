@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Newtonsoft.Json.Linq;
 using System.IO;
@@ -19,7 +16,7 @@ namespace UltimateBatchFileMaker
             InitializeComponent();
             
         }
-        private void AddRes_btn_Click(object sender, EventArgs e)
+        private void Resource_add_btn_Click(object sender, EventArgs e)
         {
             if (Name_txtbx.Text != "" && Code_txtbx.Text != "")
             {
@@ -32,10 +29,9 @@ namespace UltimateBatchFileMaker
             {
                 MessageBox.Show("Item name or code are missing");
             }
-            
         }
 
-        private void RemRes_btn_Click(object sender, EventArgs e)
+        private void Resource_remove_btn_Click(object sender, EventArgs e)
         {
             foreach (ListViewItem item in Resource_lstv.SelectedItems)
             {
@@ -43,7 +39,7 @@ namespace UltimateBatchFileMaker
             }
         }
 
-        private void CreateRes_btn_Click(object sender, EventArgs e)
+        private void Create_btn_Click(object sender, EventArgs e)
         {
             if (Category_txtbx.Text == "" && Game_txtbx.Text == "")
             {
@@ -58,18 +54,6 @@ namespace UltimateBatchFileMaker
                     exportList.Add(new string[] { item.SubItems[0].Text, item.SubItems[1].Text });
                 }
 
-                string category_name = Category_txtbx.Text;
-                JObject json = new JObject(
-                    new JProperty("Game", Game_txtbx.Text),
-                    new JProperty(category_name,
-                        new JArray(from p in exportList select new JObject(
-                            new JProperty("name",p[0]),
-                            new JProperty("code",p[1])
-                            )
-                        )
-                    )
-                );
-
                 using (SaveFileDialog sfd = new SaveFileDialog())
                 {
                     sfd.Filter = "Resource File | *.json";
@@ -78,12 +62,12 @@ namespace UltimateBatchFileMaker
 
                     if (sfd.ShowDialog() == DialogResult.OK)
                     {
-                        StreamWriter sw = new StreamWriter(sfd.FileName);
+                        JsonParser jsonParser = new JsonParser();
 
-                        sw.Write(json.ToString());
-                        sw.Close();
+                        jsonParser.CreateResourceFile(Game_txtbx.Text, Category_txtbx.Text, exportList, sfd.FileName);
+
                         MessageBox.Show("Resource file created!");
-                        this.Close();
+                        Close();
                     }
                     else
                     {
