@@ -13,27 +13,46 @@ namespace UltimateBatchFileMaker
 {
     class JsonParser
     {
+        /// <summary>
+        /// The defintions
+        /// </summary>
         private DefinitionsObject Defintions;
 
         // 
         // Constructor - Gets .json file path from getFilePath and Parse it into a list of strongly-typed classes 'Contact' and 'Adviser".
         //
+        /// <summary>
+        /// Initializes a new instance of the <see cref="JsonParser"/> class.
+        /// </summary>
         public JsonParser()
         {
 
         }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="JsonParser"/> class.
+        /// </summary>
+        /// <param name="definition_file_path">The definition file path.</param>
         public JsonParser(string definition_file_path)
         {
             Defintions = (DefinitionsObject)DeserializeFromStream(definition_file_path,"definition");
 
         }
 
+        /// <summary>
+        /// Gets the name of the game specified in <see cref="Defintions"/>.
+        /// </summary>
+        /// <returns>The Game's name</returns>
         public string GetGameName()
         {
             return Defintions.Game;
         }
 
+        /// <summary>
+        /// Loads a resource file.
+        /// </summary>
+        /// <param name="file_path">Resource file path.</param>
+        /// <returns></returns>
         public KeyValuePair<string,DataTable> LoadResourceFile(string file_path)
         {
             ResourceObject resourceObject = (ResourceObject)DeserializeFromStream(file_path,"resource");
@@ -82,16 +101,33 @@ namespace UltimateBatchFileMaker
 
         }
 
+        /// <summary>
+        /// Associates a category to a command.
+        /// </summary>
+        /// <param name="category_name">Name of the category to associate.</param>
+        /// <returns>Status from association. If succeeds - returns <c>true</c>.</returns>
         public bool AssociateCategory(string category_name)
         {
             return Defintions.AssociateCategory(category_name);
         }
 
+        /// <summary>
+        /// Updates the map command.
+        /// </summary>
+        /// <param name="mode">String representation of the mode. Can be 1, 0 or 1,0,1</param>
+        /// <returns>Formated representaion of the mode.</returns>
         public string UpdateMapCommand(string mode)
         {
             return Defintions.UpdateMapCommand(mode);
         }
 
+        /// <summary>
+        /// Creates the resource file.
+        /// </summary>
+        /// <param name="game_name">Name of the game.</param>
+        /// <param name="category_name">Name of the category.</param>
+        /// <param name="resources">List of resources.</param>
+        /// <param name="file_path">Save file path.</param>
         public void CreateResourceFile(string game_name, string category_name, List<string[]> resources, string file_path)
         {
             List<ItemObject> item_list = new List<ItemObject>();
@@ -110,10 +146,16 @@ namespace UltimateBatchFileMaker
                 Resources = item_list
             };
 
-            SerializeFromStream(resourceObject, file_path);
+            SerializeToFile(resourceObject, file_path);
         }
 
-        public void CreateDefinitionFile(string game_name, DataTable definitions_table, string path)
+        /// <summary>
+        /// Creates the definition file.
+        /// </summary>
+        /// <param name="game_name">Name of the game.</param>
+        /// <param name="definitions_table">Datatable with definitions.</param>
+        /// <param name="file_path">Save file path.</param>
+        public void CreateDefinitionFile(string game_name, DataTable definitions_table, string file_path)
         {
             List<DefinitionObject> definition_list = new List<DefinitionObject>();
             foreach (DataRow row in definitions_table.Rows)
@@ -133,14 +175,23 @@ namespace UltimateBatchFileMaker
                 KnownCategories = new List<Category>()
             };
 
-            SerializeFromStream(definitionsObject, path);
+            SerializeToFile(definitionsObject, file_path);
         }
 
+        /// <summary>
+        /// Gets the command by name.
+        /// </summary>
+        /// <param name="name">Name of the command.</param>
+        /// <returns>String representaion of the command.</returns>
         public string GetCommand(string name)
         {
             return Defintions.GetCommand(name);
         }
 
+        /// <summary>
+        /// Gets all associations.
+        /// </summary>
+        /// <returns>Dictionary object containing 'category : command' values</returns>
         public Dictionary<string, string> GetAssociations()
         {
             return Defintions.GetAssociations();
@@ -150,11 +201,14 @@ namespace UltimateBatchFileMaker
         //
         // SUPPORT METHODS
         //
-        //
-        // Support Method- Deserialize JSON format from a FileStream object.
-        // Returns an object (either DefinitionsObject or ResourceObject).
-        //
-        private object DeserializeFromStream(string file_path, string t)
+
+        /// <summary>
+        /// Deserialize JSON format from a FileStream object.
+        /// </summary>
+        /// <param name="file_path">The file path.</param>
+        /// <param name="type">type of deserialization. Either 'definition' or 'resource'.</param>
+        /// <returns>Returns an object (either <see cref="DefinitionsObject"/> or <see cref="ResourceObject"/>).</returns>
+        private object DeserializeFromStream(string file_path, string type)
         {
             var serializer = new JsonSerializer();
 
@@ -163,11 +217,11 @@ namespace UltimateBatchFileMaker
             using (var sr = new StreamReader(stream))
             using (JsonTextReader jsonTextReader = new JsonTextReader(sr))
             {
-                if (t == "definition")
+                if (type == "definition")
                 {
                     return serializer.Deserialize<DefinitionsObject>(jsonTextReader);
                 }
-                else if (t == "resource")
+                else if (type == "resource")
                 {
                     return serializer.Deserialize<ResourceObject>(jsonTextReader);
                 }
@@ -182,7 +236,12 @@ namespace UltimateBatchFileMaker
         //
         // Support Method- Serialize JSON format to a FileStream object.
         //
-        private void SerializeFromStream(object obj, string file_path)
+        /// <summary>
+        /// Serializes an Object (such as <see cref="DefinitionsObject" />) to a file.
+        /// </summary>
+        /// <param name="obj">An object.</param>
+        /// <param name="file_path">Save file path.</param>
+        private void SerializeToFile(object obj, string file_path)
         {
             var serializer = new JsonSerializer();
 

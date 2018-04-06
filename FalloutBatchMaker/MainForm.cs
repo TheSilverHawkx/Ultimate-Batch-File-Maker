@@ -331,6 +331,11 @@ namespace UltimateBatchFileMaker
         //
         // SUPPORT METHODS
         //
+        /// <summary>
+        /// Creates a new resource tab.
+        /// </summary>
+        /// <param name="category">Category name.</param>
+        /// <param name="dt">Datatable containing all the resources.</param>
         private void CreateTab(string category, DataTable dt)
         {
             foreach (TabPage item in tabControl1.TabPages)
@@ -443,6 +448,10 @@ namespace UltimateBatchFileMaker
             tp.Controls.Add(bn);
         }
 
+        /// <summary>
+        /// Updates the map mode in the <see cref="exportList"/>.
+        /// </summary>
+        /// <param name="mode">String representation of the mode; either <c>1</c>, <c>0</c> or <c>1,0,1</c></param>
         private void UpdateMapMode(string mode)
         {
             string mapCommand = jsonParser.GetCommand("map");
@@ -451,6 +460,13 @@ namespace UltimateBatchFileMaker
             exportList.Add(new string[] { mapCommand + " " + mode,"","" });
         }
 
+        /// <summary>
+        /// Determines whether the specified form is open.
+        /// </summary>
+        /// <param name="form_name">Name of the form.</param>
+        /// <returns>
+        ///   <c>true</c> if the specified form name is open; otherwise, <c>false</c>.
+        /// </returns>
         private bool IsOpen(string form_name)
         {
             FormCollection fc = Application.OpenForms;
