@@ -54,7 +54,15 @@ namespace UltimateBatchFileMaker
                     KeyValuePair<string, DataTable> kv;
                     try
                     {
-                        kv = jsonParser.LoadResourceFile(path);
+                        if (!path.ToLower().Contains("definition"))
+                        {
+                            kv = jsonParser.LoadResourceFile(path);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Cannot load definition files as resources,skipping");
+                            return;
+                        }
                     }
                     catch (Exception ex)
                     {
@@ -80,7 +88,7 @@ namespace UltimateBatchFileMaker
             {
                 using (ResourceDetectionPopup rdp = new ResourceDetectionPopup())
                 {
-                    foreach (var file in Directory.GetFiles(fbd.SelectedPath).Where(x => x.EndsWith(".json") && !x.Contains("definition")))
+                    foreach (var file in Directory.GetFiles(fbd.SelectedPath).Where(x => x.EndsWith(".json") && !x.ToLower().Contains("definition")))
                     {
                         rdp.detectedFiles.Add(file);
                     }

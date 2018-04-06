@@ -1,6 +1,7 @@
 {
   "Game": "Skyrim",
-  "Ingredients": [
+  "Name": "Ingredients",
+  "Resources": [
     {
       "name": "Abecean Longfin",
       "code": "00106E1B"
@@ -30,7 +31,7 @@
       "code": "0004DA25"
     },
     {
-      "name": "Blue Butterfly Wing ",
+      "name": "Blue Butterfly Wing",
       "code": "000727DE"
     },
     {
@@ -38,223 +39,223 @@
       "code": "000E4F0C"
     },
     {
-      "name": "Blue Mountain Flower ",
+      "name": "Blue Mountain Flower",
       "code": "00077E1C"
     },
     {
-      "name": "Bone Meal ",
+      "name": "Bone Meal",
       "code": "00034CDD"
     },
     {
-      "name": "Briar Heart ",
+      "name": "Briar Heart",
       "code": "0003AD61"
     },
     {
-      "name": "Butterfly Wing ",
+      "name": "Butterfly Wing",
       "code": "000727E0"
     },
     {
-      "name": "Canis Root ",
+      "name": "Canis Root",
       "code": "0006ABCB"
     },
     {
-      "name": "Charred Skeever Hide ",
+      "name": "Charred Skeever Hide",
       "code": "00052695"
     },
     {
-      "name": "Chaurus Eggs ",
+      "name": "Chaurus Eggs",
       "code": "0003AD56"
     },
     {
-      "name": "Chicken's Egg ",
+      "name": "Chicken's Egg",
       "code": "00023D77"
     },
     {
-      "name": "Creep Cluster ",
+      "name": "Creep Cluster",
       "code": "000B2183"
     },
     {
-      "name": "Crimson Nirnroot ",
+      "name": "Crimson Nirnroot",
       "code": "000B701A"
     },
     {
-      "name": "Cyrodilic Spadetail ",
+      "name": "Cyrodilic Spadetail",
       "code": "00106E19"
     },
     {
-      "name": "Daedra Heart ",
+      "name": "Daedra Heart",
       "code": "0003AD5B"
     },
     {
-      "name": "Deathbell ",
+      "name": "Deathbell",
       "code": "000516C8"
     },
     {
-      "name": "Dragons Tongue ",
+      "name": "Dragons Tongue",
       "code": "000889A2"
     },
     {
-      "name": "Dwarven Oil ",
+      "name": "Dwarven Oil",
       "code": "000F11C0"
     },
     {
-      "name": "Ectoplasm ",
+      "name": "Ectoplasm",
       "code": "0003AD63"
     },
     {
-      "name": "Elves Ear ",
+      "name": "Elves Ear",
       "code": "00034D31"
     },
     {
-      "name": "Eye of Sabre Cat ",
+      "name": "Eye of Sabre Cat",
       "code": "0006BC07"
     },
     {
-      "name": "Falmer Ear ",
+      "name": "Falmer Ear",
       "code": "0003AD5D"
     },
     {
-      "name": "Fire Salts ",
+      "name": "Fire Salts",
       "code": "0003AD5E"
     },
     {
-      "name": "Fly Amanita ",
+      "name": "Fly Amanita",
       "code": "0004DA00"
     },
     {
-      "name": "Frost Mirriam ",
+      "name": "Frost Mirriam",
       "code": "00034D32"
     },
     {
-      "name": "Frost Salts ",
+      "name": "Frost Salts",
       "code": "0003AD5F"
     },
     {
-      "name": "Garlic ",
+      "name": "Garlic",
       "code": "00034D22"
     },
     {
-      "name": "Giant Lichen ",
+      "name": "Giant Lichen",
       "code": "0007E8C1"
     },
     {
-      "name": "Giant's Toe ",
+      "name": "Giant's Toe",
       "code": "0003AD64"
     },
     {
-      "name": "Glow Dust ",
+      "name": "Glow Dust",
       "code": "0003AD73"
     },
     {
-      "name": "Glowing Mushroom ",
+      "name": "Glowing Mushroom",
       "code": "0007EE01"
     },
     {
-      "name": "Grass Pod ",
+      "name": "Grass Pod",
       "code": "00083E64"
     },
     {
-      "name": "Hagraven Claw ",
+      "name": "Hagraven Claw",
       "code": "0006B689"
     },
     {
-      "name": "Hagraven Feathers ",
+      "name": "Hagraven Feathers",
       "code": "0003AD66"
     },
     {
-      "name": "Hanging Moss ",
+      "name": "Hanging Moss",
       "code": "00057F91"
     },
     {
-      "name": "Hawk Beak ",
+      "name": "Hawk Beak",
       "code": "000E7EBC"
     },
     {
-      "name": "Hawk Feathers ",
+      "name": "Hawk Feathers",
       "code": "000E7ED0"
     },
     {
-      "name": "Histcarp ",
+      "name": "Histcarp",
       "code": "00106E18"
     },
     {
-      "name": "Honeycomb ",
+      "name": "Honeycomb",
       "code": "000B08C5"
     },
     {
-      "name": "Human Flesh ",
+      "name": "Human Flesh",
       "code": "001016B3"
     },
     {
-      "name": "Human Heart ",
+      "name": "Human Heart",
       "code": "000B18CD"
     },
     {
-      "name": "Ice Wraith Teeth ",
+      "name": "Ice Wraith Teeth",
       "code": "0003AD6A"
     },
     {
-      "name": "Imp Stool ",
+      "name": "Imp Stool",
       "code": "0004DA23"
     },
     {
-      "name": "Jarrin Root ",
+      "name": "Jarrin Root",
       "code": "0001BCBC"
     },
     {
-      "name": "Jazbay Grapes ",
+      "name": "Jazbay Grapes",
       "code": "0006AC4A"
     },
     {
-      "name": "Juniper Berries ",
+      "name": "Juniper Berries",
       "code": "0005076E"
     },
     {
-      "name": "Large Antlers ",
+      "name": "Large Antlers",
       "code": "0006BC0A"
     },
     {
-      "name": "Lavender ",
+      "name": "Lavender",
       "code": "00045C28"
     },
     {
-      "name": "Luna Moth Wing ",
+      "name": "Luna Moth Wing",
       "code": "000727DF"
     },
     {
-      "name": "Moon Sugar ",
+      "name": "Moon Sugar",
       "code": "000D8E3F"
     },
     {
-      "name": "Mora Tapinella ",
+      "name": "Mora Tapinella",
       "code": "000EC870"
     },
     {
-      "name": "Mudcrab Chitin ",
+      "name": "Mudcrab Chitin",
       "code": "0006BC00"
     },
     {
-      "name": "Namira's Rot ",
+      "name": "Namira's Rot",
       "code": "0004DA24"
     },
     {
-      "name": "Nightshade ",
+      "name": "Nightshade",
       "code": "0002F44C"
     },
     {
-      "name": "Nirnroot ",
+      "name": "Nirnroot",
       "code": "00059B86"
     },
     {
-      "name": "Nordic Barnacle ",
+      "name": "Nordic Barnacle",
       "code": "0007EDF5"
     },
     {
-      "name": "Orange Dartwing ",
+      "name": "Orange Dartwing",
       "code": "000BB956"
     },
     {
-      "name": "Pearl ",
+      "name": "Pearl",
       "code": "000854FE"
     },
     {
@@ -262,119 +263,119 @@
       "code": "00023D6F"
     },
     {
-      "name": "Powdered Mammoth Tusk ",
+      "name": "Powdered Mammoth Tusk",
       "code": "0006BC10"
     },
     {
-      "name": "Purple Mountain Flower ",
+      "name": "Purple Mountain Flower",
       "code": "00077E1E"
     },
     {
-      "name": "Red Mountain Flower ",
+      "name": "Red Mountain Flower",
       "code": "00077E1D"
     },
     {
-      "name": "River Betty ",
+      "name": "River Betty",
       "code": "00106E1A"
     },
     {
-      "name": "Rock Warbler Egg ",
+      "name": "Rock Warbler Egg",
       "code": "0007E8C8"
     },
     {
-      "name": "Sabre Cat Tooth ",
+      "name": "Sabre Cat Tooth",
       "code": "0006BC04"
     },
     {
-      "name": "Salt Pile (Black-Briar) ",
+      "name": "Salt Pile (Black-Briar)",
       "code": "00074A19"
     },
     {
-      "name": "Salt Pile ",
+      "name": "Salt Pile",
       "code": "00034CDF"
     },
     {
-      "name": "Scaly Pholiota ",
+      "name": "Scaly Pholiota",
       "code": "0006F950"
     },
     {
-      "name": "Silverside Perch ",
+      "name": "Silverside Perch",
       "code": "00106E1C"
     },
     {
-      "name": "Skeever Tail ",
+      "name": "Skeever Tail",
       "code": "0003AD6F"
     },
     {
-      "name": "Slaughterfish Egg ",
+      "name": "Slaughterfish Egg",
       "code": "0007E8C5"
     },
     {
-      "name": "Slaughterfish Scales ",
+      "name": "Slaughterfish Scales",
       "code": "0003AD70"
     },
     {
-      "name": "Small Antlers ",
+      "name": "Small Antlers",
       "code": "0006BC0B"
     },
     {
-      "name": "Small Pearl ",
+      "name": "Small Pearl",
       "code": "00085500"
     },
     {
-      "name": "Snowberries ",
+      "name": "Snowberries",
       "code": "0001B3BD"
     },
     {
-      "name": "Spider Egg ",
+      "name": "Spider Egg",
       "code": "0009151B"
     },
     {
-      "name": "Spriggan Sap ",
+      "name": "Spriggan Sap",
       "code": "00063B5F"
     },
     {
-      "name": "Swamp Fungal Pod ",
+      "name": "Swamp Fungal Pod",
       "code": "0007E8B7"
     },
     {
-      "name": "Taproot ",
+      "name": "Taproot",
       "code": "0003AD71"
     },
     {
-      "name": "Thistle Branch ",
+      "name": "Thistle Branch",
       "code": "000134AA"
     },
     {
-      "name": "Torchbug Thorax ",
+      "name": "Torchbug Thorax",
       "code": "0004DA73"
     },
     {
-      "name": "Troll Fat ",
+      "name": "Troll Fat",
       "code": "0003AD72"
     },
     {
-      "name": "Tundra Cotton ",
+      "name": "Tundra Cotton",
       "code": "0003F7F8"
     },
     {
-      "name": "Vampire Dust ",
+      "name": "Vampire Dust",
       "code": "0003AD76"
     },
     {
-      "name": "Void Salts ",
+      "name": "Void Salts",
       "code": "0003AD60"
     },
     {
-      "name": "Wheat ",
+      "name": "Wheat",
       "code": "0004B0BA"
     },
     {
-      "name": "White Cap ",
+      "name": "White Cap",
       "code": "0004DA22"
     },
     {
-      "name": "Wisp Wrappings ",
+      "name": "Wisp Wrappings",
       "code": "0006BC0E"
     }
   ]

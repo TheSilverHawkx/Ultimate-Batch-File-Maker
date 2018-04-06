@@ -61,7 +61,7 @@
             this.Game_txtbx.Location = new System.Drawing.Point(142, 8);
             this.Game_txtbx.Name = "Game_txtbx";
             this.Game_txtbx.Size = new System.Drawing.Size(100, 20);
-            this.Game_txtbx.TabIndex = 2;
+            this.Game_txtbx.TabIndex = 0;
             // 
             // def_dgv
             // 
@@ -76,14 +76,14 @@
             this.def_dgv.MultiSelect = false;
             this.def_dgv.Name = "def_dgv";
             this.def_dgv.Size = new System.Drawing.Size(226, 162);
-            this.def_dgv.TabIndex = 3;
+            this.def_dgv.TabIndex = 1;
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(75, 221);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(115, 27);
-            this.button1.TabIndex = 4;
+            this.button1.TabIndex = 2;
             this.button1.Text = "Create Definition File";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
