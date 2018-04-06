@@ -60,14 +60,14 @@
             this.Category_txtbx.Location = new System.Drawing.Point(131, 36);
             this.Category_txtbx.Name = "Category_txtbx";
             this.Category_txtbx.Size = new System.Drawing.Size(80, 20);
-            this.Category_txtbx.TabIndex = 1;
+            this.Category_txtbx.TabIndex = 2;
             // 
             // Name_txtbx
             // 
             this.Name_txtbx.Location = new System.Drawing.Point(12, 89);
             this.Name_txtbx.Name = "Name_txtbx";
             this.Name_txtbx.Size = new System.Drawing.Size(100, 20);
-            this.Name_txtbx.TabIndex = 2;
+            this.Name_txtbx.TabIndex = 3;
             // 
             // label2
             // 
@@ -95,7 +95,7 @@
             this.Resource_add_btn.Location = new System.Drawing.Point(41, 115);
             this.Resource_add_btn.Name = "Resource_add_btn";
             this.Resource_add_btn.Size = new System.Drawing.Size(32, 23);
-            this.Resource_add_btn.TabIndex = 6;
+            this.Resource_add_btn.TabIndex = 5;
             this.Resource_add_btn.Text = "↓";
             this.Resource_add_btn.UseVisualStyleBackColor = true;
             this.Resource_add_btn.Click += new System.EventHandler(this.Resource_add_btn_Click);
@@ -116,7 +116,7 @@
             this.Code_txtbx.Location = new System.Drawing.Point(118, 89);
             this.Code_txtbx.Name = "Code_txtbx";
             this.Code_txtbx.Size = new System.Drawing.Size(93, 20);
-            this.Code_txtbx.TabIndex = 2;
+            this.Code_txtbx.TabIndex = 4;
             // 
             // Create_btn
             // 
@@ -138,7 +138,7 @@
             this.Resource_lstv.Location = new System.Drawing.Point(12, 144);
             this.Resource_lstv.Name = "Resource_lstv";
             this.Resource_lstv.Size = new System.Drawing.Size(199, 105);
-            this.Resource_lstv.TabIndex = 9;
+            this.Resource_lstv.TabIndex = 6;
             this.Resource_lstv.UseCompatibleStateImageBehavior = false;
             this.Resource_lstv.View = System.Windows.Forms.View.Details;
             // 

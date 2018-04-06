@@ -76,14 +76,14 @@
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(462, 201);
-            this.tabControl1.TabIndex = 4;
+            this.tabControl1.TabIndex = 13;
             // 
             // ExtractInfo
             // 
             this.ExtractInfo.Location = new System.Drawing.Point(365, 27);
             this.ExtractInfo.Name = "ExtractInfo";
             this.ExtractInfo.Size = new System.Drawing.Size(86, 145);
-            this.ExtractInfo.TabIndex = 5;
+            this.ExtractInfo.TabIndex = 14;
             this.ExtractInfo.Text = "Create File";
             this.ExtractInfo.UseVisualStyleBackColor = true;
             this.ExtractInfo.Click += new System.EventHandler(this.ExtractInfo_Click);
@@ -201,7 +201,7 @@
             this.Level_txtbx.Location = new System.Drawing.Point(69, 15);
             this.Level_txtbx.Name = "Level_txtbx";
             this.Level_txtbx.Size = new System.Drawing.Size(58, 20);
-            this.Level_txtbx.TabIndex = 8;
+            this.Level_txtbx.TabIndex = 0;
             // 
             // Player_grpbx
             // 
@@ -232,7 +232,7 @@
             this.Money_txtbx.Name = "Money_txtbx";
             this.Money_txtbx.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.Money_txtbx.Size = new System.Drawing.Size(58, 20);
-            this.Money_txtbx.TabIndex = 8;
+            this.Money_txtbx.TabIndex = 1;
             // 
             // Map_none_rbtn
             // 
@@ -241,7 +241,7 @@
             this.Map_none_rbtn.Location = new System.Drawing.Point(6, 56);
             this.Map_none_rbtn.Name = "Map_none_rbtn";
             this.Map_none_rbtn.Size = new System.Drawing.Size(77, 17);
-            this.Map_none_rbtn.TabIndex = 10;
+            this.Map_none_rbtn.TabIndex = 4;
             this.Map_none_rbtn.TabStop = true;
             this.Map_none_rbtn.Text = "Remove All";
             this.Map_none_rbtn.UseVisualStyleBackColor = true;
@@ -254,7 +254,7 @@
             this.Map_markers_rbtn.Location = new System.Drawing.Point(6, 36);
             this.Map_markers_rbtn.Name = "Map_markers_rbtn";
             this.Map_markers_rbtn.Size = new System.Drawing.Size(93, 17);
-            this.Map_markers_rbtn.TabIndex = 10;
+            this.Map_markers_rbtn.TabIndex = 3;
             this.Map_markers_rbtn.TabStop = true;
             this.Map_markers_rbtn.Text = "Show Markers ";
             this.Map_markers_rbtn.UseVisualStyleBackColor = true;
@@ -267,7 +267,7 @@
             this.Map_full_rbtn.Location = new System.Drawing.Point(6, 16);
             this.Map_full_rbtn.Name = "Map_full_rbtn";
             this.Map_full_rbtn.Size = new System.Drawing.Size(114, 17);
-            this.Map_full_rbtn.TabIndex = 10;
+            this.Map_full_rbtn.TabIndex = 2;
             this.Map_full_rbtn.TabStop = true;
             this.Map_full_rbtn.Text = "Complete Discover";
             this.Map_full_rbtn.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -293,7 +293,7 @@
             this.Perk_txtbx.Location = new System.Drawing.Point(3, 16);
             this.Perk_txtbx.Name = "Perk_txtbx";
             this.Perk_txtbx.Size = new System.Drawing.Size(96, 20);
-            this.Perk_txtbx.TabIndex = 1;
+            this.Perk_txtbx.TabIndex = 5;
             // 
             // Perk_remove_btn
             // 
@@ -303,7 +303,7 @@
             this.Perk_remove_btn.Location = new System.Drawing.Point(65, 38);
             this.Perk_remove_btn.Name = "Perk_remove_btn";
             this.Perk_remove_btn.Size = new System.Drawing.Size(33, 22);
-            this.Perk_remove_btn.TabIndex = 13;
+            this.Perk_remove_btn.TabIndex = 8;
             this.Perk_remove_btn.Text = "↑";
             this.Perk_remove_btn.UseVisualStyleBackColor = true;
             this.Perk_remove_btn.Click += new System.EventHandler(this.Perk_remove_btn_Click);
@@ -316,7 +316,7 @@
             this.Perk_add_btn.Location = new System.Drawing.Point(6, 38);
             this.Perk_add_btn.Name = "Perk_add_btn";
             this.Perk_add_btn.Size = new System.Drawing.Size(33, 22);
-            this.Perk_add_btn.TabIndex = 13;
+            this.Perk_add_btn.TabIndex = 6;
             this.Perk_add_btn.Text = "↓";
             this.Perk_add_btn.UseVisualStyleBackColor = true;
             this.Perk_add_btn.Click += new System.EventHandler(this.Perk_add_btn_Click);
@@ -328,7 +328,7 @@
             this.Perks_lstbx.Location = new System.Drawing.Point(3, 63);
             this.Perks_lstbx.Name = "Perks_lstbx";
             this.Perks_lstbx.Size = new System.Drawing.Size(96, 82);
-            this.Perks_lstbx.TabIndex = 0;
+            this.Perks_lstbx.TabIndex = 7;
             // 
             // Var_grpbx
             // 
@@ -349,7 +349,7 @@
             this.Var_txtbx.Location = new System.Drawing.Point(3, 16);
             this.Var_txtbx.Name = "Var_txtbx";
             this.Var_txtbx.Size = new System.Drawing.Size(100, 20);
-            this.Var_txtbx.TabIndex = 14;
+            this.Var_txtbx.TabIndex = 9;
             // 
             // Variables_lstbx
             // 
@@ -358,7 +358,7 @@
             this.Variables_lstbx.Location = new System.Drawing.Point(3, 63);
             this.Variables_lstbx.Name = "Variables_lstbx";
             this.Variables_lstbx.Size = new System.Drawing.Size(100, 82);
-            this.Variables_lstbx.TabIndex = 14;
+            this.Variables_lstbx.TabIndex = 11;
             // 
             // Var_remove_btn
             // 
@@ -368,7 +368,7 @@
             this.Var_remove_btn.Location = new System.Drawing.Point(67, 38);
             this.Var_remove_btn.Name = "Var_remove_btn";
             this.Var_remove_btn.Size = new System.Drawing.Size(33, 22);
-            this.Var_remove_btn.TabIndex = 13;
+            this.Var_remove_btn.TabIndex = 12;
             this.Var_remove_btn.Text = "↑";
             this.Var_remove_btn.UseVisualStyleBackColor = true;
             this.Var_remove_btn.Click += new System.EventHandler(this.Var_remove_btn_Click);
@@ -381,7 +381,7 @@
             this.Var_add_btn.Location = new System.Drawing.Point(3, 38);
             this.Var_add_btn.Name = "Var_add_btn";
             this.Var_add_btn.Size = new System.Drawing.Size(33, 22);
-            this.Var_add_btn.TabIndex = 13;
+            this.Var_add_btn.TabIndex = 10;
             this.Var_add_btn.Text = "↓";
             this.Var_add_btn.UseVisualStyleBackColor = true;
             this.Var_add_btn.Click += new System.EventHandler(this.Var_add_btn_Click);

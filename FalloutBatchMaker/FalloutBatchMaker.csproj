@@ -92,7 +92,6 @@
     <Compile Include="CreateResFormAdv.Designer.cs">
       <DependentUpon>CreateResFormAdv.cs</DependentUpon>
     </Compile>
-    <Compile Include="Definitions.cs" />
     <Compile Include="HelpForm.cs">
       <SubType>Form</SubType>
     </Compile>

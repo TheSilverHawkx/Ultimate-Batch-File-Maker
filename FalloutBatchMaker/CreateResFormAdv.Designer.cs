@@ -56,7 +56,7 @@
             this.Input_rtxtbx.Location = new System.Drawing.Point(3, 16);
             this.Input_rtxtbx.Name = "Input_rtxtbx";
             this.Input_rtxtbx.Size = new System.Drawing.Size(355, 122);
-            this.Input_rtxtbx.TabIndex = 6;
+            this.Input_rtxtbx.TabIndex = 0;
             this.Input_rtxtbx.Text = "";
             // 
             // button1
@@ -64,7 +64,7 @@
             this.button1.Location = new System.Drawing.Point(259, 205);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(99, 23);
-            this.button1.TabIndex = 4;
+            this.button1.TabIndex = 3;
             this.button1.Text = "Process input";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -76,7 +76,7 @@
             this.linkLabel1.Location = new System.Drawing.Point(-1, 210);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(195, 19);
-            this.linkLabel1.TabIndex = 5;
+            this.linkLabel1.TabIndex = 4;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "http://www.objgen.com/json";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
@@ -96,14 +96,14 @@
             this.Category_name_txtbx.Location = new System.Drawing.Point(165, 175);
             this.Category_name_txtbx.Name = "Category_name_txtbx";
             this.Category_name_txtbx.Size = new System.Drawing.Size(193, 20);
-            this.Category_name_txtbx.TabIndex = 8;
+            this.Category_name_txtbx.TabIndex = 2;
             // 
             // Game_name_txtbx
             // 
             this.Game_name_txtbx.Location = new System.Drawing.Point(165, 145);
             this.Game_name_txtbx.Name = "Game_name_txtbx";
             this.Game_name_txtbx.Size = new System.Drawing.Size(193, 20);
-            this.Game_name_txtbx.TabIndex = 8;
+            this.Game_name_txtbx.TabIndex = 1;
             // 
             // label2
             // 

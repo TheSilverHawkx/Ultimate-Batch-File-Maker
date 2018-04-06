@@ -21,8 +21,8 @@ namespace UltimateBatchFileMaker.Models
             if (KnownCategories.Exists(x => x.name == category_name))
             {
                 var known_category = KnownCategories.Where(x => x.name == category_name).First();
-                string command_name = Definitions.Where(x => x.name.Contains(known_category.type)).First().name;
-                Association.Add(known_category.name, command_name);
+                string command = Definitions.Where(x => x.name.ToLower().Contains(known_category.type.ToLower())).First().command;
+                Association.Add(known_category.name, command);
             }
             else
             {
@@ -36,7 +36,10 @@ namespace UltimateBatchFileMaker.Models
                         if (KnownCategories.Exists(x => x.type == val))
                         {
                             string command_name = Definitions.Where(x => x.name.Contains(val)).First().name;
-                            Association.Add(val, command_name);
+                            if (!Association.ContainsKey(val))
+                            {
+                                Association.Add(val, command_name);
+                            }
                         }
                         else
                         {

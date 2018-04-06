@@ -56,7 +56,7 @@
             this.categories_cmbx.Location = new System.Drawing.Point(32, 38);
             this.categories_cmbx.Name = "categories_cmbx";
             this.categories_cmbx.Size = new System.Drawing.Size(154, 21);
-            this.categories_cmbx.TabIndex = 1;
+            this.categories_cmbx.TabIndex = 0;
             // 
             // label2
             // 
@@ -74,14 +74,14 @@
             this.cmd_txtbx.Location = new System.Drawing.Point(32, 78);
             this.cmd_txtbx.Name = "cmd_txtbx";
             this.cmd_txtbx.Size = new System.Drawing.Size(154, 20);
-            this.cmd_txtbx.TabIndex = 3;
+            this.cmd_txtbx.TabIndex = 1;
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(32, 104);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(154, 23);
-            this.button1.TabIndex = 4;
+            this.button1.TabIndex = 2;
             this.button1.Text = "Submit";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
